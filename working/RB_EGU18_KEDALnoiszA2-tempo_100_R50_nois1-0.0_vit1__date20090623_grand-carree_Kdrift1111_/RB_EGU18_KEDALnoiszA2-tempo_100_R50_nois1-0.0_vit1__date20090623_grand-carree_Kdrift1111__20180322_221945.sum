@@ -1,0 +1,540 @@
+********** ecart 2D bary MC/vrai en distance        **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 0.0036782147038066986
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 0.0036782147038066986
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 0.5199622278609151
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 0.5201435083260214
+********** ecart 2D bary brut/vrai en distance      **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 0.003678214764721315
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 0.003678214764721315
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 0.519962227957585
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 0.5201435083246181
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 0.519976190175483
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 0.5201454939390501
+********** BL des coords a prioris('Mod')           **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [7073.03030955 5000.600926   5001.06436925 5001.97717361 5000.79876442
+ 7072.24488564]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [7073.03030955 5000.600926   5001.06436925 5001.97717361 5000.79876442
+ 7072.24488564]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp [7073.03030955 5000.600926   5001.06436925 5001.97717361 5000.79876442
+ 7072.24488564]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp [7073.03030955 5000.600926   5001.06436925 5001.97717361 5000.79876442
+ 7072.24488564]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp [7073.03030955 5000.600926   5001.06436925 5001.97717361 5000.79876442
+ 7072.24488564]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp [7073.03030955 5000.600926   5001.06436925 5001.97717361 5000.79876442
+ 7072.24488564]
+********** BLs News à l'issue de l'inversion        **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [7071.1331091  5000.04047326 5000.25051318 5000.25037419 5000.03979261
+ 7071.41345238]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [7071.1331091  5000.04047326 5000.25051318 5000.25037419 5000.03979261
+ 7071.41345238]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp [7071.13313166 5000.0404734  5000.25051306 5000.25037431 5000.03979247
+ 7071.41342981]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp [7071.08768727 5000.08654462 5000.24731942 5000.22279698 5000.08238708
+ 7071.49980628]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp [7071.13313166 5000.0404734  5000.25051306 5000.25037431 5000.03979247
+ 7071.41342981]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp [7071.08765919 5000.08651472 5000.24731685 5000.22277002 5000.08236808
+ 7071.4997789 ]
+********** BLs Observees                            **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [7071.13292793 5000.04061746 5000.25065713 5000.25051838 5000.03993652
+ 7071.41322606]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [7071.13292793 5000.04061746 5000.25065713 5000.25051838 5000.03993652
+ 7071.41322606]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp [7071.13292793 5000.04061746 5000.25065713 5000.25051838 5000.03993652
+ 7071.41322606]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp [7071.13292793 5000.04061746 5000.25065713 5000.25051838 5000.03993652
+ 7071.41322606]
+********** BLs Vraies                               **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [7071.13145119 5000.03999984 5000.24999375 5000.24999375 5000.03999984
+ 7071.4142857 ]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [7071.13145119 5000.03999984 5000.24999375 5000.24999375 5000.03999984
+ 7071.4142857 ]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp [7071.13145119 5000.03999984 5000.24999375 5000.24999375 5000.03999984
+ 7071.4142857 ]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp [7071.13145119 5000.03999984 5000.24999375 5000.24999375 5000.03999984
+ 7071.4142857 ]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp [7071.13145119 5000.03999984 5000.24999375 5000.24999375 5000.03999984
+ 7071.4142857 ]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp [7071.13145119 5000.03999984 5000.24999375 5000.24999375 5000.03999984
+ 7071.4142857 ]
+********** Barycentre 'brut' : Sum Xpxp / Npxp      **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [ 9999.99822887 10000.00322372  3995.00591707]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [ 9999.99822887 10000.00322372  3995.00591707]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp [10000.10021737 10000.51021289  3995.00922144]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp [10000.100316   10000.51037826  3994.99981963]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp [10000.10021454 10000.51022768  3995.00922154]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp [10000.10032269 10000.51037897  3994.99983238]
+********** Barycentre des dXs dans le MC            **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [0. 0. 0.]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [0. 0. 0.]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp [0. 0. 0.]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp [-0.  0. -0.]
+********** Barycentre estime dans le MC             **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [ 9999.99822887 10000.00322372  3995.00591707]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [ 9999.99822887 10000.00322372  3995.00591707]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp [10000.10021737 10000.51021289  3995.00922144]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp [10000.100316   10000.51037826  3994.99981963]
+********** Nb PXPs                                  **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 4
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 4
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 4
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 4
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 4
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 4
+********** Nb iter.                                 **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 5
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 5
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 5
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 5
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 5
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 5
+********** Nb pings                                 **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 100
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 100
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 100
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 100
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 100
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 100
+********** Taille Jacob.                            **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp (409, 15)
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp (409, 15)
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp (406, 15)
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp (400, 15)
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp (406, 12)
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp (400, 12)
+********** Taille Resid.                            **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp (409,)
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp (409,)
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp (406,)
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp (400,)
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp (406,)
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp (400,)
+********** batch_mode                               **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp True
+********** bruit  Z                                 **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 1
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 1
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 1
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 1
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 1
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 1
+********** bruit BL                                 **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 0.001
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 0.001
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 0.001
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 0.001
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 0.001
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 0.001
+********** bruit PXP apriori                        **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 1
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 1
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 1
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 1
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 1
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 1
+********** bruit dZ                                 **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 0.01
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 0.01
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 0.01
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 0.01
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 0.01
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 0.01
+********** coords. apriori                          **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [[ 7499.96928249  7500.03081389  4010.00936009]
+ [12500.0271474  12499.9752766   3980.00662791]
+ [ 7500.02671614 12500.03131836  4030.00151612]
+ [12499.96976968  7499.97548602  3960.00616418]]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [[ 7499.96928249  7500.03081389  4010.00936009]
+ [12500.0271474  12499.9752766   3980.00662791]
+ [ 7500.02671614 12500.03131836  4030.00151612]
+ [12499.96976968  7499.97548602  3960.00616418]]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp [[ 7500.07104544  7500.54040887  4010.40576332]
+ [12500.12932042 12500.47968266  3979.61175622]
+ [ 7500.1302669  12500.54348439  4029.7442454 ]
+ [12500.07025625  7500.47728093  3960.27512088]]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp [[ 7500.09813822  7500.53891762  4010.42233123]
+ [12500.09083763 12500.47953142  3979.63693912]
+ [ 7500.11878274 12500.58823466  4029.70830546]
+ [12500.09354798  7500.43481902  3960.23176065]]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp [[ 7500.07104002  7500.54041532  4010.40576403]
+ [12500.12931303 12500.47969107  3979.6117556 ]
+ [ 7500.13025943 12500.54349088  4029.74423645]
+ [12500.07025091  7500.47728931  3960.27512992]]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp [[ 7500.09815949  7500.5389356   4010.42235675]
+ [12500.09083898 12500.47953357  3979.63693685]
+ [ 7500.11878437 12500.58823335  4029.70830734]
+ [12500.09354331  7500.43480867  3960.23175686]]
+********** dX                                       **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [-0.00000006 -0.         -0.         -0.00000607  0.00000607 -0.
+  0.00000607 -0.00000607  0.          0.00000607  0.00000607  0.
+ -0.00000607 -0.00000607 -0.        ]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [-0.00000006 -0.         -0.         -0.00000607  0.00000607 -0.
+  0.00000607 -0.00000607  0.          0.00000607  0.00000607  0.
+ -0.00000607 -0.00000607 -0.        ]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp [-0.00000488 -0.00000132 -0.00000001  0.00000184 -0.00000186 -0.00000404
+ -0.00000184  0.00000186  0.00000404 -0.0000019  -0.00000187 -0.00000232
+  0.0000019   0.00000187  0.00000232]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp [-0.00001064  0.00000258 -0.00001448  0.00000377 -0.00001095  0.00000456
+  0.00000952  0.00000385  0.00001106 -0.00002245  0.00002231 -0.00002271
+  0.00000916 -0.0000152   0.0000071 ]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp [-0.00000204  0.00000679  0.00000312 -0.00000056  0.00000528 -0.00000304
+ -0.00000058  0.00000682 -0.00000472 -0.00000202  0.00000524  0.0000048 ]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp [-0.00002364 -0.00000695 -0.00001985 -0.00000578 -0.00000826  0.0000091
+ -0.00001094  0.00001568 -0.00001705  0.00000499  0.00000422 -0.00000047]
+********** duree                                    **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 0:00:58.934100
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 0:00:54.119633
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 0:00:53.593727
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 0:00:50.720498
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 0:00:54.736760
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 0:00:52.018888
+********** ecart 2D a la postion vraie en distance  **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [0.04351795 0.03672674 0.04117393 0.0389291 ]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [0.04351795 0.03672674 0.04117393 0.0389291 ]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp [0.54505534 0.49680782 0.55887344 0.48242423]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp [0.54777088 0.48806538 0.60012564 0.44475561]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp [0.54507105 0.49682019 0.55888918 0.48243652]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp [0.54779077 0.48805245 0.60012003 0.44476233]
+********** ecart 3D a la postion vraie en distance  **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [0.04451318 0.03732001 0.04120183 0.03941411]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [0.04451318 0.03732001 0.04120183 0.03941411]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp [0.67950417 0.63051417 0.61461461 0.55536106]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp [0.6916706  0.60829557 0.66727669 0.50151483]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp [0.67952147 0.63052865 0.61463365 0.55537744]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp [0.69169588 0.60827907 0.66726202 0.50152224]
+********** ecart 3D bary MC/vrai en distance        **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 0.006967139226507814
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 0.006967139226507814
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 0.5200439918090877
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 0.5201435395977417
+********** ecart 3D bary brut/vrai en distance      **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 0.00696713925905314
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 0.00696713925905314
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 0.5200439919062987
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 0.5201435395963392
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 0.520057953574774
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 0.5201455209467445
+********** ecart a la postion vraie en coordonnees  **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [[-0.03072364  0.03081996  0.00936009]
+ [ 0.02715341 -0.02472946  0.00662791]
+ [ 0.02672215  0.03132442  0.00151612]
+ [-0.03023644 -0.02452005  0.00616418]]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [[-0.03072364  0.03081996  0.00936009]
+ [ 0.02715341 -0.02472946  0.00662791]
+ [ 0.02672215  0.03132442  0.00151612]
+ [-0.03023644 -0.02452005  0.00616418]]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp [[ 0.0710424   0.54040569  0.40575927]
+ [ 0.12931371  0.4796832  -0.38823976]
+ [ 0.13026012  0.5434812  -0.25575693]
+ [ 0.07025327  0.47728148  0.27512319]]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp [[ 0.09813136  0.53890924  0.42232131]
+ [ 0.0908365   0.47953785 -0.3630643 ]
+ [ 0.11874965  0.58825955 -0.29173174]
+ [ 0.09354649  0.4348064   0.23175327]]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp [[ 0.07103798  0.54042211  0.40576714]
+ [ 0.12931247  0.47969635 -0.38824744]
+ [ 0.13025885  0.5434977  -0.25576828]
+ [ 0.07024889  0.47729455  0.27513471]]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp [[ 0.09813585  0.53892865  0.4223369 ]
+ [ 0.0908332   0.47952531 -0.36305405]
+ [ 0.11877343  0.58824903 -0.29170971]
+ [ 0.09354829  0.43481289  0.23175638]]
+********** ecart au bary MC/bary vrai en coords.    **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [-0.00177113  0.00322372  0.00591707]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [-0.00177113  0.00322372  0.00591707]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp [0.10021737 0.51021289 0.00922144]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp [ 0.100316    0.51037826 -0.00018037]
+********** ecart au bary brut/vrai en coords.       **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [-0.00177113  0.00322372  0.00591707]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [-0.00177113  0.00322372  0.00591707]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp [0.10021737 0.51021289 0.00922144]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp [ 0.100316    0.51037826 -0.00018037]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp [0.10021454 0.51022768 0.00922154]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp [ 0.10032269  0.51037897 -0.00016762]
+********** ecart en input à la balise de réference  **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [  0.         -30.00025348  19.9897178  -50.0056696 ]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [  0.         -30.00025348  19.9897178  -50.0056696 ]
+********** ecart vrai à la balise de réference      **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [  0. -30.  20. -50.]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [  0. -30.  20. -50.]
+********** ecart à la balise de réference           **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [  0.         -30.00273218  19.99215602 -50.00319592]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [  0.         -30.00273218  19.99215602 -50.00319592]
+********** f.u.v.                                   **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 0.008447528701368301
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 0.008447528701368301
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 0.0002129572131776805
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 8.510615136864795e-06
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 0.0002065449030752929
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 8.250437472924527e-06
+********** fin                                      **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 2018-03-22 22:17:58.877244
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 2018-03-22 22:15:15.475172
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 2018-03-22 22:16:09.116332
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 2018-03-22 22:16:59.904022
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 2018-03-22 22:18:53.677003
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 2018-03-22 22:19:45.738019
+********** force_mode                               **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp True
+********** kriter/kriterold                         **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [4.8585301749379135e-05, 3.953109228647953e-05]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [4.8585301749379135e-05, 3.953109228647953e-05]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp [3.385839993813247e-05, 5.7623616266095155e-05]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp [0.00017033764863270943, 8.557710074319886e-05]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp [4.501163417772856e-05, 8.893376864715922e-05]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp [0.0001269246248982448, 9.42356304124675e-05]
+********** nom                                      **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111_
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111_
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111_
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111_
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111_
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111_
+********** nouvelles coords.                        **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [[ 7499.96927636  7500.03081996  4010.00936009]
+ [12500.02715341 12499.97527054  3980.00662791]
+ [ 7500.02672215 12500.03132442  4030.00151612]
+ [12499.96976356  7499.97547995  3960.00616418]]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [[ 7499.96927636  7500.03081996  4010.00936009]
+ [12500.02715341 12499.97527054  3980.00662791]
+ [ 7500.02672215 12500.03132442  4030.00151612]
+ [12499.96976356  7499.97547995  3960.00616418]]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp [[ 7500.0710424   7500.54040569  4010.40575927]
+ [12500.12931371 12500.4796832   3979.61176024]
+ [ 7500.13026012 12500.5434812   4029.74424307]
+ [12500.07025327  7500.47728148  3960.27512319]]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp [[ 7500.09813136  7500.53890924  4010.42232131]
+ [12500.0908365  12500.47953785  3979.6369357 ]
+ [ 7500.11874965 12500.58825955  4029.70826826]
+ [12500.09354649  7500.4348064   3960.23175327]]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp [[ 7500.07103798  7500.54042211  4010.40576714]
+ [12500.12931247 12500.47969635  3979.61175256]
+ [ 7500.13025885 12500.5434977   4029.74423172]
+ [12500.07024889  7500.47729455  3960.27513471]]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp [[ 7500.09813585  7500.53892865  4010.4223369 ]
+ [12500.0908332  12500.47952531  3979.63694595]
+ [ 7500.11877343 12500.58824903  4029.70829029]
+ [12500.09354829  7500.43481289  3960.23175638]]
+********** params var. de l'exp.                    **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp {'with_ssp_bilin': 0, 'with_decimate_SSP': 1, 'with_jackknife': 0, 'with_invert_jk': 0, 'with_FB_mode': 1, 'with_time_window': 0, 'with_V_4_P_reinject': 0, 'with_alternat_SSP': 0, 'with_monoZ': 0, 'with_dzcst': 0, 'with_barycenter': False, 'with_BL': True, 'with_zmaster': True}
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp {'with_ssp_bilin': 0, 'with_decimate_SSP': 1, 'with_jackknife': 0, 'with_invert_jk': 0, 'with_FB_mode': 1, 'with_time_window': 0, 'with_V_4_P_reinject': 0, 'with_alternat_SSP': 0, 'with_monoZ': 0, 'with_dzcst': 0, 'with_barycenter': True, 'with_BL': True, 'with_zmaster': True}
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp {'with_ssp_bilin': 0, 'with_decimate_SSP': 1, 'with_jackknife': 0, 'with_invert_jk': 0, 'with_FB_mode': 1, 'with_time_window': 0, 'with_V_4_P_reinject': 0, 'with_alternat_SSP': 0, 'with_monoZ': 0, 'with_dzcst': 0, 'with_barycenter': True, 'with_BL': True, 'with_zmaster': False}
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp {'with_ssp_bilin': 0, 'with_decimate_SSP': 1, 'with_jackknife': 0, 'with_invert_jk': 0, 'with_FB_mode': 1, 'with_time_window': 0, 'with_V_4_P_reinject': 0, 'with_alternat_SSP': 0, 'with_monoZ': 0, 'with_dzcst': 0, 'with_barycenter': True, 'with_BL': False, 'with_zmaster': False}
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp {'with_ssp_bilin': 0, 'with_decimate_SSP': 1, 'with_jackknife': 0, 'with_invert_jk': 0, 'with_FB_mode': 1, 'with_time_window': 0, 'with_V_4_P_reinject': 0, 'with_alternat_SSP': 0, 'with_monoZ': 0, 'with_dzcst': 0, 'with_barycenter': False, 'with_BL': True, 'with_zmaster': False}
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp {'with_ssp_bilin': 0, 'with_decimate_SSP': 1, 'with_jackknife': 0, 'with_invert_jk': 0, 'with_FB_mode': 1, 'with_time_window': 0, 'with_V_4_P_reinject': 0, 'with_alternat_SSP': 0, 'with_monoZ': 0, 'with_dzcst': 0, 'with_barycenter': False, 'with_BL': False, 'with_zmaster': False}
+********** params variables                         **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp ['with_barycenter', 'with_BL', 'with_zmaster']
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp ['with_barycenter', 'with_BL', 'with_zmaster']
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp ['with_barycenter', 'with_BL', 'with_zmaster']
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp ['with_barycenter', 'with_BL', 'with_zmaster']
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp ['with_barycenter', 'with_BL', 'with_zmaster']
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp ['with_barycenter', 'with_BL', 'with_zmaster']
+********** path                                     **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp /home/psakicki/CODES/acoustyx_toolbox_2_py3/working/RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111_
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp /home/psakicki/CODES/acoustyx_toolbox_2_py3/working/RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111_
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp /home/psakicki/CODES/acoustyx_toolbox_2_py3/working/RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111_
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp /home/psakicki/CODES/acoustyx_toolbox_2_py3/working/RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111_
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp /home/psakicki/CODES/acoustyx_toolbox_2_py3/working/RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111_
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp /home/psakicki/CODES/acoustyx_toolbox_2_py3/working/RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111_
+********** plateforme                               **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp TPX1-GFZ
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp TPX1-GFZ
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp TPX1-GFZ
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp TPX1-GFZ
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp TPX1-GFZ
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp TPX1-GFZ
+********** poids ASM                                **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 1e-05
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 1e-05
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 1e-05
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 1e-05
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 1e-05
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 1e-05
+********** poids BL                                 **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 0.0001
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 0.0001
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 0.0001
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 0.0001
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 0.0001
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 0.0001
+********** poids dZ                                 **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 0.001
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 0.001
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 0.001
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 0.001
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 0.001
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 0.001
+********** seed bruit BL                            **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 25571070
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 25571070
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 25571070
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 25571070
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 25571070
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 25571070
+********** seed bruit PXP apriori                   **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 1
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 1
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 1
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 1
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 1
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 1
+********** seed bruit Z                             **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 462
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 462
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 462
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 462
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 462
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 462
+********** seed bruit dZ                            **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 35780
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 35780
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 35780
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 35780
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 35780
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 35780
+********** sigmas                                   **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp [0.00066657 0.00054007 0.00027183 0.039291   0.03929189 0.00022154
+ 0.03929099 0.03929189 0.00036052 0.03929188 0.03929099 0.00040923
+ 0.03929187 0.03929099 0.00040918        nan        nan 0.00000016]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp [0.00066657 0.00054007 0.00027183 0.039291   0.03929189 0.00022154
+ 0.03929099 0.03929189 0.00036052 0.03929188 0.03929099 0.00040923
+ 0.03929187 0.03929099 0.00040918        nan        nan 0.00000016]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp [0.03427035 0.03099586 0.00025537 0.02325418 0.02325523 0.03058734
+ 0.02325417 0.02325522 0.03057815 0.0232581  0.0232561  0.02945383
+ 0.02325809 0.0232561  0.02944432 0.00000009 0.00000003        nan]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp [0.02570554 0.02325002 0.02224464 0.04462469 0.04033135 0.03912195
+ 0.04439553 0.04018103 0.03889478 0.04460711 0.04041754 0.03781758
+ 0.04446546 0.04015039 0.03826731        nan        nan        nan]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp [0.04142525 0.03871321 0.03061693 0.04108766 0.03849088 0.03031613
+ 0.04145772 0.03883734 0.02922433 0.04105931 0.03836678 0.02945091]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp [0.05138707 0.04642295 0.04533492 0.05099047 0.04616715 0.04494644
+ 0.05135657 0.04657481 0.04308441 0.05111298 0.04611263 0.04386428]
+********** som. abs dX                              **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 4.8585301749379135e-05
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 4.8585301749379135e-05
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 3.385839993813247e-05
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 0.00017033764863270943
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 4.501163417772856e-05
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 0.0001269246248982448
+********** som. dX                                  **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp -5.987609022566997e-08
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp -5.987609022566997e-08
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp -6.204191351662943e-06
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp -2.254029249736159e-05
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 1.9075613226752658e-05
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp -5.89595183653096e-05
+********** version numpy                            **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 1.14.2
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 1.14.2
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 1.14.2
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 1.14.2
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 1.14.2
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 1.14.2
+********** version python                           **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 3.6.3 (default, Oct  3 2017, 21:45:48) 
+[GCC 7.2.0]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 3.6.3 (default, Oct  3 2017, 21:45:48) 
+[GCC 7.2.0]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 3.6.3 (default, Oct  3 2017, 21:45:48) 
+[GCC 7.2.0]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 3.6.3 (default, Oct  3 2017, 21:45:48) 
+[GCC 7.2.0]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 3.6.3 (default, Oct  3 2017, 21:45:48) 
+[GCC 7.2.0]
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 3.6.3 (default, Oct  3 2017, 21:45:48) 
+[GCC 7.2.0]
+********** version scipy                            **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp 1.0.0
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp 1.0.0
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp 1.0.0
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp 1.0.0
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp 1.0.0
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp 1.0.0
+********** with_BL                                  **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp False
+********** with_V_4_P_reinject                      **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp False
+********** with_alternat_SSP                        **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp False
+********** with_barycenter                          **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp False
+********** with_decimate_SSP                        **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp True
+********** with_dzcst                               **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp False
+********** with_jackknife                           **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp False
+********** with_monoZ                               **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp False
+********** with_ssp_bilin                           **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp False
+********** with_time_window                         **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp False
+********** with_zmaster                             **********
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221758.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__111_20180322_221515.exp True
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__110_20180322_221609.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__100_20180322_221659.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__010_20180322_221853.exp False
+RB_EGU18_KEDALnoiszA2-tempo_100_R50_nois1-0.0_vit1__date20090623_grand-carree_Kdrift1111__000_20180322_221945.exp False

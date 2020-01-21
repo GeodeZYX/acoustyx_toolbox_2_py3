@@ -1,0 +1,87 @@
+INFO : with_munk_ssp ON, you will use a Munk profile
+decimating SSP
+INFO : with_noising_apriori is OFF, noise on apriori will be set at 0
+START
+===================== START =====================
++ start 2017-09-20 22:52:50.676854
++ name Detection15mai
++ path /home/adminuser/Documents/CODES/acoustyx_toolbox_2/exemple/EXPERIMENTS/Detection15mai
++ plateform psakicki-MS-16Y1
++ version python 2.7.13 (default, Jan 19 2017, 14:48:08) 
+[GCC 6.3.0 20170118]
++ version numpy 1.12.1
++ version scipy 0.18.1
++ batch_mode True
++ force_mode False
++ with_alternat_ssp False
++ with_backward_select False
++ with_barycenter True
++ with_bl False
++ with_cleaning True
++ with_decimate_ssp True
++ with_dzcst False
++ with_fb_mode True
++ with_invert_jk False
++ with_jackknife False
++ with_mono_z False
++ with_munk_ssp True
++ with_noising_apriori False
++ with_old_style False
++ with_print_simu_infos False
++ with_smart_ssp False
++ with_specific_timwin_bool False
++ with_ssp_bilin False
++ with_time_window False
++ with_v_4_p_reinject False
++ with_zmaster False
+* weight ASM
+1e-06
+* weight BL
+1e-06
+* weight dZ
+0.001
+* noise PXP apriori
+1e-12
+* seed noise PXP apriori
+10
+* noise dZ
+1e-12
+* seed noise dZ
+0
+* noise  Z
+1e-12
+* seed noise Z
+0
+* noise BL
+1e-12
+* seed noise BL
+0
++ variables params []
++ var. params of the exp. {'with_smart_ssp': 0, 'with_ssp_bilin': 0, 'with_invert_jk': 0, 'with_munk_ssp': 1, 'with_time_window': 0, 'with_mono_z': 0, 'with_zmaster': 0, 'with_barycenter': 1, 'with_cleaning': 1, 'with_bl': 0, 'with_jackknife': 0, 'with_specific_timwin_bool': 0, 'with_noising_apriori': 0, 'with_fb_mode': 1, 'with_backward_select': 0, 'with_v_4_p_reinject': 0, 'with_decimate_ssp': 1, 'with_alternat_ssp': 0, 'with_old_style': 0, 'with_dzcst': 0}
+
+------------ Iteration No 1 ------------
+ERR : raytrace_SnellDesc : something very weird is happening      Z, C & zmax are printed below [   0   10   20   30   40   50   60   70   80   90  100  130  160  190  220
+  250  280  310  340  370  400  430  460  490  540  590  640  690  740  790
+  840  890  940  990 1040 1090 1140 1190 1240 1290 1340 1390 1440 1490 1540
+ 1590 1640 1690 1740 1790 1840 1890 1940 1990 2090 2190 2290 2390 2490 2590
+ 2690 2790 2890 2990 3090 3190 3290 3390 3490 3590 3690 3790 3890 3990 4090
+ 4190 4290 4390 4490 4590 4690 4790 4890 4990 5090 5190 5290 5390 5490 5590
+ 5690 5790 5890 5990] [ 1548.52101517  1547.44400177  1546.38602754  1545.34680182  1544.32603837
+  1543.32345534  1542.33877516  1541.37172451  1540.42203425  1539.48943934
+  1538.57367878  1535.92485272  1533.41851578  1531.04824099  1528.80789128
+  1526.69160638  1524.69379035  1522.80909966  1521.0324318   1519.35891441
+  1517.78389487  1516.30293047  1514.91177883  1513.60638896  1511.61089367
+  1509.82610426  1508.23642029  1506.82739637  1505.58565662  1504.4988155
+  1503.55540448  1502.74480416  1502.05718137  1501.48343099  1501.01512203
+  1500.64444772  1500.3641793   1500.1676232   1500.04858147  1500.00131502
+  1500.02050968  1500.10124476  1500.23896385  1500.42944793  1500.66879034
+  1500.95337365  1501.27984828  1501.64511264  1502.04629478  1502.48073538
+  1502.94597204  1503.43972463  1503.95988187  1504.50448879  1505.65994479
+  1506.89316031  1508.19304716  1509.55009827  1510.95616223  1512.40425001
+  1513.88836917  1515.40338179  1516.94488257  1518.50909441  1520.09277879
+  1521.69315902  1523.30785432  1524.93482343  1526.57231615  1528.21883185
+  1529.87308389  1531.5339691   1533.20054162  1534.87199045  1536.54762026
+  1538.22683485  1539.90912304  1541.59404656  1543.28122962  1544.97035001
+  1546.66113148  1548.35333717  1550.04676398  1551.7412378   1553.43660931
+  1555.13275052  1556.82955167  1558.52691865  1560.22477077  1561.92303887
+  1563.62166362  1565.32059416  1567.01978689  1568.71920442] 1311.83653912

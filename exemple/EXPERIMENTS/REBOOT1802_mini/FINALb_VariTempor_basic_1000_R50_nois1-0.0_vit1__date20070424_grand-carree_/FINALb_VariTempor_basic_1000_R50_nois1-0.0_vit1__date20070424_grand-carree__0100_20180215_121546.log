@@ -1,0 +1,176 @@
+*************************************
+INFO : sigma_batch_mode AVANT eval : 
+sigma_pxp_apri 10
+sigma_dZ_apri 1e-06
+sigma_BL_apri 0.01
+sigma_defo_ASM 1e-05
+sigma_defo_BL 0.001
+sigma_defo_zmaster 1e-08
+INFO : eval_a_dict : the 2 values must be equals  10 10
+INFO : eval_a_dict : the 2 values must be equals  1e-12 1e-12
+INFO : eval_a_dict : the 2 values must be equals  1e-12 1e-12
+INFO : eval_a_dict : the 2 values must be equals  0.5 0.5
+INFO : eval_a_dict : the 2 values must be equals  0.001 0.001
+INFO : eval_a_dict : the 2 values must be equals  0.001 0.001
+INFO : sigma_batch_mode APRES eval : 
+sigma_pxp_apri 10
+sigma_dZ_apri 1e-12
+sigma_BL_apri 1e-12
+sigma_defo_ASM 0.5
+sigma_defo_BL 0.001
+sigma_defo_zmaster 0.001
+*************************************
+This par must be splited ...
+This par must be splited ...
+This par must be splited ...
+This par must be splited ...
+START
+===================== DEBUT =====================
++ debut 2018-02-15 12:15:46.548789
++ nom FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree_
++ path /home/psakicki/CODES/acoustyx_toolbox_2_py3/exemple/EXPERIMENTS/REBOOT1802/FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree_
++ plateforme TPX1-GFZ
++ version python 3.6.3 (default, Oct  3 2017, 21:45:48) 
+[GCC 7.2.0]
++ version numpy 1.14.0
++ version scipy 1.0.0
++ batch_mode True
++ force_mode True
++ with_BL True
++ with_ssp_bilin False
++ with_monoZ False
++ with_alternat_SSP False
++ with_barycenter True
++ with_decimate_SSP False
++ with_dzcst False
++ with_zmaster False
++ with_time_window False
++ with_V_4_P_reinject False
++ with_jackknife False
++ params variables ['with_monoZ', 'with_barycenter', 'with_dzcst', 'with_zmaster']
++ params var. de l'exp. {'with_ssp_bilin': 0, 'with_decimate_SSP': 0, 'with_zmaster': False, 'with_jackknife': 0, 'with_invert_jk': 0, 'with_FB_mode': 1, 'with_time_window': 0, 'with_V_4_P_reinject': 0, 'with_alternat_SSP': 0, 'with_BL': 1, 'with_monoZ': False, 'with_barycenter': True, 'with_dzcst': False}
+
+------------ iter No 1 ------------
+Submarine Acoustic Model determination :  10.567275285720825 s
+1000 4 0 (4000, 12)
+Jacobian ASM determination :  117.54771184921265 s
+fin du remplissage, debut du redesign + gestion des poids
+fin des poids 
+conversion en sparse 
+fin de la conversion en sparse 
++ f.u.v. 0.05038578304371959
+* coords. apriori
+[[12517.88628473 12504.36509851  3980.96497468]
+ [ 7495.83242153  7499.43733173  3988.63803904]
+ [12504.41227487  7496.69129848  3984.30771187]
+ [ 7500.50561707 12504.99951333  4020.04091069]]
+* dX
+[  5.49017334 -15.16369629   1.49457803 -13.7858696   -2.43847919
+  -4.67749023   9.19866043   1.49758166  12.92301941   0.82117414
+   5.15595007 -36.84869385   3.76033711  -4.22648573  28.60308838]
++ som. dX -8.196152299642563
++ som. abs dX 146.08527746796608
+* nouvelles coords.
+[[12509.59058848 12486.76292303  3977.78206248]
+ [ 7510.5212553   7485.7712171   4003.05563649]
+ [12510.72362235  7486.68355226  3948.95359606]
+ [ 7509.75612753 12485.60933131  4050.1385771 ]]
+* sigmas
+[284.07341433 318.21475246   1.85453074 212.89598562 213.76777052
+ 255.01267161 212.8046076  213.39050618 254.75752886 213.03897617
+ 212.62041438 297.05266086 212.9571922  213.00546469 297.21934947
+   0.00000351   0.00000392          nan]
+* kriter/kriterold
+[146.08527746796608, 10000000]
+* ecart 3D a la postion vraie en distance
+[16.496025   19.00997792 20.35551269 26.60518102]
+* ecart 2D a la postion vraie en distance
+[16.34624097 17.69618817 17.09748101 17.38601074]
+* ecart a la postion vraie en coordonnees
+[[  9.59058848 -13.23707697  -2.21793752]
+ [ 10.5212553  -14.2287829   -6.94436351]
+ [ 10.72362235 -13.31644774 -11.04640394]
+ [  9.75612753 -14.39066869  20.1385771 ]]
+* BLs Vraies 
+[7071.13145119 5000.03999984 5000.24999375 5000.24999375 5000.03999984
+ 7071.4142857 ]
+* BLs Observees
+[7071.13145119 5000.03999984 5000.24999375 5000.24999375 5000.03999984
+ 7071.4142857 ]
+* BL des coords a prioris('Mod')
+[7090.16119926 5007.69304274 5017.5328694  5008.58247808 5005.6628665
+ 7079.79589228]
+* BLs News à l'issue de l'inversion
+[7071.15626996 5000.16260518 5000.35813046 5000.49513295 5000.05985535
+ 7071.71642737]
+* Barycentre 'brut' : Sum Xpxp / Npxp
+[10010.14789841  9986.20675593  3994.98246803]
+* ecart 3D bary brut/vrai en distance
+17.12406878203605
+* ecart 2D bary brut/vrai en distance
+17.124059807240897
+* ecart au bary brut/vrai en coords.
+[ 10.14789841 -13.79324407  -0.01753197]
+* Barycentre estime dans le MC
+[10010.14932289  9986.20961422  3994.9824871 ]
+* Barycentre des dXs dans le MC
+[-0.00142448 -0.0028583  -0.00001907]
+WARN : som barycentre des dXs dans le MC > 10**-5 !!!!
+* ecart 3D bary MC/vrai en distance
+17.122610832418115
+* ecart 2D bary MC/vrai en distance
+17.122601876377654
+* ecart au bary MC/bary vrai en coords.
+[ 10.14932289 -13.79038578  -0.0175129 ]
+===================== FINAL =====================
++ fin 2018-02-15 12:17:54.696065
++ duree 0:02:08.147276
++ nom FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree_
++ path /home/psakicki/CODES/acoustyx_toolbox_2_py3/exemple/EXPERIMENTS/REBOOT1802/FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree_
++ plateforme TPX1-GFZ
++ version python 3.6.3 (default, Oct  3 2017, 21:45:48) 
+[GCC 7.2.0]
++ version numpy 1.14.0
++ version scipy 1.0.0
++ batch_mode True
++ force_mode True
++ with_BL True
++ with_ssp_bilin False
++ with_monoZ False
++ with_alternat_SSP False
++ with_barycenter True
++ with_decimate_SSP False
++ with_dzcst False
++ with_zmaster False
++ with_time_window False
++ with_V_4_P_reinject False
++ with_jackknife False
+* poids ASM
+0.5
+* poids BL
+0.001
+* poids dZ
+0.001
+* bruit PXP apriori
+10
+* seed bruit PXP apriori
+1
+* bruit dZ
+1e-12
+* seed bruit dZ
+17990
+* bruit  Z
+1
+* seed bruit Z
+572
+* bruit BL
+1e-12
+* seed bruit BL
+17899959
++ params variables ['with_monoZ', 'with_barycenter', 'with_dzcst', 'with_zmaster']
++ params var. de l'exp. {'with_ssp_bilin': 0, 'with_decimate_SSP': 0, 'with_zmaster': False, 'with_jackknife': 0, 'with_invert_jk': 0, 'with_FB_mode': 1, 'with_time_window': 0, 'with_V_4_P_reinject': 0, 'with_alternat_SSP': 0, 'with_BL': 1, 'with_monoZ': False, 'with_barycenter': True, 'with_dzcst': False}
++ Nb pings      1000
++ Nb PXPs       4
++ Taille Jacob. (4006, 15)
++ Taille Resid. (4006,)
++ Nb iter.      2

@@ -1,0 +1,192 @@
+********** Nb PXPs                                  **********
+Detection15mai_20170727_123039.exp 3
+********** Nb iter.                                 **********
+Detection15mai_20170727_123039.exp 4
+********** Nb pings                                 **********
+Detection15mai_20170727_123039.exp 7619
+********** Size Jacob.                              **********
+Detection15mai_20170727_123039.exp (27354, 12)
+********** Size Resid.                              **********
+Detection15mai_20170727_123039.exp (27354,)
+********** barycentrer dXs in LSQ                   **********
+Detection15mai_20170727_123039.exp [  0.00000000e+00   0.00000000e+00  -4.73695157e-15]
+********** barycentrer estimated in LSQ             **********
+Detection15mai_20170727_123039.exp [  173.14784803   -87.07400035  1291.45555697]
+********** baselines of current iteration apriori coordinates ('Mod') **********
+Detection15mai_20170727_123039.exp [ 1071.91155162  1530.45305413  1034.6701135 ]
+********** baselines of first apriori coordinates ('Mod') **********
+Detection15mai_20170727_123039.exp [ 1072.25414265  1528.3230118   1034.0674912 ]
+********** batch_mode                               **********
+Detection15mai_20170727_123039.exp True
+Detection15mai_20170920_225749.exp True
+********** coords. apriori                          **********
+Detection15mai_20170727_123039.exp [[  -78.24600933  -854.87082973  1354.84624623]
+ [  655.16505878   -74.26195181  1312.9850543 ]
+ [  -57.51872033   668.25777589  1206.73756613]]
+********** critera/critera old                      **********
+Detection15mai_20170727_123039.exp [0.9900453837443921, 2.2768049451894252]
+********** dX                                       **********
+Detection15mai_20170727_123039.exp [[ 0.01440499 -0.11566513 -0.06739859]
+ [ 0.03082879 -0.230147   -0.13531255]
+ [-0.01575619  0.11440854  0.0680507 ]
+ [-0.0150726   0.11573846  0.06726185]]
+********** duration                                 **********
+Detection15mai_20170727_123039.exp 0:35:00.216959
+********** end                                      **********
+Detection15mai_20170727_123039.exp 2017-07-27 12:30:39.157970
+********** f.u.v.                                   **********
+Detection15mai_20170727_123039.exp 7.09645509269e+23
+********** f.u.v. before inversion                  **********
+Detection15mai_20170727_123039.exp 8.85990186816e+17
+********** force_mode                               **********
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_225749.exp False
+********** jackknife inverted                       **********
+Detection15mai_20170920_225749.exp 0
+********** jackknife random seed                    **********
+Detection15mai_20170920_225749.exp 1452
+********** keep_ratio                               **********
+Detection15mai_20170920_225749.exp 0.1
+********** name                                     **********
+Detection15mai_20170727_123039.exp Detection15mai
+Detection15mai_20170920_225749.exp Detection15mai
+********** new baselines after inversion            **********
+Detection15mai_20170727_123039.exp [ 1072.12270988  1530.77707745  1034.67067805]
+********** new coords.                              **********
+Detection15mai_20170727_123039.exp [[  -78.20077554  -855.21664186  1354.6435351 ]
+ [  655.16370758   -74.2632084   1312.98570641]
+ [  -57.51938794   668.25784922  1206.73742939]]
+********** noise  Z                                 **********
+Detection15mai_20170727_123039.exp 1e-12
+Detection15mai_20170920_225749.exp 1e-12
+********** noise BL                                 **********
+Detection15mai_20170727_123039.exp 1e-12
+Detection15mai_20170920_225749.exp 1e-12
+********** noise PXP apriori                        **********
+Detection15mai_20170727_123039.exp 1e-12
+Detection15mai_20170920_225749.exp 1e-12
+********** noise dZ                                 **********
+Detection15mai_20170727_123039.exp 1e-12
+Detection15mai_20170920_225749.exp 1e-12
+********** path                                     **********
+Detection15mai_20170727_123039.exp /home/psakicki/THESE/CODES/CodePython/acoustyx_toolbox_2/exemple/EXPERIMENTS/Detection15mai
+Detection15mai_20170920_225749.exp /home/adminuser/Documents/CODES/acoustyx_toolbox_2/exemple/EXPERIMENTS/Detection15mai
+********** plateform                                **********
+Detection15mai_20170727_123039.exp VirBox5HPHP
+Detection15mai_20170920_225749.exp psakicki-MS-16Y1
+********** raw barycentrer : Sum Xpxp / Npxp        **********
+Detection15mai_20170727_123039.exp [  173.14784803   -87.07400035  1291.45555697]
+********** seed noise BL                            **********
+Detection15mai_20170727_123039.exp 0
+Detection15mai_20170920_225749.exp 0
+********** seed noise PXP apriori                   **********
+Detection15mai_20170727_123039.exp 10
+Detection15mai_20170920_225749.exp 10
+********** seed noise Z                             **********
+Detection15mai_20170727_123039.exp 0
+Detection15mai_20170920_225749.exp 0
+********** seed noise dZ                            **********
+Detection15mai_20170727_123039.exp 0
+Detection15mai_20170920_225749.exp 0
+********** sigmas                                   **********
+Detection15mai_20170727_123039.exp [[ 0.10419864  0.08643241  0.04830886]
+ [ 0.1682498   0.14039302  0.07593201]
+ [ 0.11943442  0.10225967  0.05384505]
+ [ 0.15016492  0.1209041   0.07310497]]
+********** start                                    **********
+Detection15mai_20170920_225749.exp 2017-09-20 22:54:54.165942
+********** sum abs dX                               **********
+Detection15mai_20170727_123039.exp 0.990045383744
+********** sum dX                                   **********
+Detection15mai_20170727_123039.exp -0.168658726229
+********** var. params of the exp.                  **********
+Detection15mai_20170727_123039.exp {'with_specific_timwin_bool': 0, 'with_noising_apriori': 0, 'with_smart_ssp': 0, 'with_ssp_bilin': 0, 'with_invert_jk': 0, 'with_munk_ssp': 1, 'with_fb_mode': 1, 'with_dzcst': 0, 'with_time_window': 0, 'with_mono_z': 0, 'with_v_4_p_reinject': 0, 'with_decimate_ssp': 1, 'with_alternat_ssp': 0, 'with_zmaster': 0, 'with_barycenter': 1, 'with_backward_select': 0, 'with_old_style': 0, 'with_cleaning': 1, 'with_bl': 0, 'with_jackknife': 0}
+Detection15mai_20170920_225749.exp {'with_specific_timwin_bool': 0, 'with_noising_apriori': 0, 'with_smart_ssp': 0, 'with_ssp_bilin': 0, 'with_invert_jk': 0, 'with_munk_ssp': 1, 'with_fb_mode': 1, 'with_dzcst': 0, 'with_time_window': 0, 'with_mono_z': 0, 'with_v_4_p_reinject': 0, 'with_decimate_ssp': 1, 'with_alternat_ssp': 0, 'with_zmaster': 0, 'with_barycenter': 1, 'with_backward_select': 0, 'with_old_style': 0, 'with_cleaning': 1, 'with_bl': 0, 'with_jackknife': 1}
+********** variables params                         **********
+Detection15mai_20170727_123039.exp []
+Detection15mai_20170920_225749.exp []
+********** version numpy                            **********
+Detection15mai_20170727_123039.exp 1.13.0
+Detection15mai_20170920_225749.exp 1.12.1
+********** version python                           **********
+Detection15mai_20170727_123039.exp 2.7.13 (default, Jan 19 2017, 14:48:08) 
+[GCC 6.3.0 20170118]
+Detection15mai_20170920_225749.exp 2.7.13 (default, Jan 19 2017, 14:48:08) 
+[GCC 6.3.0 20170118]
+********** version scipy                            **********
+Detection15mai_20170727_123039.exp 0.19.1
+Detection15mai_20170920_225749.exp 0.18.1
+********** weight ASM                               **********
+Detection15mai_20170727_123039.exp 1e-06
+Detection15mai_20170920_225749.exp 1e-06
+********** weight BL                                **********
+Detection15mai_20170727_123039.exp 1e-06
+Detection15mai_20170920_225749.exp 1e-06
+********** weight dZ                                **********
+Detection15mai_20170727_123039.exp 0.001
+Detection15mai_20170920_225749.exp 0.001
+********** with_alternat_ssp                        **********
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_225749.exp False
+********** with_backward_select                     **********
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_225749.exp False
+********** with_barycenter                          **********
+Detection15mai_20170727_123039.exp True
+Detection15mai_20170920_225749.exp True
+********** with_bl                                  **********
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_225749.exp False
+********** with_cleaning                            **********
+Detection15mai_20170727_123039.exp True
+Detection15mai_20170920_225749.exp True
+********** with_decimate_ssp                        **********
+Detection15mai_20170727_123039.exp True
+Detection15mai_20170920_225749.exp True
+********** with_dzcst                               **********
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_225749.exp False
+********** with_fb_mode                             **********
+Detection15mai_20170727_123039.exp True
+Detection15mai_20170920_225749.exp True
+********** with_invert_jk                           **********
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_225749.exp False
+********** with_jackknife                           **********
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_225749.exp True
+********** with_mono_z                              **********
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_225749.exp False
+********** with_munk_ssp                            **********
+Detection15mai_20170727_123039.exp True
+Detection15mai_20170920_225749.exp True
+********** with_noising_apriori                     **********
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_225749.exp False
+********** with_old_style                           **********
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_225749.exp False
+********** with_print_simu_infos                    **********
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_225749.exp False
+********** with_smart_ssp                           **********
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_225749.exp False
+********** with_specific_timwin_bool                **********
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_225749.exp False
+********** with_ssp_bilin                           **********
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_225749.exp False
+********** with_time_window                         **********
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_225749.exp False
+********** with_v_4_p_reinject                      **********
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_225749.exp False
+********** with_var_lis                             **********
+Detection15mai_20170727_123039.exp True
+********** with_zmaster                             **********
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_225749.exp False

@@ -1,0 +1,28 @@
+*************************************
+INFO : sigma_batch_mode AVANT eval : 
+sigma_pxp_apri 10
+sigma_dZ_apri 1e-06
+sigma_BL_apri 0.01
+sigma_defo_ASM 1e-05
+sigma_defo_BL 0.001
+sigma_defo_zmaster 1e-08
+INFO : eval_a_dict : the 2 values must be equals  1 1 , variable sigma_pxp_apri
+INFO : eval_a_dict : the 2 values must be equals  0.01 0.01 , variable sigma_dZ_apri
+INFO : eval_a_dict : the 2 values must be equals  0.001 0.001 , variable sigma_BL_apri
+INFO : eval_a_dict : the 2 values must be equals  1e-05 1e-05 , variable sigma_defo_ASM
+INFO : eval_a_dict : the 2 values must be equals  0.0001 0.0001 , variable sigma_defo_BL
+INFO : eval_a_dict : the 2 values must be equals  0.001 0.001 , variable sigma_defo_zmaster
+INFO : sigma_batch_mode APRES eval : 
+sigma_pxp_apri 1
+sigma_dZ_apri 0.01
+sigma_BL_apri 0.001
+sigma_defo_ASM 1e-05
+sigma_defo_BL 0.0001
+sigma_defo_zmaster 0.001
+*************************************
+WARN : with_zmaster is True and with_barycenter is False => with_barycenter forced to True
+      (mode is not implemented)
+decimating SSP
+ERR : with_zmaster and not with_BL, impossible combination, skipping ...
+ERR : exception ... mais on continue !
+

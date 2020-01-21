@@ -1,0 +1,197 @@
+********** ecart 2D bary MC/vrai en distance        **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 0.00214452838909
+********** ecart 2D bary brut/vrai en distance      **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 0.00214452838977
+********** BL des coords a prioris('Mod')           **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [ 7090.16119926  5005.6628665   5008.58247808  5017.5328694   5007.69304274
+  7079.79589228]
+********** BLs News à l'issue de l'inversion       **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [ 7071.1335863   5000.03872454  5000.25266821  5000.25274683  5000.03861037
+  7071.41410433]
+********** BLs Observees                            **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [ 7071.13145119  5000.03999984  5000.24999375  5000.24999375  5000.03999984
+  7071.4142857 ]
+********** BLs Vraies                               **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [ 7071.13145119  5000.03999984  5000.24999375  5000.24999375  5000.03999984
+  7071.4142857 ]
+********** Barycentre 'brut' : Sum Xpxp / Npxp      **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [ 10000.0019888   10000.00080228   3994.99941406]
+********** Barycentre des dXs dans le MC            **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [-0.  0. -0.]
+********** Barycentre estime dans le MC             **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [ 10000.0019888   10000.00080228   3994.99941406]
+********** Nb PXPs                                  **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 4
+********** Nb iter.                                 **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 4
+********** Nb pings                                 **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 1000
+********** Taille Jacob.                            **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp (4009, 15)
+********** Taille Resid.                            **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp (4009,)
+********** batch_mode                               **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp True
+********** bruit  Z                                 **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 1
+********** bruit BL                                 **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 1e-12
+********** bruit PXP apriori                        **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 10
+********** bruit dZ                                 **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 1e-12
+********** coords. apriori                          **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [[  7499.97443227   7500.02696146   4009.99922046]
+ [ 12500.02972796  12499.97462002   3979.99847619]
+ [  7500.02699065  12500.0256784    4030.00012917]
+ [ 12499.97711313   7499.97599982   3959.99983177]]
+********** dX                                       **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [-0.0000772  -0.00001264 -0.00000034  0.00000479 -0.00003703  0.0000144
+ -0.00000434  0.00003257  0.00005449 -0.00000428 -0.00003302 -0.00002862
+  0.00000383  0.00003748 -0.00004028]
+********** duree                                    **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 0:02:12.092849
+********** ecart 2D a la postion vraie en distance  **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [ 0.0371707   0.03901337  0.0371637   0.03319623]
+********** ecart 3D a la postion vraie en distance  **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [ 0.03717858  0.03904104  0.03716384  0.03319688]
+********** ecart 3D bary MC/vrai en distance        **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 0.00222313497866
+********** ecart 3D bary brut/vrai en distance      **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 0.00222313497944
+********** ecart a la postion vraie en coordonnees  **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [[-0.02564014  0.02691179 -0.00076548]
+ [ 0.02964643 -0.02536006 -0.00146966]
+ [ 0.02690917  0.02563274  0.00010022]
+ [-0.02296024 -0.02397534 -0.00020885]]
+********** ecart au bary MC/bary vrai en coords.    **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [ 0.0019888   0.00080228 -0.00058594]
+********** ecart au bary brut/vrai en coords.       **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [ 0.0019888   0.00080228 -0.00058594]
+********** ecart en input à la balise de réference **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [  0. -30.  20. -50.]
+********** ecart vrai à la balise de réference    **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [  0. -30.  20. -50.]
+********** ecart à la balise de réference         **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [  0.         -30.00070418  20.0008657  -49.99944337]
+********** f.u.v.                                   **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 41956694.0206
+********** fin                                      **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 2016-09-04 06:34:41.181755
+********** force_mode                               **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp True
+********** kriter/kriterold                         **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [0.00038531115941258074, 0.37661697364768931]
+********** nom                                      **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree_
+********** nouvelles coords.                        **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [[  7499.97435986   7500.02691179   4009.99923452]
+ [ 12500.02964643  12499.97463994   3979.99853034]
+ [  7500.02690917  12500.02563274   4030.00010022]
+ [ 12499.97703976   7499.97602466   3959.99979115]]
+********** params var. de l'exp.                    **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp {'with_ssp_bilin': 0, 'with_invert_jk': 0, 'with_FB_mode': 1, 'with_time_window': 0, 'with_V_4_P_reinject': 0, 'with_decimate_SSP': 0, 'with_alternat_SSP': 0, 'with_zmaster': 1, 'with_barycenter': 1, 'with_monoZ': 0, 'with_jackknife': 0, 'with_BL': 1, 'with_dzcst': 0}
+********** params variables                         **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp ['with_monoZ', 'with_barycenter', 'with_BL', 'with_dzcst', 'with_zmaster']
+********** path                                     **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp /home/psakicki/THESE/CODES/CodePython/acoustyx_toolbox_2/working/FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree_
+********** poids ASM                                **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 1e-06
+********** poids BL                                 **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 0.001
+********** poids dZ                                 **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 0.001
+********** seed bruit BL                            **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 17899959
+********** seed bruit PXP apriori                   **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 1
+********** seed bruit Z                             **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 572
+********** seed bruit dZ                            **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 17990
+********** sigmas                                   **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [   0.01312791    0.01321671    0.00425909    0.03644058    0.03650825
+    0.00767812    0.0364223     0.03653211    0.01087929    0.03626571
+    0.03635163    0.01359565    0.03624658    0.03632671    0.01361071
+  262.34023132           nan           nan]
+********** som. abs dX                              **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp 0.000385311159413
+********** som. dX                                  **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp -9.01767722903e-05
+********** varcovar                                 **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp [[ 0.         -0.          0.         -0.         -0.          0.          0.
+  -0.         -0.          0.          0.          0.         -0.          0.
+  -0.         -0.25       -0.          0.        ]
+ [-0.          0.         -0.         -0.         -0.          0.         -0.
+   0.         -0.          0.         -0.         -0.          0.          0.
+   0.         -0.         -0.25       -0.        ]
+ [ 0.         -0.          0.          0.          0.         -0.         -0.
+  -0.          0.          0.         -0.          0.         -0.          0.
+   0.          0.         -0.         -0.25      ]
+ [-0.         -0.          0.          0.         -0.          0.         -0.
+   0.          0.         -0.         -0.         -0.          0.          0.
+  -0.          0.25       -0.         -0.        ]
+ [-0.         -0.          0.         -0.          0.          0.          0.
+  -0.          0.          0.          0.         -0.         -0.         -0.
+  -0.         -0.          0.25        0.        ]
+ [ 0.          0.         -0.          0.          0.          0.         -0.
+  -0.         -0.         -0.          0.         -0.          0.         -0.
+  -0.         -0.         -0.          0.25      ]
+ [ 0.         -0.         -0.         -0.          0.         -0.          0.
+  -0.         -0.          0.          0.          0.         -0.         -0.
+   0.          0.25        0.          0.        ]
+ [-0.          0.         -0.          0.         -0.         -0.         -0.
+   0.         -0.         -0.         -0.          0.          0.          0.
+   0.          0.          0.25       -0.        ]
+ [-0.         -0.          0.          0.          0.         -0.         -0.
+  -0.          0.         -0.          0.         -0.          0.         -0.
+  -0.          0.          0.          0.25      ]
+ [ 0.          0.          0.         -0.          0.         -0.          0.
+  -0.         -0.          0.          0.          0.         -0.         -0.
+   0.          0.25        0.          0.        ]
+ [ 0.         -0.         -0.         -0.          0.          0.          0.
+  -0.          0.          0.          0.         -0.         -0.         -0.
+  -0.         -0.          0.25        0.        ]
+ [ 0.         -0.          0.         -0.         -0.         -0.          0.
+   0.         -0.          0.         -0.          0.         -0.          0.
+  -0.          0.         -0.          0.25      ]
+ [-0.          0.         -0.          0.         -0.          0.         -0.
+   0.          0.         -0.         -0.         -0.          0.          0.
+  -0.          0.25       -0.         -0.        ]
+ [ 0.          0.          0.          0.         -0.         -0.         -0.
+   0.         -0.         -0.         -0.          0.          0.          0.
+   0.          0.          0.25       -0.        ]
+ [-0.          0.          0.         -0.         -0.         -0.          0.
+   0.         -0.          0.         -0.         -0.         -0.          0.
+   0.         -0.          0.          0.25      ]
+ [-0.25       -0.         -0.          0.25       -0.         -0.          0.25
+   0.          0.          0.25       -0.          0.          0.25        0.
+  -0.          0.00164032  0.01854134 -0.00050879]
+ [-0.         -0.25       -0.          0.          0.25       -0.         -0.
+   0.25        0.         -0.          0.25       -0.          0.          0.25
+   0.          0.01798248 -0.00963783  0.00673723]
+ [ 0.         -0.         -0.25       -0.          0.          0.25        0.
+  -0.          0.25        0.          0.          0.25       -0.         -0.
+   0.25       -0.00165671  0.00576246 -0.03365803]]
+********** with_BL                                  **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp True
+********** with_V_4_P_reinject                      **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp False
+********** with_alternat_SSP                        **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp False
+********** with_barycenter                          **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp True
+********** with_decimate_SSP                        **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp False
+********** with_dzcst                               **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp False
+********** with_jackknife                           **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp False
+********** with_monoZ                               **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp False
+********** with_ssp_bilin                           **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp False
+********** with_time_window                         **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp False
+********** with_zmaster                             **********
+FINALb_VariTempor_basic_1000_R50_nois1-0.0_vit1__date20070424_grand-carree__01101_20160904_063441.exp True

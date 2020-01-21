@@ -1,0 +1,83 @@
+# Gdic_path : /home/psakicki/THESE/CODES/CodePython/acoustyx_toolbox_2/exemple/Gdic/Gdic_meteor500_20.pik
+# K_t : 4000
+# K_t_hdwr : 5000
+# K_t_hdwr_pxp : 5004
+# K_t_zone : 9993
+# K_xyz : 1111
+# K_xyz_emi : 387485
+# K_xyz_rec : 377144
+# Kfile_path : /home/psakicki/THESE/CODES/CodePython/acoustyx_toolbox_2/exemple/Kfiles_kourents_gradients/kfile_poly_proxy_MOVE.K
+# SSF_based_on_interpolation : 1
+# SSF_based_on_interpolation_cental_SSP_ONLY : 1
+# Udic_path : /home/psakicki/THESE/CODES/CodePython/acoustyx_toolbox_2/exemple/Udic/Udictest_atal.pik
+# add_offset : False
+# bypass_ssf_rec : 1
+# coef_sigma_zones : 0
+# crs_angle : 20
+# crs_nb_obs : 1000
+# crs_nb_pass : 3
+# crs_xcenter : 10000
+# crs_xsize : 2000
+# crs_ycenter : 10000
+# crs_ysize : 2000
+# crs_zcenter : 0
+# design : grand-carree
+# drt_angle : 0
+# drt_nb_obs : 3333
+# drt_nb_pass : 3
+# drt_xcenter : 10000
+# drt_xsize : 500
+# drt_ycenter : 10000
+# drt_ysize : 500
+# drt_zcenter : 0
+# drv_K_derive : 1400
+# drv_R : 50
+# drv_nb_obs : 1000
+# drv_param : 1
+# drv_step_size : 10
+# drv_x0 : 10000
+# drv_xcenter : 10000
+# drv_y0 : 10000
+# drv_ycenter : 10000
+# eiko_h : 1000
+# eiko_resotype : rkck
+# epoch_init : 0
+# forwd_bkwrd_mode : True
+# ipxp : 4
+# nb_obs : 1000
+# noise_on_datation_seed : 54321
+# noise_on_datation_std : 1e-06
+# null_water_column_noise : 1
+# offset : [0.1, 0.1, 0.1]
+# pxp_coords : [12500  7500  3960]
+# sigma_t : 0
+# sigma_t_hdwr : 0.0
+# sigma_t_hdwr_input : 0.0
+# sigma_x : 0.03
+# sigma_y : 0.03
+# sigma_z : 0.05
+# sigma_zones : [0, 0]
+# sigma_zones_input : [0.0001, 1e-05]
+# ssf_realistik_grad : 0
+# ssp_decimate : True
+# ssp_file_path : /home/psakicki/THESE/CODES/CodePython/acoustyx_toolbox_2/exemple/SSP/SSP_NOAA_dep5645_20030608000000
+# sspt_dic_path : /home/psakicki/THESE/bd_CTD/NEW_DATA_2015/MOVE/MOVE_reform_1507/SIMPLE/sspdic_sensor.pik
+# tempor_ctd_epoch : 0.0
+# tempor_ctd_time : 2007-04-24 00:00:00
+# tempor_len : 86400
+# tempor_start : 2007-04-24 00:00:00
+# tide_amplitude : 0.0578406653086
+# timestamp : 20160903_194036
+# traject : derive
+# vit : 1
+# with_pseudo_ssf : 0
+# with_ssf : 0
+# with_temporal : 1
+# with_tide : True
+# x_grad : 0
+# y_grad : 0
+# z_mixed : 3500
+# zones_bound : [0, 1000, 99999]
+# zones_bound_input : [1000]
+# fields : E_emi_noise X_emi_noise Y_emi_noise Z_emi_noise T_emi_noise E_rec_noise X_rec_noise Y_rec_noise Z_rec_noise T_rec_noise TAT TWTT_noise E_emi_clean X_emi_clean Y_emi_clean Z_emi_clean T_emi_clean E_rec_clean X_rec_clean Y_rec_clean Z_rec_clean T_rec_clean TWTT_clean Noise_emi Noise_rec
+       0.000000000000     9999.978209139814     9999.990461488491        0.066896930476        3.512433217740        7.027524221636     9998.359750554022    10006.852895413644        0.087023933970        3.515091003896        0.000000000000        7.027524221636        0.000000000000    10000.000000000000    10000.000000000000        0.000000000000        3.512433217740        7.027524221636     9998.392220578526    10006.841136018058        0.000000000000        3.515091003896        7.027524221636        0.000000000000        0.000000000000

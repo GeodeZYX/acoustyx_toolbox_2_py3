@@ -1,0 +1,388 @@
+INFO : with_munk_ssp ON, you will use a Munk profile
+decimating SSP
+INFO : with_noising_apriori is OFF, noise on apriori will be set at 0
+START
+===================== START =====================
++ start 2017-07-27 11:55:38.941011
++ name Detection15mai
++ path /home/psakicki/THESE/CODES/CodePython/acoustyx_toolbox_2/exemple/EXPERIMENTS/Detection15mai
++ plateform VirBox5HPHP
++ version python 2.7.13 (default, Jan 19 2017, 14:48:08) 
+[GCC 6.3.0 20170118]
++ version numpy 1.13.0
++ version scipy 0.19.1
++ batch_mode True
++ force_mode False
++ with_alternat_ssp False
++ with_backward_select False
++ with_barycenter True
++ with_bl False
++ with_cleaning True
++ with_decimate_ssp True
++ with_dzcst False
++ with_fb_mode True
++ with_invert_jk False
++ with_jackknife False
++ with_mono_z False
++ with_munk_ssp True
++ with_noising_apriori False
++ with_old_style False
++ with_print_simu_infos False
++ with_smart_ssp False
++ with_specific_timwin_bool False
++ with_ssp_bilin False
++ with_time_window False
++ with_v_4_p_reinject False
++ with_zmaster False
+* weight ASM
+1e-06
+* weight BL
+1e-06
+* weight dZ
+0.001
+* noise PXP apriori
+1e-12
+* seed noise PXP apriori
+10
+* noise dZ
+1e-12
+* seed noise dZ
+0
+* noise  Z
+1e-12
+* seed noise Z
+0
+* noise BL
+1e-12
+* seed noise BL
+0
++ variables params []
++ var. params of the exp. {'with_smart_ssp': 0, 'with_ssp_bilin': 0, 'with_invert_jk': 0, 'with_munk_ssp': 1, 'with_time_window': 0, 'with_mono_z': 0, 'with_zmaster': 0, 'with_barycenter': 1, 'with_cleaning': 1, 'with_bl': 0, 'with_jackknife': 0, 'with_specific_timwin_bool': 0, 'with_noising_apriori': 0, 'with_fb_mode': 1, 'with_backward_select': 0, 'with_v_4_p_reinject': 0, 'with_decimate_ssp': 1, 'with_alternat_ssp': 0, 'with_old_style': 0, 'with_dzcst': 0}
+
+------------ Iteration No 1 ------------
+Submarine Acoustic Model determination :  35.6656079292 s
+7619 3 0 (27646, 9)
+Jacobian ASM determination :  466.968668938 s
+INFO : End of Jacobian filling, start of redesign + weight management
+INFO : Weights end
+INFO : Sparse matrix conversion
+INFO : End of sparse conversion
+INFO : Creation of the constraint matrix for barycenter determination
+INFO : Normal matrix inversion done
+INFO : Normal equation is about to be solved
+INFO : Normal equation is solved
+INFO : Creating the new PXP coordinates
+INFO : Cleaning pings based on residuals
+INFO : Valid pings BEFORE cleaning 8896 for PXP 0
+INFO : Valid pings AFTER cleaning 8862 for PXP 0
+INFO : Valid pings BEFORE cleaning 11131 for PXP 1
+INFO : Valid pings AFTER cleaning 11073 for PXP 1
+INFO : Valid pings BEFORE cleaning 7619 for PXP 2
+INFO : Valid pings AFTER cleaning 7570 for PXP 2
+
+----- Results of the iteration  1
+
+how to read 'dX' & 'sigmas' fields : 
+1st row = results for Barycenter
+2nd row = results for PXP1
+3rd row = results for PXP2
+etc ...
+
++ f.u.v. 1314232.26203
++ f.u.v. before inversion 1
+* coords. apriori
+[[  -78.01707448  -854.88852201  1354.75153031]
+ [  657.46200569   -75.80416804  1312.0076598 ]
+ [  -55.18166279   666.13423397  1207.30815759]]
+* dX
+[[-1.71570248  1.88247765  0.42936023]
+ [ 1.0677273  -0.43222298  0.44163135]
+ [-0.47911366  0.27729087  0.52414246]
+ [-0.58861365  0.15493211 -0.96577381]]
++ sum dX 0.596135406881
++ sum abs dX 8.95898855693
+* new coords.
+[[  -78.66504965  -853.43826734  1355.6225219 ]
+ [  655.26718955   -73.64439952  1312.96116249]
+ [  -57.48597891   668.17164373  1206.77174401]]
+* sigmas
+[[ 0.12966294  0.10202885  0.05836676]
+ [ 0.20624089  0.15986526  0.0885172 ]
+ [ 0.14964515  0.12174535  0.06588989]
+ [ 0.18959401  0.14859506  0.09090268]]
+* critera/critera old
+[8.9589885569292225, 10000000]
+* baselines of first apriori coordinates ('Mod')
+[ 1072.25414265  1528.3230118   1034.0674912 ]
+* baselines of current iteration apriori coordinates ('Mod')
+[ 1072.25414265  1528.3230118   1034.0674912 ]
+* new baselines after inversion
+[ 1071.7065828   1529.0198915   1034.20709424]
+* raw barycentrer : Sum Xpxp / Npxp
+[  173.03872033   -86.30367438  1291.7851428 ]
+* barycentrer estimated in LSQ
+[  173.03872033   -86.30367438  1291.7851428 ]
+* barycentrer dXs in LSQ
+[  9.47390314e-15   3.78956126e-14  -4.73695157e-15]
+
+------------ Iteration No 2 ------------
+Submarine Acoustic Model determination :  42.9610610008 s
+7570 3 0 (27505, 9)
+Jacobian ASM determination :  493.587357044 s
+INFO : End of Jacobian filling, start of redesign + weight management
+INFO : Weights end
+INFO : Sparse matrix conversion
+INFO : End of sparse conversion
+INFO : Creation of the constraint matrix for barycenter determination
+INFO : Normal matrix inversion done
+INFO : Normal equation is about to be solved
+INFO : Normal equation is solved
+INFO : Creating the new PXP coordinates
+INFO : Cleaning pings based on residuals
+INFO : Valid pings BEFORE cleaning 8862 for PXP 0
+INFO : Valid pings AFTER cleaning 8776 for PXP 0
+INFO : Valid pings BEFORE cleaning 11073 for PXP 1
+INFO : Valid pings AFTER cleaning 11061 for PXP 1
+INFO : Valid pings BEFORE cleaning 7570 for PXP 2
+INFO : Valid pings AFTER cleaning 7566 for PXP 2
+
+----- Results of the iteration  2
+
+how to read 'dX' & 'sigmas' fields : 
+1st row = results for Barycenter
+2nd row = results for PXP1
+3rd row = results for PXP2
+etc ...
+
++ f.u.v. 1.09470017822e+12
++ f.u.v. before inversion 1314232.26203
+* coords. apriori
+[[  -78.66504965  -853.43826734  1355.6225219 ]
+ [  655.26718955   -73.64439952  1312.96116249]
+ [  -57.48597891   668.17164373  1206.77174401]]
+* dX
+[[ 0.08349081 -0.39777603 -0.0940616 ]
+ [ 0.28084565 -0.21486577 -0.20031486]
+ [-0.1724639  -0.22647842  0.1122953 ]
+ [-0.10838175  0.44134419  0.08801955]]
++ sum dX -0.408346828896
++ sum abs dX 2.42033785727
+* new coords.
+[[  -78.30071319  -854.05090915  1355.32814544]
+ [  655.17821646   -74.26865398  1312.97939619]
+ [  -57.51086985   668.21521189  1206.76570196]]
+* sigmas
+[[ 0.10363687  0.08340499  0.04719774]
+ [ 0.16518528  0.13141687  0.07214475]
+ [ 0.11956094  0.10032303  0.05306527]
+ [ 0.15139855  0.11996618  0.07312976]]
+* critera/critera old
+[2.4203378572668175, 8.9589885569292225]
+* baselines of first apriori coordinates ('Mod')
+[ 1072.25414265  1528.3230118   1034.0674912 ]
+* baselines of current iteration apriori coordinates ('Mod')
+[ 1071.7065828   1529.0198915   1034.20709424]
+* new baselines after inversion
+[ 1071.37534146  1529.63955246  1034.64456393]
+* raw barycentrer : Sum Xpxp / Npxp
+[  173.12221114   -86.70145041  1291.6910812 ]
+* barycentrer estimated in LSQ
+[  173.12221114   -86.70145041  1291.6910812 ]
+* barycentrer dXs in LSQ
+[  0.00000000e+00   3.78956126e-14  -4.73695157e-15]
+
+------------ Iteration No 3 ------------
+Submarine Acoustic Model determination :  45.7435879707 s
+7566 3 0 (27403, 9)
+Jacobian ASM determination :  507.422787905 s
+INFO : End of Jacobian filling, start of redesign + weight management
+INFO : Weights end
+INFO : Sparse matrix conversion
+INFO : End of sparse conversion
+INFO : Creation of the constraint matrix for barycenter determination
+INFO : Normal matrix inversion done
+INFO : Normal equation is about to be solved
+INFO : Normal equation is solved
+INFO : Creating the new PXP coordinates
+INFO : Cleaning pings based on residuals
+INFO : Valid pings BEFORE cleaning 8776 for PXP 0
+INFO : Valid pings AFTER cleaning 8728 for PXP 0
+INFO : Valid pings BEFORE cleaning 11061 for PXP 1
+INFO : Valid pings AFTER cleaning 11060 for PXP 1
+INFO : Valid pings BEFORE cleaning 7566 for PXP 2
+INFO : Valid pings AFTER cleaning 7566 for PXP 2
+
+----- Results of the iteration  3
+
+how to read 'dX' & 'sigmas' fields : 
+1st row = results for Barycenter
+2nd row = results for PXP1
+3rd row = results for PXP2
+etc ...
+
++ f.u.v. 8.85990186816e+17
++ f.u.v. before inversion 1.09470017822e+12
+* coords. apriori
+[[  -78.30071319  -854.05090915  1355.32814544]
+ [  655.17821646   -74.26865398  1312.97939619]
+ [  -57.51086985   668.21521189  1206.76570196]]
+* dX
+[[ 0.0112319  -0.25688481 -0.16812564]
+ [ 0.04347196 -0.56303578 -0.31377356]
+ [-0.02438958  0.26358697  0.17378375]
+ [-0.01908238  0.29944881  0.13998981]]
++ sum dX -0.413778547059
++ sum abs dX 2.27680494519
+* new coords.
+[[  -78.24600933  -854.87082973  1354.84624623]
+ [  655.16505878   -74.26195181  1312.9850543 ]
+ [  -57.51872033   668.25777589  1206.73756613]]
+* sigmas
+[[ 0.10386029  0.08528925  0.04787947]
+ [ 0.16691769  0.13722512  0.07456496]
+ [ 0.11921364  0.1014832   0.05351924]
+ [ 0.15030953  0.12046616  0.07302158]]
+* critera/critera old
+[2.2768049451894252, 2.4203378572668175]
+* baselines of first apriori coordinates ('Mod')
+[ 1072.25414265  1528.3230118   1034.0674912 ]
+* baselines of current iteration apriori coordinates ('Mod')
+[ 1071.37534146  1529.63955246  1034.64456393]
+* new baselines after inversion
+[ 1071.91155162  1530.45305413  1034.6701135 ]
+* raw barycentrer : Sum Xpxp / Npxp
+[  173.13344304   -86.95833522  1291.52295555]
+* barycentrer estimated in LSQ
+[  173.13344304   -86.95833522  1291.52295555]
+* barycentrer dXs in LSQ
+[  0.00000000e+00   3.78956126e-14  -9.47390314e-15]
+
+------------ Iteration No 4 ------------
+Submarine Acoustic Model determination :  43.7182190418 s
+7566 3 0 (27354, 9)
+Jacobian ASM determination :  424.342442036 s
+INFO : End of Jacobian filling, start of redesign + weight management
+INFO : Weights end
+INFO : Sparse matrix conversion
+INFO : End of sparse conversion
+INFO : Creation of the constraint matrix for barycenter determination
+INFO : Normal matrix inversion done
+INFO : Normal equation is about to be solved
+INFO : Normal equation is solved
+INFO : Creating the new PXP coordinates
+INFO : Cleaning pings based on residuals
+INFO : Valid pings BEFORE cleaning 8728 for PXP 0
+INFO : Valid pings AFTER cleaning 8699 for PXP 0
+INFO : Valid pings BEFORE cleaning 11060 for PXP 1
+INFO : Valid pings AFTER cleaning 11060 for PXP 1
+INFO : Valid pings BEFORE cleaning 7566 for PXP 2
+INFO : Valid pings AFTER cleaning 7566 for PXP 2
+
+----- Results of the iteration  4
+
+how to read 'dX' & 'sigmas' fields : 
+1st row = results for Barycenter
+2nd row = results for PXP1
+3rd row = results for PXP2
+etc ...
+
++ f.u.v. 7.09645509269e+23
++ f.u.v. before inversion 8.85990186816e+17
+* coords. apriori
+[[  -78.24600933  -854.87082973  1354.84624623]
+ [  655.16505878   -74.26195181  1312.9850543 ]
+ [  -57.51872033   668.25777589  1206.73756613]]
+* dX
+[[ 0.01440499 -0.11566513 -0.06739859]
+ [ 0.03082879 -0.230147   -0.13531255]
+ [-0.01575619  0.11440854  0.0680507 ]
+ [-0.0150726   0.11573846  0.06726185]]
++ sum dX -0.168658726229
++ sum abs dX 0.990045383744
+* new coords.
+[[  -78.20077554  -855.21664186  1354.6435351 ]
+ [  655.16370758   -74.2632084   1312.98570641]
+ [  -57.51938794   668.25784922  1206.73742939]]
+* sigmas
+[[ 0.10419864  0.08643241  0.04830886]
+ [ 0.1682498   0.14039302  0.07593201]
+ [ 0.11943442  0.10225967  0.05384505]
+ [ 0.15016492  0.1209041   0.07310497]]
+* critera/critera old
+[0.9900453837443921, 2.2768049451894252]
+* baselines of first apriori coordinates ('Mod')
+[ 1072.25414265  1528.3230118   1034.0674912 ]
+* baselines of current iteration apriori coordinates ('Mod')
+[ 1071.91155162  1530.45305413  1034.6701135 ]
+* new baselines after inversion
+[ 1072.12270988  1530.77707745  1034.67067805]
+* raw barycentrer : Sum Xpxp / Npxp
+[  173.14784803   -87.07400035  1291.45555697]
+* barycentrer estimated in LSQ
+[  173.14784803   -87.07400035  1291.45555697]
+* barycentrer dXs in LSQ
+[  0.00000000e+00   0.00000000e+00  -4.73695157e-15]
+
+===================== FINAL =====================
++ end 2017-07-27 12:30:39.157970
++ duration 0:35:00.216959
++ name Detection15mai
++ path /home/psakicki/THESE/CODES/CodePython/acoustyx_toolbox_2/exemple/EXPERIMENTS/Detection15mai
++ plateform VirBox5HPHP
++ version python 2.7.13 (default, Jan 19 2017, 14:48:08) 
+[GCC 6.3.0 20170118]
++ version numpy 1.13.0
++ version scipy 0.19.1
++ batch_mode True
++ force_mode False
++ with_alternat_ssp False
++ with_backward_select False
++ with_barycenter True
++ with_bl False
++ with_cleaning True
++ with_decimate_ssp True
++ with_dzcst False
++ with_fb_mode True
++ with_invert_jk False
++ with_jackknife False
++ with_mono_z False
++ with_munk_ssp True
++ with_noising_apriori False
++ with_old_style False
++ with_print_simu_infos False
++ with_smart_ssp False
++ with_specific_timwin_bool False
++ with_ssp_bilin False
++ with_time_window False
++ with_v_4_p_reinject False
++ with_var_lis True
++ with_zmaster False
+* weight ASM
+1e-06
+* weight BL
+1e-06
+* weight dZ
+0.001
+* noise PXP apriori
+1e-12
+* seed noise PXP apriori
+10
+* noise dZ
+1e-12
+* seed noise dZ
+0
+* noise  Z
+1e-12
+* seed noise Z
+0
+* noise BL
+1e-12
+* seed noise BL
+0
++ variables params []
++ var. params of the exp. {'with_smart_ssp': 0, 'with_ssp_bilin': 0, 'with_invert_jk': 0, 'with_munk_ssp': 1, 'with_time_window': 0, 'with_mono_z': 0, 'with_zmaster': 0, 'with_barycenter': 1, 'with_cleaning': 1, 'with_bl': 0, 'with_jackknife': 0, 'with_specific_timwin_bool': 0, 'with_noising_apriori': 0, 'with_fb_mode': 1, 'with_backward_select': 0, 'with_v_4_p_reinject': 0, 'with_decimate_ssp': 1, 'with_alternat_ssp': 0, 'with_old_style': 0, 'with_dzcst': 0}
++ Nb pings      7619
++ Nb PXPs       3
++ Size Jacob. (27354, 12)
++ Size Resid. (27354,)
++ Nb iter.      4

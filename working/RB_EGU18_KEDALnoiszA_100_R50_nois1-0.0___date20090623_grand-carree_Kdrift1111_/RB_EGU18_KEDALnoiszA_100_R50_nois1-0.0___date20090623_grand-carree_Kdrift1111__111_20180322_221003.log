@@ -1,0 +1,488 @@
+*************************************
+INFO : sigma_batch_mode AVANT eval : 
+sigma_pxp_apri 10
+sigma_dZ_apri 1e-06
+sigma_BL_apri 0.01
+sigma_defo_ASM 1e-05
+sigma_defo_BL 0.001
+sigma_defo_zmaster 1e-08
+INFO : eval_a_dict : the 2 values must be equals  1 1 , variable sigma_pxp_apri
+INFO : eval_a_dict : the 2 values must be equals  0.01 0.01 , variable sigma_dZ_apri
+INFO : eval_a_dict : the 2 values must be equals  0.001 0.001 , variable sigma_BL_apri
+INFO : eval_a_dict : the 2 values must be equals  1e-05 1e-05 , variable sigma_defo_ASM
+INFO : eval_a_dict : the 2 values must be equals  0.0001 0.0001 , variable sigma_defo_BL
+INFO : eval_a_dict : the 2 values must be equals  0.001 0.001 , variable sigma_defo_zmaster
+INFO : sigma_batch_mode APRES eval : 
+sigma_pxp_apri 1
+sigma_dZ_apri 0.01
+sigma_BL_apri 0.001
+sigma_defo_ASM 1e-05
+sigma_defo_BL 0.0001
+sigma_defo_zmaster 0.001
+*************************************
+WARN : with_zmaster is True and with_barycenter is False => with_barycenter forced to True
+      (mode is not implemented)
+decimating SSP
+This par must be splited ...
+DEBUG ipxp, PXPapri_mono
+1 [7499.58324215 7499.94373317 4007.8638039 ]
+This par must be splited ...
+DEBUG ipxp, PXPapri_mono
+2 [12501.78862847 12500.43650985  3980.09649747]
+This par must be splited ...
+DEBUG ipxp, PXPapri_mono
+3 [ 7500.05056171 12500.49995133  4029.00409107]
+This par must be splited ...
+DEBUG ipxp, PXPapri_mono
+4 [12500.44122749  7499.66912985  3962.43077119]
+**************DEBUG with_barycenter ********************+++
+PXPbary0      [10000.46591496 10000.13733105  3994.84879091]
+PXPbary       [10000.46591496 10000.13733105  3994.84879091]
+dPXPapri0_arr [[-2500.8826728  -2500.19359788    13.015013  ]
+ [ 2501.32271352  2500.2991788    -14.75229344]
+ [-2500.41535325  2500.36262028    34.15530016]
+ [ 2499.97531253 -2500.4682012    -32.41801972]]
+dPXPapri0_vct [-2500.8826728  -2500.19359788    13.015013    2501.32271352
+  2500.2991788    -14.75229344 -2500.41535325  2500.36262028
+    34.15530016  2499.97531253 -2500.4682012    -32.41801972]
+dPXPapri      [-2500.8826728  -2500.19359788    13.015013    2501.32271352
+  2500.2991788    -14.75229344 -2500.41535325  2500.36262028
+    34.15530016  2499.97531253 -2500.4682012    -32.41801972]
+dPXPapri0     [-2500.8826728  -2500.19359788    13.015013    2501.32271352
+  2500.2991788    -14.75229344 -2500.41535325  2500.36262028
+    34.15530016  2499.97531253 -2500.4682012    -32.41801972]
+dPXPapri_lis  [array([-2500.8826728 , -2500.19359788,    13.015013  ]), array([2501.32271352, 2500.2991788 ,  -14.75229344]), array([-2500.41535325,  2500.36262028,    34.15530016]), array([ 2499.97531253, -2500.4682012 ,   -32.41801972])]
+**************DEBUG with_zmaster ********************+++
+PXPref        [10000.46591496 10000.13733105  3994.84879091]
+dPXPapri0_arr [[-2500.8826728  -2500.19359788    13.015013  ]
+ [ 2501.32271352  2500.2991788    -14.75229344]
+ [-2500.41535325  2500.36262028    34.15530016]
+ [ 2499.97531253 -2500.4682012    -32.41801972]]
+dPXPapri0_vct [-2500.8826728  -2500.19359788    13.015013    2501.32271352
+  2500.2991788    -14.75229344 -2500.41535325  2500.36262028
+    34.15530016  2499.97531253 -2500.4682012    -32.41801972]
+dPXPapri0     [-2500.8826728  -2500.19359788    13.015013    2501.32271352
+  2500.2991788    -14.75229344 -2500.41535325  2500.36262028
+    34.15530016  2499.97531253 -2500.4682012    -32.41801972]
+dPXPapri      [-2500.8826728  -2500.19359788    13.015013    2501.32271352
+  2500.2991788    -14.75229344 -2500.41535325  2500.36262028
+    34.15530016  2499.97531253 -2500.4682012    -32.41801972]
+dPXPapri_lis  [array([-2500.8826728 , -2500.19359788,    13.015013  ]), array([2501.32271352, 2500.2991788 ,  -14.75229344]), array([-2500.41535325,  2500.36262028,    34.15530016]), array([ 2499.97531253, -2500.4682012 ,   -32.41801972])]
+START
+===================== DEBUT =====================
++ debut 2018-03-22 22:10:03.732522
++ nom RB_EGU18_KEDALnoiszA_100_R50_nois1-0.0___date20090623_grand-carree_Kdrift1111_
++ path /home/psakicki/CODES/acoustyx_toolbox_2_py3/working/RB_EGU18_KEDALnoiszA_100_R50_nois1-0.0___date20090623_grand-carree_Kdrift1111_
++ plateforme TPX1-GFZ
++ version python 3.6.3 (default, Oct  3 2017, 21:45:48) 
+[GCC 7.2.0]
++ version numpy 1.14.2
++ version scipy 1.0.0
++ batch_mode True
++ force_mode True
++ with_BL True
++ with_ssp_bilin False
++ with_monoZ False
++ with_alternat_SSP False
++ with_barycenter True
++ with_decimate_SSP True
++ with_dzcst False
++ with_zmaster True
++ with_time_window False
++ with_V_4_P_reinject False
++ with_jackknife False
++ params variables ['with_barycenter', 'with_BL', 'with_zmaster']
++ params var. de l'exp. {'with_ssp_bilin': 0, 'with_decimate_SSP': 1, 'with_jackknife': 0, 'with_invert_jk': 0, 'with_FB_mode': 1, 'with_time_window': 0, 'with_V_4_P_reinject': 0, 'with_alternat_SSP': 0, 'with_monoZ': 0, 'with_dzcst': 0, 'with_barycenter': True, 'with_BL': True, 'with_zmaster': True}
+
+------------ iter No 1 ------------
+Submarine Acoustic Model determination :  1.0260536670684814 s
+100 4 0 (400, 12)
+Jacobian ASM determination :  11.464107513427734 s
+
+DEBUG BL
+**********************************+++
+B_BL,ObsBL,ModBL
+[-1.89738162 -0.56030854 -0.81371211 -1.72665522 -0.7588279  -0.83165958] [7071.13292793 5000.04061746 5000.25065713 5000.25051838 5000.03993652
+ 7071.41322606] [7073.03030955 5000.600926   5001.06436925 5001.97717361 5000.79876442
+ 7072.24488564]
+**********************************+++
+
+fin du remplissage, debut du redesign + gestion des poids
+fin des poids 
+conversion en sparse 
+fin de la conversion en sparse 
++ f.u.v. 0.29084333652599004
+* coords. apriori
+[[ 7499.58324215  7499.94373317  4007.8638039 ]
+ [12501.78862847 12500.43650985  3980.09649747]
+ [ 7500.05056171 12500.49995133  4029.00409107]
+ [12500.44122749  7499.66912985  3962.43077119]]
+* dX
+[-0.46666641 -0.13403143  0.15086389  0.88169511  0.19238318  1.98844021
+ -1.32275307 -0.29803382 -0.24690003  0.41491721 -0.36333579  0.84026279
+  0.02614074  0.46898642 -2.58180297]
++ som. dX -0.4498339541011651
++ som. abs dX 10.377213072208953
+* nouvelles coords.
+[[ 7499.99827086  7500.00208492  4010.003108  ]
+ [12499.999209   12500.0044446   3980.00046132]
+ [ 7499.99881251 12500.00258411  4029.99521775]
+ [12500.00070182  7500.00408484  3959.9998321 ]]
+* sigmas
+[0.00069179 0.000561   0.00027825 0.04071959 0.04073081 0.00022811
+ 0.0407213  0.04073797 0.00037068 0.04072234 0.0407232  0.00042126
+ 0.04072406 0.04071603 0.00042119        nan 0.00005205 0.00000553]
+* kriter/kriterold
+[10.377213072208953, 10000000]
+* ecart 3D a la postion vraie en distance
+[0.00412268 0.00453795 0.00556396 0.00414809]
+* ecart 2D a la postion vraie en distance
+[0.00270865 0.00451444 0.0028439  0.00414469]
+* ecart a la postion vraie en coordonnees
+[[-0.00172914  0.00208492  0.003108  ]
+ [-0.000791    0.0044446   0.00046132]
+ [-0.00118749  0.00258411 -0.00478225]
+ [ 0.00070182  0.00408484 -0.0001679 ]]
+* BLs Vraies 
+[7071.13145119 5000.03999984 5000.24999375 5000.24999375 5000.03999984
+ 7071.4142857 ]
+* BLs Observees
+[7071.13292793 5000.04061746 5000.25065713 5000.25051838 5000.03993652
+ 7071.41322606]
+* BL des coords a prioris('Mod')
+[7073.03030955 5000.600926   5001.06436925 5001.97717361 5000.79876442
+ 7072.24488564]
+* BLs News à l'issue de l'inversion
+[7071.13379431 5000.04046748 5000.25245735 5000.25033779 5000.04036212
+ 7071.41451478]
+* Barycentre 'brut' : Sum Xpxp / Npxp
+[ 9999.99924855 10000.00329962  3994.99965479]
+* ecart 3D bary brut/vrai en distance
+0.0034016641897571254
+* ecart 2D bary brut/vrai en distance
+0.003384102947835758
+* ecart au bary brut/vrai en coords.
+[-0.00075145  0.00329962 -0.00034521]
+* Barycentre estime dans le MC
+[ 9999.99924855 10000.00329962  3994.99965479]
+* Barycentre des dXs dans le MC
+[ 0. -0.  0.]
+* ecart 3D bary MC/vrai en distance
+0.0034016643430200134
+* ecart 2D bary MC/vrai en distance
+0.0033841031018939783
+* ecart au bary MC/bary vrai en coords.
+[-0.00075145  0.00329962 -0.00034521]
+* ecart à la balise de réference
+[  0.         -30.00264668  19.99210975 -50.0032759 ]
+* ecart en input à la balise de réference
+[  0.         -30.00025348  19.9897178  -50.0056696 ]
+* ecart vrai à la balise de réference
+[  0. -30.  20. -50.]
+------------ iter No 2 ------------
+Submarine Acoustic Model determination :  1.0393824577331543 s
+100 4 0 (400, 12)
+Jacobian ASM determination :  11.406745195388794 s
+
+DEBUG BL
+**********************************+++
+B_BL,ObsBL,ModBL
+[-0.00086638  0.00014998 -0.00180022  0.00018059 -0.00042559 -0.00128873] [7071.13292793 5000.04061746 5000.25065713 5000.25051838 5000.03993652
+ 7071.41322606] [7071.13379431 5000.04046748 5000.25245735 5000.25033779 5000.04036212
+ 7071.41451478]
+**********************************+++
+
+fin du remplissage, debut du redesign + gestion des poids
+fin des poids 
+conversion en sparse 
+fin de la conversion en sparse 
++ f.u.v. 0.04517894264796533
+* coords. apriori
+[[ 7499.99827086  7500.00208492  4010.003108  ]
+ [12499.999209   12500.0044446   3980.00046132]
+ [ 7499.99881251 12500.00258411  4029.99521775]
+ [12500.00070182  7500.00408484  3959.9998321 ]]
+* dX
+[ 0.00018606 -0.00043264  0.00017617  0.00042415  0.0004116  -0.00002104
+  0.00056504 -0.00069872 -0.0001059   0.00053021  0.00041702  0.00006349
+ -0.0015194  -0.0001299   0.00006344]
++ som. dX -7.040944955362746e-05
++ som. abs dX 0.005744785256077819
+* nouvelles coords.
+[[ 7499.99888107  7500.00206387  4010.00326314]
+ [12499.99996011 12500.00331323  3980.0005316 ]
+ [ 7499.99952878 12500.00256849  4029.99545741]
+ [12499.99936849  7500.00352229  3960.00007172]]
+* sigmas
+[0.00050568 0.00041002 0.00020334 0.02976391 0.0297639  0.0001667
+ 0.0297639  0.02976389 0.00027089 0.02976388 0.0297639  0.00030786
+ 0.02976388 0.02976391 0.00030782 0.00000794        nan        nan]
+* kriter/kriterold
+[0.005744785256077819, 10.377213072208953]
+* ecart 3D a la postion vraie en distance
+[0.0040199  0.00335585 0.00523968 0.00357918]
+* ecart 2D a la postion vraie en distance
+[0.00234767 0.00331347 0.00261136 0.00357846]
+* ecart a la postion vraie en coordonnees
+[[-0.00111893  0.00206387  0.00326314]
+ [-0.00003989  0.00331323  0.0005316 ]
+ [-0.00047122  0.00256849 -0.00454259]
+ [-0.00063151  0.00352229  0.00007172]]
+* BLs Vraies 
+[7071.13145119 5000.03999984 5000.24999375 5000.24999375 5000.03999984
+ 7071.4142857 ]
+* BLs Observees
+[7071.13292793 5000.04061746 5000.25065713 5000.25051838 5000.03993652
+ 7071.41322606]
+* BL des coords a prioris('Mod')
+[7073.03030955 5000.600926   5001.06436925 5001.97717361 5000.79876442
+ 7072.24488564]
+* BLs News à l'issue de l'inversion
+[7071.13310919 5000.04047324 5000.25051306 5000.25037432 5000.03979262
+ 7071.41345228]
+* Barycentre 'brut' : Sum Xpxp / Npxp
+[ 9999.99943461 10000.00286697  3994.99983097]
+* ecart 3D bary brut/vrai en distance
+0.002927074738676025
+* ecart 2D bary brut/vrai en distance
+0.0029221898962742262
+* ecart au bary brut/vrai en coords.
+[-0.00056539  0.00286697 -0.00016903]
+* Barycentre estime dans le MC
+[ 9999.99943461 10000.00286697  3994.99983097]
+* Barycentre des dXs dans le MC
+[ 0. -0.  0.]
+* ecart 3D bary MC/vrai en distance
+0.002927074888238698
+* ecart 2D bary MC/vrai en distance
+0.002922190046060609
+* ecart au bary MC/bary vrai en coords.
+[-0.00056539  0.00286697 -0.00016903]
+* ecart à la balise de réference
+[  0.         -30.00273154  19.99219428 -50.00319142]
+* ecart en input à la balise de réference
+[  0.         -30.00025348  19.9897178  -50.0056696 ]
+* ecart vrai à la balise de réference
+[  0. -30.  20. -50.]
+------------ iter No 3 ------------
+Submarine Acoustic Model determination :  1.1610872745513916 s
+100 4 0 (400, 12)
+Jacobian ASM determination :  11.767808437347412 s
+
+DEBUG BL
+**********************************+++
+B_BL,ObsBL,ModBL
+[-0.00018125  0.00014422  0.00014407  0.00014406  0.0001439  -0.00022622] [7071.13292793 5000.04061746 5000.25065713 5000.25051838 5000.03993652
+ 7071.41322606] [7071.13310919 5000.04047324 5000.25051306 5000.25037432 5000.03979262
+ 7071.41345228]
+**********************************+++
+
+fin du remplissage, debut du redesign + gestion des poids
+fin des poids 
+conversion en sparse 
+fin de la conversion en sparse 
++ f.u.v. 0.007017866826326784
+* coords. apriori
+[[ 7499.99888107  7500.00206387  4010.00326314]
+ [12499.99996011 12500.00331323  3980.0005316 ]
+ [ 7499.99952878 12500.00256849  4029.99545741]
+ [12499.99936849  7500.00352229  3960.00007172]]
+* dX
+[ 0.00000011  0.0000001  -0.00000001  0.00002284 -0.00002284  0.00000001
+ -0.00002284  0.00002284  0.00000004 -0.00002284 -0.00002284 -0.00000003
+  0.00002284  0.00002284 -0.00000001]
++ som. dX 2.0252104841748547e-07
++ som. abs dX 0.00018299281991384118
+* nouvelles coords.
+[[ 7499.99890401  7500.00204114  4010.00326314]
+ [12499.99993738 12500.00333617  3980.00053163]
+ [ 7499.99950605 12500.00254575  4029.99545737]
+ [12499.99939144  7500.00354523  3960.0000717 ]]
+* sigmas
+[0.00050566 0.00041002 0.00020333 0.02976278 0.02976277 0.0001667
+ 0.02976277 0.02976277 0.00027089 0.02976276 0.02976276 0.00030786
+ 0.02976276 0.02976276 0.00030781        nan 0.0000015         nan]
+* kriter/kriterold
+[0.00018299281991384118, 0.005744785256077819]
+* ecart 3D a la postion vraie en distance
+[0.00400194 0.00337884 0.00523071 0.0035978 ]
+* ecart 2D a la postion vraie en distance
+[0.00231677 0.00333676 0.00259323 0.00359708]
+* ecart a la postion vraie en coordonnees
+[[-0.00109599  0.00204114  0.00326314]
+ [-0.00006262  0.00333617  0.00053163]
+ [-0.00049395  0.00254575 -0.00454263]
+ [-0.00060856  0.00354523  0.0000717 ]]
+* BLs Vraies 
+[7071.13145119 5000.03999984 5000.24999375 5000.24999375 5000.03999984
+ 7071.4142857 ]
+* BLs Observees
+[7071.13292793 5000.04061746 5000.25065713 5000.25051838 5000.03993652
+ 7071.41322606]
+* BL des coords a prioris('Mod')
+[7073.03030955 5000.600926   5001.06436925 5001.97717361 5000.79876442
+ 7072.24488564]
+* BLs News à l'issue de l'inversion
+[7071.13310919 5000.04047324 5000.25051306 5000.25037432 5000.03979262
+ 7071.41345228]
+* Barycentre 'brut' : Sum Xpxp / Npxp
+[ 9999.99943472 10000.00286707  3994.99983096]
+* ecart 3D bary brut/vrai en distance
+0.0029271518586561664
+* ecart 2D bary brut/vrai en distance
+0.0029222668400859745
+* ecart au bary brut/vrai en coords.
+[-0.00056528  0.00286707 -0.00016904]
+* Barycentre estime dans le MC
+[ 9999.99943472 10000.00286707  3994.99983096]
+* Barycentre des dXs dans le MC
+[ 0. -0.  0.]
+* ecart 3D bary MC/vrai en distance
+0.002927152008212482
+* ecart 2D bary MC/vrai en distance
+0.0029222669898659914
+* ecart au bary MC/bary vrai en coords.
+[-0.00056528  0.00286707 -0.00016904]
+* ecart à la balise de réference
+[  0.         -30.00273151  19.99219424 -50.00319144]
+* ecart en input à la balise de réference
+[  0.         -30.00025348  19.9897178  -50.0056696 ]
+* ecart vrai à la balise de réference
+[  0. -30.  20. -50.]
+------------ iter No 4 ------------
+Submarine Acoustic Model determination :  1.1581830978393555 s
+100 4 0 (400, 12)
+Jacobian ASM determination :  11.661802053451538 s
+
+DEBUG BL
+**********************************+++
+B_BL,ObsBL,ModBL
+[-0.00018125  0.00014422  0.00014407  0.00014406  0.0001439  -0.00022622] [7071.13292793 5000.04061746 5000.25065713 5000.25051838 5000.03993652
+ 7071.41322606] [7071.13310919 5000.04047324 5000.25051306 5000.25037432 5000.03979262
+ 7071.41345228]
+**********************************+++
+
+fin du remplissage, debut du redesign + gestion des poids
+fin des poids 
+conversion en sparse 
+fin de la conversion en sparse 
++ f.u.v. 0.0010901196794024174
+* coords. apriori
+[[ 7499.99890401  7500.00204114  4010.00326314]
+ [12499.99993738 12500.00333617  3980.00053163]
+ [ 7499.99950605 12500.00254575  4029.99545737]
+ [12499.99939144  7500.00354523  3960.0000717 ]]
+* dX
+[ 0.00000026 -0.00000001 -0.          0.0000261  -0.0000261  -0.
+ -0.0000261   0.0000261  -0.         -0.0000261  -0.0000261   0.
+  0.0000261   0.0000261   0.        ]
++ som. dX 2.5176593849477187e-07
++ som. abs dX 0.0002090729634206669
+* nouvelles coords.
+[[ 7499.99893038  7500.00201503  4010.00326314]
+ [12499.99991154 12500.00336226  3980.00053162]
+ [ 7499.99948022 12500.00251965  4029.99545738]
+ [12499.9994178   7500.00357132  3960.0000717 ]]
+* sigmas
+[0.00050563 0.00041002 0.00020333 0.02975852 0.02975852 0.0001667
+ 0.02975852 0.02975852 0.00027089 0.02975851 0.02975851 0.00030786
+ 0.0297585  0.02975851 0.00030781 0.00000022 0.00000034 0.00000005]
+* kriter/kriterold
+[0.0002090729634206669, 0.00018299281991384118]
+* ecart 3D a la postion vraie en distance
+[0.00398152 0.00340517 0.00522056 0.00361917]
+* ecart 2D a la postion vraie en distance
+[0.00228132 0.00336342 0.0025727  0.00361846]
+* ecart a la postion vraie en coordonnees
+[[-0.00106962  0.00201503  0.00326314]
+ [-0.00008846  0.00336226  0.00053162]
+ [-0.00051978  0.00251965 -0.00454262]
+ [-0.0005822   0.00357132  0.0000717 ]]
+* BLs Vraies 
+[7071.13145119 5000.03999984 5000.24999375 5000.24999375 5000.03999984
+ 7071.4142857 ]
+* BLs Observees
+[7071.13292793 5000.04061746 5000.25065713 5000.25051838 5000.03993652
+ 7071.41322606]
+* BL des coords a prioris('Mod')
+[7073.03030955 5000.600926   5001.06436925 5001.97717361 5000.79876442
+ 7072.24488564]
+* BLs News à l'issue de l'inversion
+[7071.13310919 5000.04047324 5000.25051306 5000.25037432 5000.03979262
+ 7071.41345228]
+* Barycentre 'brut' : Sum Xpxp / Npxp
+[ 9999.99943498 10000.00286706  3994.99983096]
+* ecart 3D bary brut/vrai en distance
+0.002927090079988306
+* ecart 2D bary brut/vrai en distance
+0.0029222048784369493
+* ecart au bary brut/vrai en coords.
+[-0.00056502  0.00286706 -0.00016904]
+* Barycentre estime dans le MC
+[ 9999.99943498 10000.00286706  3994.99983096]
+* Barycentre des dXs dans le MC
+[ 0. -0.  0.]
+* ecart 3D bary MC/vrai en distance
+0.0029270902295315685
+* ecart 2D bary MC/vrai en distance
+0.002922205028203905
+* ecart au bary MC/bary vrai en coords.
+[-0.00056502  0.00286706 -0.00016904]
+* ecart à la balise de réference
+[  0.         -30.00273151  19.99219424 -50.00319144]
+* ecart en input à la balise de réference
+[  0.         -30.00025348  19.9897178  -50.0056696 ]
+* ecart vrai à la balise de réference
+[  0. -30.  20. -50.]
+===================== FINAL =====================
++ fin 2018-03-22 22:10:54.699619
++ duree 0:00:50.967097
++ nom RB_EGU18_KEDALnoiszA_100_R50_nois1-0.0___date20090623_grand-carree_Kdrift1111_
++ path /home/psakicki/CODES/acoustyx_toolbox_2_py3/working/RB_EGU18_KEDALnoiszA_100_R50_nois1-0.0___date20090623_grand-carree_Kdrift1111_
++ plateforme TPX1-GFZ
++ version python 3.6.3 (default, Oct  3 2017, 21:45:48) 
+[GCC 7.2.0]
++ version numpy 1.14.2
++ version scipy 1.0.0
++ batch_mode True
++ force_mode True
++ with_BL True
++ with_ssp_bilin False
++ with_monoZ False
++ with_alternat_SSP False
++ with_barycenter True
++ with_decimate_SSP True
++ with_dzcst False
++ with_zmaster True
++ with_time_window False
++ with_V_4_P_reinject False
++ with_jackknife False
+* poids ASM
+1e-05
+* poids BL
+0.0001
+* poids dZ
+0.001
+* bruit PXP apriori
+1
+* seed bruit PXP apriori
+1
+* bruit dZ
+0.01
+* seed bruit dZ
+35780
+* bruit  Z
+1
+* seed bruit Z
+462
+* bruit BL
+0.001
+* seed bruit BL
+25571070
++ params variables ['with_barycenter', 'with_BL', 'with_zmaster']
++ params var. de l'exp. {'with_ssp_bilin': 0, 'with_decimate_SSP': 1, 'with_jackknife': 0, 'with_invert_jk': 0, 'with_FB_mode': 1, 'with_time_window': 0, 'with_V_4_P_reinject': 0, 'with_alternat_SSP': 0, 'with_monoZ': 0, 'with_dzcst': 0, 'with_barycenter': True, 'with_BL': True, 'with_zmaster': True}
++ Nb pings      100
++ Nb PXPs       4
++ Taille Jacob. (409, 15)
++ Taille Resid. (409,)
++ Nb iter.      5
