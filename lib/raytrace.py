@@ -745,46 +745,6 @@ def raytrace_SD3_frontend(Zinp , Cinp , zstart , zmax , tmax , theta ,
         return np.sum(Dx) , np.sum(Dz) , np.sum(Dt)
 
 
-#def find_dZ_for_fabrik_ping_OLD(Z,C,Angle_list,XYZ_bato,zpxp,procs=4,
-#                            with_out_path_length=False,temporal_ZC=False):
-#    """
-#    Dz_lis : une cumsum
-#    S_lis  : le path par couche
-#    """
-#    if not with_out_path_length:
-#        print 'in find_dZ_for_fabrik_ping, not with_out_path_length mode'
-#        args_lis = []
-#        pool = mp.Pool(processes=procs)
-#        if not temporal_ZC:
-#            for a,zbato in zip(Angle_list,XYZ_bato):
-#                args_lis.append((Z,C,a,zpxp,True))
-#        else:
-#            for Zt , Ct , a , zbato in zip(Z , C , Angle_list , XYZ_bato):
-#                args_lis.append((Zt,Ct,a,zpxp,True))
-#
-#        results = [pool.apply(raytrace_SD1_frontend,args=x) for x in args_lis]
-#        Dz_lis = [e[1] for e in results]
-#        pool.close()
-#        return Dz_lis
-#    else:
-#        print 'in find_dZ_for_fabrik_ping, with_out_path_length mode'
-#        args_lis = []
-#        pool = mp.Pool(processes=procs)
-#        #for a,zbato in zip(Angle_list,XYZ_bato):
-#        #   args_lis.append((Z,C,a,zpxp,True,True))
-#
-#        if not temporal_ZC:
-#            for a,zbato in zip(Angle_list,XYZ_bato):
-#                args_lis.append((Z,C,a,zpxp,True,True))
-#        else:
-#            for Zt , Ct , a , zbato in zip(Z , C , Angle_list , XYZ_bato):
-#                args_lis.append((Zt,Ct,a,zpxp,True,True))
-#
-#        results = [pool.apply(raytrace_SD1_frontend,args=x) for x in args_lis]
-#        Dz_lis  = [e[1] for e in results]
-#        S_lis   = [np.diff(e[3]) for e in results]
-#        pool.close()
-#        return Dz_lis , S_lis
 
 def find_dZ_for_fabrik_ping(Z,C,Angle_list,XYZ_bato,zpxp,procs=4,
                             with_out_path_length=False,temporal_ZC=False):
@@ -862,88 +822,6 @@ def plot_raytrace(Dz, Dx, Dt,Round):
         plt.plot(x,-z)#,color = np.cumsum(Dt))
 
     return x , -z
-
-
-#def raytrace_seek(Xsrc, Xrec, Z, C, thetaminin=0, thetamaxin=88,
-#                  verbose=True,fulloutput=True):
-#    """RAYTRACE_SEEK Recherche le rayon acoustique qui relie le bateau et la
-#     balise dans un SSP particulier, par la methode de la sécante, puis par dicotomie
-#     ICI theta est INCONNU, si theta fixé : raytrace_SnellDesc
-#     ENTREE :
-#     Xsrc : La position du Bateau (vecteur 1x3 OU 3x1)
-#     Xrec : La position du récepteur (vecteur 1x3 OU 3x1)
-#     Z et C : le SSP
-#     thetamin et thetamax : angles de "balayage" en degrés (IL N'EST PAS
-#     RECOMMANDÉ UN THETAMAX > 88)
-#     => ne sont utilisé que dans la 2nde partie, "dicotomie de la seconde chance"
-#     SORTIE :
-#     theta : angle d'emission du rayon acoustique
-#     si fulloutput == True
-#     Dx et Dt : distance horizontale et temps de parcours du rayon dans les
-#     differentes couches du SSP
-#     si fulloutput == False
-#     X = cumsum(Dx) & T = cumsum(Dt)
-#
-#     Retourne:
-#     Theta , x , t
-#
-#     Plus exactement :
-#     if fulloutput:
-#         return theta, Dx, Dt
-#     else:
-#        return theta , np.sum(Dx) , np.sum(Dt)
-#    """
-#
-#    # assurons nous que l'on bosse avec des arrays
-#    Z = np.array(Z)
-#    C = np.array(C)
-#
-#    tic = time.time()
-#
-#    theta_geom = angle_geometrik(Xrec, Xsrc)
-#    # empiriquement theta vrai ~ thetageo +ou- (+ !!!) 10 de thetageom
-#    # delta = theta_geom * 0.1 # c'est absolument débile ce truc si on est proche de 0 !!! (150510)
-#    delta = 15
-#    thmin = theta_geom - delta
-#    thmax = theta_geom + delta
-#    # On maintient malgré tout les bornes en input comme les bornes opé
-#    if thmin < thetaminin:
-#        thmin = thetaminin
-#    if thmax > thetamaxin:
-#        thmax = thetamaxin
-#    # Une clause pour les effets de bord
-#    if thetaminin < 5:
-#        thmin = thetaminin
-#
-#
-#    if verbose:
-#        print 'thmin & thmax operational :',thmin,thmax
-#
-#    nisec = 0
-#    nidico = 0
-#    kritersec , kriterdico = np.nan , np.nan
-#
-#    theta, Dx, Dt, nisec, kritersec = \
-#    raytrace_seek_secante(Xsrc, Xrec, Z, C,thmin, thmax, 'secante', verbose=verbose) # nargout=3
-#
-#    snd_chance = False
-#    if np.isnan(theta):
-#        snd_chance = True
-#
-#    if snd_chance:
-#        print 'seconde chance : recherche par dicotomie'
-#        theta, Dx, Dt, nidico ,kriterdico = \
-#        raytrace_seek_dicotomie(Xsrc, Xrec,Z,C,thetaminin,thetamaxin) # nargout=3
-#
-#    toc = time.time()
-#    toctic = toc - tic
-#    if verbose or snd_chance:
-#        print ("Raytrace Seek : %f s, nb iter. sect./2coto.: %i/%i, stop : %f/%f " \
-#        %(toctic,nisec,nidico,kritersec,kriterdico) )
-#    if fulloutput:
-#        return theta, Dx, Dt
-#    else:
-#        return theta , np.sum(Dx) , np.sum(Dt)
 
 
 def raytrace_seek_mono(Xsrc, Xrec, Z, C, thetaminin=0, thetamaxin=88,
@@ -1347,54 +1225,6 @@ def raytrace_seek_dicotomie(Xsrc, Xrec, Z, C, thetamin, thetamax):
 
     return theta, Dx, Dt, i , kriter
 
-
-#def time_spend_in_layer_zones_OLD(zones_bound,Dz_in,Dt_in,severe=True):
-#    """
-#    Input :
-#        zones bound : a list of bounds 0 and 99999 (max depth) are added if not
-#
-#        Dz : the CUMULATIVE depth of a ping
-#
-#        Dt : the time spend in each layer (not cumulative),
-#        can also be the path length
-#    Return :
-#        t_zones_sum : the time spend in each zone
-#        propor_lis  : the proportion
-#    """
-#
-#    sumT = np.sum(Dt_in)
-#
-#    t_zones_lis_lis = []
-#    for i in range(len(zones_bound)-1):
-#        t_zones_lis_lis.append([])
-#        for dz,dt in zip(Dz_in,Dt_in):
-#            if zones_bound[i] <= dz <  zones_bound[i+1]:
-#                t_zones_lis_lis[i].append(dt)
-#
-#    t_zones_sum = []
-#    for tzl in t_zones_lis_lis:
-#        sumtzl = np.sum(tzl)
-#        if sumtzl != 0:
-#            t_zones_sum.append( sumtzl )
-#
-#    try:
-#        propor_lis = list(np.array(t_zones_sum) / sumT)
-#    except Exception as exep:
-#        print exep
-#        print "ERR : time_spend_in_layer_zones : list(np.array(t_zones_sum) / sumT)"
-#        print np.array(t_zones_sum) , sumT , Dt_in
-#
-#    if np.abs(np.sum(t_zones_sum) - sumT) > 10**-9:
-#        print "WARN : np.sum(t_zones_sum) != np.sum(Dt_in) !!!"
-#        print "np.abs(np.sum(t_zones_sum) - sumT) = "
-#        print np.abs(np.sum(t_zones_sum) - sumT)
-#        if severe:
-#            print "severe mode : return t_zones_sum , sumT"
-#            return t_zones_sum , sumT
-#
-#    return np.array(t_zones_sum) , np.array(propor_lis)
-
-
 def time_spend_in_layer_zones(zones_bound,Dz_in,Dt_or_Ds_in,severe=False,
                               Dt_or_Ds_mode='Dt'):
     """
@@ -1551,115 +1381,6 @@ def angle_geometrik(Xrec, Xsrc):
     theta = np.rad2deg(np.arccos(prof / hypo))
     return theta
 
-# -*- coding: utf-8 -*-
-# Autogenerated with SMOP version 0.23
-# main.py /home/psakic01/THESE/CodeMk4/fonctions/raytrace/raytrace_diff.m
-
-#def raytrace_diff(Xsrc, Xrec, Z, C, h=0, diffmode = 'centre', diffwhat = 'all'):
-#    """differencie numeriquement la fonction de ray tracing d'un pas h
-#     diffmode =  'prog' , 'retro' ou 'centre' : dérivation "en avant" (+h),
-#     "en arrière" (-h)  ou "centrée( / 2h) "
-#
-#     diffwhat = 'all' , 'onlysrc' , 'onlyrec'
-#
-#     DISCONTINUED FCT, THE LIGHT ONE SHALL BE PREFERED
-#    """
-#    dXsrc = np.empty(shape=(3), dtype='float64')
-#    dXrec = np.empty(shape=(3), dtype='float64')
-#
-#    __, __, Dttrue = raytrace_seek(Xsrc, Xrec, Z, C, 1, 89,verbose=False) # nargout=3
-#    Ttrue = np.sum(Dttrue)
-#
-#    if diffwhat != 'all' and diffwhat != 'onlysrc' and diffwhat != 'onlyrec' :
-#        raise Exception("verifier argument diffwhat")
-#
-#    if diffmode == 'centre':
-#            # Diference centrée
-#            # Pour les coordonnées du bateau (gaffe au 'not' qui change tout)
-#            if not  diffwhat == 'onlyrec':
-#                print diffwhat , 'aaa'
-#                for xyz in range(3):
-#                    matbool = np.array([0, 0, 0])
-#                    matbool[xyz] = 1
-#                    Xsrc_h = Xsrc + matbool * h
-#                    __, __, Dt1 = raytrace_seek(Xsrc_h, Xrec, Z, C, 1, 89,verbose=False) # nargout=3
-#                    Xsrc_h = Xsrc - matbool * h
-#                    __, __, Dt2 = raytrace_seek(Xsrc_h, Xrec, Z, C, 1, 89,verbose=False) # nargout=3
-#                    dXsrc[xyz] = (np.sum(Dt1) - np.sum(Dt2)) / (2*h)
-#                    Dt1 = np.array([])
-#                    Dt2 = np.array([])
-#            # Pour les coordonnées de la balise fond (gaffe au 'not' qui change tout)
-#            if not  diffwhat == 'onlysrc':
-#                print diffwhat , 'bbb'
-#                for xyz in range(3):
-#                    matbool = np.array([0, 0, 0])
-#                    matbool[xyz] = 1
-#                    Xrec_h = Xrec + matbool * h
-#                    __, __, Dt1 = raytrace_seek(Xsrc, Xrec_h, Z, C, 1, 89,verbose=False) # nargout=3
-#                    Xrec_h = Xrec - matbool * h
-#                    __, __, Dt2 = raytrace_seek(Xsrc, Xrec_h, Z, C, 1, 89,verbose=False) # nargout=3
-#                    dXrec[xyz] = (np.sum(Dt1) - np.sum(Dt2)) / (2*h)
-#                    Dt1 = np.array([])
-#                    Dt2 = np.array([])
-#
-#    elif diffmode == 'prog' or diffmode == 'retro' :
-#
-#        if diffmode == 'prog' :
-#            ploumo = 1 # ploumo = plus ou moins
-#        elif diffmode == 'retro' :
-#            ploumo = -1
-#        else:
-#            raise Exception("verifier argument diffmode")
-#
-#        # Difference en avant
-#        # Pour les coordonnées du bateau (gaffe au 'not' qui change tout)
-#        if not  diffwhat == 'onlyrec':
-#            for xyz in range(3):
-#                matbool = np.array([0, 0, 0])
-#                matbool[xyz] = 1
-#                Xsrc_h = Xsrc + ploumo * matbool * h
-#                __, __, Dt = raytrace_seek(Xsrc_h, Xrec, Z, C, 1, 89,verbose=False) # nargout=3
-#                dXsrc[xyz] = (ploumo * np.sum(Dt) - ploumo * Ttrue) / h
-#                Dt = np.array([])
-#        # Pour les coordonnées de la balise fond (gaffe au 'not' qui change tout)
-#        if not  diffwhat == 'onlysrc':
-#            for xyz in range(3):
-#                matbool = np.array([0, 0, 0])
-#                matbool[xyz] = 1
-#                Xrec_h = Xrec + ploumo * matbool * h
-#                __, __, Dt = raytrace_seek(Xsrc, Xrec_h, Z, C, 1, 89,verbose=False) # nargout=3
-#                dXrec[xyz] = (ploumo * np.sum(Dt) - ploumo * Ttrue) / h
-#                Dt = np.array([])
-#    else:
-#        raise Exception("verifier argument diffmode")
-#
-#    return dXsrc, dXrec
-#
-#
-#def raytrace_diff_light_old1(Xsrc, Xrec, Z, C, h=0):
-#    """version classique avec derviation avant arrière"""
-#    dX = np.empty(shape=(3), dtype='float64')
-#
-#    Xsrc = np.array(Xsrc)
-#    Xrec = np.array(Xrec)
-#
-#    if h == 0:
-#        epsil_h = True
-#        h_xyz = Xrec * np.sqrt(np.finfo(float).eps)
-#    else:
-#        epsil_h = False
-#
-#    for xyz in range(3):
-#        matbool = np.array([0, 0, 0])
-#        matbool[xyz] = 1
-#        if epsil_h:
-#            h = h_xyz[xyz]
-#        Xrec_h = Xrec + matbool * h
-#        __, __, Dt_plus = raytrace_seek(Xsrc, Xrec_h, Z, C, 1, 89,verbose=False)
-#        Xrec_h = Xrec - matbool * h
-#        __, __, Dt_moins = raytrace_seek(Xsrc, Xrec_h, Z, C, 1, 89,verbose=False)
-#        dX[xyz] = (np.sum(Dt_plus) - np.sum(Dt_moins)) / (2*h)
-#    return dX
 
 
 def get_accur_coeff(i):
@@ -1671,39 +1392,6 @@ def get_accur_coeff(i):
         return accur_coeff_mat[-1]
     else:
         return accur_coeff_mat[i]
-
-
-#def raytrace_diff_light_old2(Xsrc, Xrec, Z, C, h=0 , accur = 0):
-#    """ Version avec une imporved derivation """
-#    dX = np.empty(shape=(3), dtype='float64')
-#
-#    Xsrc = np.array(Xsrc)
-#    Xrec = np.array(Xrec)
-#
-#    if h == 0:
-#        epsil_h = True
-#        h_xyz = Xrec * np.sqrt(np.finfo(float).eps)
-#    else:
-#        epsil_h = False
-#
-#    accur_coeff = get_accur_coeff(accur)
-#
-#    for xyz in range(3):
-#        matbool = np.array([0, 0, 0])
-#        matbool[xyz] = 1
-#        if epsil_h:
-#            h = h_xyz[xyz]
-#        T_stk = []
-#        for i,k in enumerate(accur_coeff):
-#            if k == 0:
-#                T_stk.append(0.)
-#            else:
-#                Xrec_h = Xrec + matbool  * h * (i-4)
-#                __ , __ , Dt = raytrace_seek(Xsrc, Xrec_h, Z, C, 1, 89,verbose=False)
-#                T = np.sum(Dt)
-#                T_stk.append(T)
-#        dX[xyz] = np.dot(np.array(T_stk) , accur_coeff) / h
-#    return dX
 
 
 def raytrace_diff_light(Xsrc, Xrec, Z, C, h=0 , accur = 0 , Xrefbary = []):
@@ -1771,8 +1459,6 @@ def raytrace_diff_light(Xsrc, Xrec, Z, C, h=0 , accur = 0 , Xrefbary = []):
     else:
         return dX_stk
 
-
-
 def raytrace_diff2_wrapper(xsrc,ysrc,zsrc,xrec,yrec,zec,Z,C):
     Xsrc = np.array([xsrc,ysrc,zsrc])
     Xrec = np.array([xrec,yrec,zec])
@@ -1797,7 +1483,7 @@ def rt_SD_wrap_rootfind(theta_and_t,Xrec,zsrc,Zinp , Cinp):
     theta,t = theta_and_t
     r0 = np.sqrt(Xrec[0]**2 + Xrec[1]**2)
     z0 = Xrec[2]
-    r1,z1,t1 = rt.raytrace_SnellDesc_frontend(Zinp, Cinp , zsrc , z0 , t, \
+    r1,z1,t1 = rt.raytrace_SD1_frontend(Zinp, Cinp , zsrc , z0 , t, \
                                            theta,tcut = 0.1,plotflag = False, \
                                            cumsum = False)
 
@@ -2206,3 +1892,320 @@ def fit_dbl_exp_SSP(Z,C,dz=1,zup=None,zdown=None):
 #            print "Sur que la fonction func ne renvoit qu'un seul output ???"
 #
 #    return out
+
+
+
+#def find_dZ_for_fabrik_ping_OLD(Z,C,Angle_list,XYZ_bato,zpxp,procs=4,
+#                            with_out_path_length=False,temporal_ZC=False):
+#    """
+#    Dz_lis : une cumsum
+#    S_lis  : le path par couche
+#    """
+#    if not with_out_path_length:
+#        print 'in find_dZ_for_fabrik_ping, not with_out_path_length mode'
+#        args_lis = []
+#        pool = mp.Pool(processes=procs)
+#        if not temporal_ZC:
+#            for a,zbato in zip(Angle_list,XYZ_bato):
+#                args_lis.append((Z,C,a,zpxp,True))
+#        else:
+#            for Zt , Ct , a , zbato in zip(Z , C , Angle_list , XYZ_bato):
+#                args_lis.append((Zt,Ct,a,zpxp,True))
+#
+#        results = [pool.apply(raytrace_SD1_frontend,args=x) for x in args_lis]
+#        Dz_lis = [e[1] for e in results]
+#        pool.close()
+#        return Dz_lis
+#    else:
+#        print 'in find_dZ_for_fabrik_ping, with_out_path_length mode'
+#        args_lis = []
+#        pool = mp.Pool(processes=procs)
+#        #for a,zbato in zip(Angle_list,XYZ_bato):
+#        #   args_lis.append((Z,C,a,zpxp,True,True))
+#
+#        if not temporal_ZC:
+#            for a,zbato in zip(Angle_list,XYZ_bato):
+#                args_lis.append((Z,C,a,zpxp,True,True))
+#        else:
+#            for Zt , Ct , a , zbato in zip(Z , C , Angle_list , XYZ_bato):
+#                args_lis.append((Zt,Ct,a,zpxp,True,True))
+#
+#        results = [pool.apply(raytrace_SD1_frontend,args=x) for x in args_lis]
+#        Dz_lis  = [e[1] for e in results]
+#        S_lis   = [np.diff(e[3]) for e in results]
+#        pool.close()
+#        return Dz_lis , S_lis
+    
+
+
+#def raytrace_seek(Xsrc, Xrec, Z, C, thetaminin=0, thetamaxin=88,
+#                  verbose=True,fulloutput=True):
+#    """RAYTRACE_SEEK Recherche le rayon acoustique qui relie le bateau et la
+#     balise dans un SSP particulier, par la methode de la sécante, puis par dicotomie
+#     ICI theta est INCONNU, si theta fixé : raytrace_SnellDesc
+#     ENTREE :
+#     Xsrc : La position du Bateau (vecteur 1x3 OU 3x1)
+#     Xrec : La position du récepteur (vecteur 1x3 OU 3x1)
+#     Z et C : le SSP
+#     thetamin et thetamax : angles de "balayage" en degrés (IL N'EST PAS
+#     RECOMMANDÉ UN THETAMAX > 88)
+#     => ne sont utilisé que dans la 2nde partie, "dicotomie de la seconde chance"
+#     SORTIE :
+#     theta : angle d'emission du rayon acoustique
+#     si fulloutput == True
+#     Dx et Dt : distance horizontale et temps de parcours du rayon dans les
+#     differentes couches du SSP
+#     si fulloutput == False
+#     X = cumsum(Dx) & T = cumsum(Dt)
+#
+#     Retourne:
+#     Theta , x , t
+#
+#     Plus exactement :
+#     if fulloutput:
+#         return theta, Dx, Dt
+#     else:
+#        return theta , np.sum(Dx) , np.sum(Dt)
+#    """
+#
+#    # assurons nous que l'on bosse avec des arrays
+#    Z = np.array(Z)
+#    C = np.array(C)
+#
+#    tic = time.time()
+#
+#    theta_geom = angle_geometrik(Xrec, Xsrc)
+#    # empiriquement theta vrai ~ thetageo +ou- (+ !!!) 10 de thetageom
+#    # delta = theta_geom * 0.1 # c'est absolument débile ce truc si on est proche de 0 !!! (150510)
+#    delta = 15
+#    thmin = theta_geom - delta
+#    thmax = theta_geom + delta
+#    # On maintient malgré tout les bornes en input comme les bornes opé
+#    if thmin < thetaminin:
+#        thmin = thetaminin
+#    if thmax > thetamaxin:
+#        thmax = thetamaxin
+#    # Une clause pour les effets de bord
+#    if thetaminin < 5:
+#        thmin = thetaminin
+#
+#
+#    if verbose:
+#        print 'thmin & thmax operational :',thmin,thmax
+#
+#    nisec = 0
+#    nidico = 0
+#    kritersec , kriterdico = np.nan , np.nan
+#
+#    theta, Dx, Dt, nisec, kritersec = \
+#    raytrace_seek_secante(Xsrc, Xrec, Z, C,thmin, thmax, 'secante', verbose=verbose) # nargout=3
+#
+#    snd_chance = False
+#    if np.isnan(theta):
+#        snd_chance = True
+#
+#    if snd_chance:
+#        print 'seconde chance : recherche par dicotomie'
+#        theta, Dx, Dt, nidico ,kriterdico = \
+#        raytrace_seek_dicotomie(Xsrc, Xrec,Z,C,thetaminin,thetamaxin) # nargout=3
+#
+#    toc = time.time()
+#    toctic = toc - tic
+#    if verbose or snd_chance:
+#        print ("Raytrace Seek : %f s, nb iter. sect./2coto.: %i/%i, stop : %f/%f " \
+#        %(toctic,nisec,nidico,kritersec,kriterdico) )
+#    if fulloutput:
+#        return theta, Dx, Dt
+#    else:
+#        return theta , np.sum(Dx) , np.sum(Dt)
+    
+
+# -*- coding: utf-8 -*-
+# Autogenerated with SMOP version 0.23
+# main.py /home/psakic01/THESE/CodeMk4/fonctions/raytrace/raytrace_diff.m
+
+#def raytrace_diff(Xsrc, Xrec, Z, C, h=0, diffmode = 'centre', diffwhat = 'all'):
+#    """differencie numeriquement la fonction de ray tracing d'un pas h
+#     diffmode =  'prog' , 'retro' ou 'centre' : dérivation "en avant" (+h),
+#     "en arrière" (-h)  ou "centrée( / 2h) "
+#
+#     diffwhat = 'all' , 'onlysrc' , 'onlyrec'
+#
+#     DISCONTINUED FCT, THE LIGHT ONE SHALL BE PREFERED
+#    """
+#    dXsrc = np.empty(shape=(3), dtype='float64')
+#    dXrec = np.empty(shape=(3), dtype='float64')
+#
+#    __, __, Dttrue = raytrace_seek(Xsrc, Xrec, Z, C, 1, 89,verbose=False) # nargout=3
+#    Ttrue = np.sum(Dttrue)
+#
+#    if diffwhat != 'all' and diffwhat != 'onlysrc' and diffwhat != 'onlyrec' :
+#        raise Exception("verifier argument diffwhat")
+#
+#    if diffmode == 'centre':
+#            # Diference centrée
+#            # Pour les coordonnées du bateau (gaffe au 'not' qui change tout)
+#            if not  diffwhat == 'onlyrec':
+#                print diffwhat , 'aaa'
+#                for xyz in range(3):
+#                    matbool = np.array([0, 0, 0])
+#                    matbool[xyz] = 1
+#                    Xsrc_h = Xsrc + matbool * h
+#                    __, __, Dt1 = raytrace_seek(Xsrc_h, Xrec, Z, C, 1, 89,verbose=False) # nargout=3
+#                    Xsrc_h = Xsrc - matbool * h
+#                    __, __, Dt2 = raytrace_seek(Xsrc_h, Xrec, Z, C, 1, 89,verbose=False) # nargout=3
+#                    dXsrc[xyz] = (np.sum(Dt1) - np.sum(Dt2)) / (2*h)
+#                    Dt1 = np.array([])
+#                    Dt2 = np.array([])
+#            # Pour les coordonnées de la balise fond (gaffe au 'not' qui change tout)
+#            if not  diffwhat == 'onlysrc':
+#                print diffwhat , 'bbb'
+#                for xyz in range(3):
+#                    matbool = np.array([0, 0, 0])
+#                    matbool[xyz] = 1
+#                    Xrec_h = Xrec + matbool * h
+#                    __, __, Dt1 = raytrace_seek(Xsrc, Xrec_h, Z, C, 1, 89,verbose=False) # nargout=3
+#                    Xrec_h = Xrec - matbool * h
+#                    __, __, Dt2 = raytrace_seek(Xsrc, Xrec_h, Z, C, 1, 89,verbose=False) # nargout=3
+#                    dXrec[xyz] = (np.sum(Dt1) - np.sum(Dt2)) / (2*h)
+#                    Dt1 = np.array([])
+#                    Dt2 = np.array([])
+#
+#    elif diffmode == 'prog' or diffmode == 'retro' :
+#
+#        if diffmode == 'prog' :
+#            ploumo = 1 # ploumo = plus ou moins
+#        elif diffmode == 'retro' :
+#            ploumo = -1
+#        else:
+#            raise Exception("verifier argument diffmode")
+#
+#        # Difference en avant
+#        # Pour les coordonnées du bateau (gaffe au 'not' qui change tout)
+#        if not  diffwhat == 'onlyrec':
+#            for xyz in range(3):
+#                matbool = np.array([0, 0, 0])
+#                matbool[xyz] = 1
+#                Xsrc_h = Xsrc + ploumo * matbool * h
+#                __, __, Dt = raytrace_seek(Xsrc_h, Xrec, Z, C, 1, 89,verbose=False) # nargout=3
+#                dXsrc[xyz] = (ploumo * np.sum(Dt) - ploumo * Ttrue) / h
+#                Dt = np.array([])
+#        # Pour les coordonnées de la balise fond (gaffe au 'not' qui change tout)
+#        if not  diffwhat == 'onlysrc':
+#            for xyz in range(3):
+#                matbool = np.array([0, 0, 0])
+#                matbool[xyz] = 1
+#                Xrec_h = Xrec + ploumo * matbool * h
+#                __, __, Dt = raytrace_seek(Xsrc, Xrec_h, Z, C, 1, 89,verbose=False) # nargout=3
+#                dXrec[xyz] = (ploumo * np.sum(Dt) - ploumo * Ttrue) / h
+#                Dt = np.array([])
+#    else:
+#        raise Exception("verifier argument diffmode")
+#
+#    return dXsrc, dXrec
+#
+#
+#def raytrace_diff_light_old1(Xsrc, Xrec, Z, C, h=0):
+#    """version classique avec derviation avant arrière"""
+#    dX = np.empty(shape=(3), dtype='float64')
+#
+#    Xsrc = np.array(Xsrc)
+#    Xrec = np.array(Xrec)
+#
+#    if h == 0:
+#        epsil_h = True
+#        h_xyz = Xrec * np.sqrt(np.finfo(float).eps)
+#    else:
+#        epsil_h = False
+#
+#    for xyz in range(3):
+#        matbool = np.array([0, 0, 0])
+#        matbool[xyz] = 1
+#        if epsil_h:
+#            h = h_xyz[xyz]
+#        Xrec_h = Xrec + matbool * h
+#        __, __, Dt_plus = raytrace_seek(Xsrc, Xrec_h, Z, C, 1, 89,verbose=False)
+#        Xrec_h = Xrec - matbool * h
+#        __, __, Dt_moins = raytrace_seek(Xsrc, Xrec_h, Z, C, 1, 89,verbose=False)
+#        dX[xyz] = (np.sum(Dt_plus) - np.sum(Dt_moins)) / (2*h)
+#    return dX
+    
+
+#def time_spend_in_layer_zones_OLD(zones_bound,Dz_in,Dt_in,severe=True):
+#    """
+#    Input :
+#        zones bound : a list of bounds 0 and 99999 (max depth) are added if not
+#
+#        Dz : the CUMULATIVE depth of a ping
+#
+#        Dt : the time spend in each layer (not cumulative),
+#        can also be the path length
+#    Return :
+#        t_zones_sum : the time spend in each zone
+#        propor_lis  : the proportion
+#    """
+#
+#    sumT = np.sum(Dt_in)
+#
+#    t_zones_lis_lis = []
+#    for i in range(len(zones_bound)-1):
+#        t_zones_lis_lis.append([])
+#        for dz,dt in zip(Dz_in,Dt_in):
+#            if zones_bound[i] <= dz <  zones_bound[i+1]:
+#                t_zones_lis_lis[i].append(dt)
+#
+#    t_zones_sum = []
+#    for tzl in t_zones_lis_lis:
+#        sumtzl = np.sum(tzl)
+#        if sumtzl != 0:
+#            t_zones_sum.append( sumtzl )
+#
+#    try:
+#        propor_lis = list(np.array(t_zones_sum) / sumT)
+#    except Exception as exep:
+#        print exep
+#        print "ERR : time_spend_in_layer_zones : list(np.array(t_zones_sum) / sumT)"
+#        print np.array(t_zones_sum) , sumT , Dt_in
+#
+#    if np.abs(np.sum(t_zones_sum) - sumT) > 10**-9:
+#        print "WARN : np.sum(t_zones_sum) != np.sum(Dt_in) !!!"
+#        print "np.abs(np.sum(t_zones_sum) - sumT) = "
+#        print np.abs(np.sum(t_zones_sum) - sumT)
+#        if severe:
+#            print "severe mode : return t_zones_sum , sumT"
+#            return t_zones_sum , sumT
+#
+#    return np.array(t_zones_sum) , np.array(propor_lis)
+
+
+#def raytrace_diff_light_old2(Xsrc, Xrec, Z, C, h=0 , accur = 0):
+#    """ Version avec une imporved derivation """
+#    dX = np.empty(shape=(3), dtype='float64')
+#
+#    Xsrc = np.array(Xsrc)
+#    Xrec = np.array(Xrec)
+#
+#    if h == 0:
+#        epsil_h = True
+#        h_xyz = Xrec * np.sqrt(np.finfo(float).eps)
+#    else:
+#        epsil_h = False
+#
+#    accur_coeff = get_accur_coeff(accur)
+#
+#    for xyz in range(3):
+#        matbool = np.array([0, 0, 0])
+#        matbool[xyz] = 1
+#        if epsil_h:
+#            h = h_xyz[xyz]
+#        T_stk = []
+#        for i,k in enumerate(accur_coeff):
+#            if k == 0:
+#                T_stk.append(0.)
+#            else:
+#                Xrec_h = Xrec + matbool  * h * (i-4)
+#                __ , __ , Dt = raytrace_seek(Xsrc, Xrec_h, Z, C, 1, 89,verbose=False)
+#                T = np.sum(Dt)
+#                T_stk.append(T)
+#        dX[xyz] = np.dot(np.array(T_stk) , accur_coeff) / h
+#    return dX

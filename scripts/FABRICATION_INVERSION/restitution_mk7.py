@@ -66,6 +66,7 @@ import SSP as ssp
 
 
 
+
 ##### ================= set the path of the config file here =================
 configfile_path = '/home/psakicki/THESE/CODES/CodePython/acoustyx_toolbox_2/config_files/GEODESEA.cfg'
 configfile_path = '/home/psakicki/THESE/CODES/CodePython/acoustyx_toolbox_2/config_files/CANOPUS.cfg'
@@ -74,12 +75,15 @@ configfile_path = '/home/psakicki/THESE/CODES/CodePython/acoustyx_toolbox_2/conf
 configfile_path = '/home/psakicki/THESE/CODES/CodePython/acoustyx_toolbox_2/config_files/Simulation_1709A_WithorWithoutLateralGradient.cfg'
 configfile_path = '/home/adminuser/Documents/CODES/acoustyx_toolbox_2/config_files/Detection15mai_CANOPUS_1505_RealCampaign_exemple.cfg'
 
-
-configfile_path = '/home/adminuser/Documents/CODES/acoustyx_toolbox_2/config_files/Detection15mai_CANOPUS_1505_RealCampaign_exemple.cfg'
-
 configfile_path = '/home/psakicki/CODES/acoustyx_toolbox_2_py3/config_files/Detection15mai_CANOPUS_1505_RealCampaign_exemple.cfg'
 
+configfile_path = '/home/psakicki/CODES/acoustyx_toolbox_2_py3/config_files/PAMELI_BREST_wrong_lever_arm_5cm.cfg'
+configfile_path = '/home/psakicki/CODES/acoustyx_toolbox_2_py3/config_files/PAMELI_BREST.cfg'
+
+configfile_path = '/home/psakicki/CODES/acoustyx_toolbox_2_py3/config_files/PAMELI_BREST_wrong_lever_arm.cfg'
 ###############################################################################
+
+
 ############# SETING GENERIC VALUES to avoid editor errors
 multiexp_mode , batch_mode    = 0 , 0
 purge_prelim_mode , purge_mode = 0 , 0
@@ -99,7 +103,7 @@ sigma_defo_bl  = 42
 nbproc = 0
 iitermax = 0
 cleaning_coef = 0
-dX_sum_stop = 0
+dX_sum_stop  = 0
 time_window_mode = ''
 with_time_window = 0
 start,end = [] , []
@@ -197,7 +201,6 @@ bool_kw_lis = list(variable_dict.keys())
                 
 booldic_lis = geok.kwargs_for_jacobian(no_variable_dict,
                                        variable_dict)
-
 
 ########### SIGMA READING ###########
 # reading of the config file Dic, sigmas section,
@@ -404,6 +407,9 @@ for exp , booldic , sigmadic , startend in  iterlist:
 
         PXP_lis     = []
         PXPapri_lis = []
+        
+        PXPapri0_lis = []
+
         fuv = 1
 
         expdic = collections.OrderedDict()
@@ -484,9 +490,11 @@ for exp , booldic , sigmadic , startend in  iterlist:
         err_z = R_z.randn(1) * sigma_z_apri
         i_pxp_master = 0
 
-        for ipxp,Mpxp in bigdico[MNOPfile].items():
+        for ipxp,Mpxp in sorted(bigdico[MNOPfile].items()):
+            
             Mdata = Mpxp['d']
             Mcomm = Mpxp['c']
+            
             if MNOPfile == 'P':
                 Mtab    = Mpxp['t']  
                 
@@ -560,6 +568,9 @@ for exp , booldic , sigmadic , startend in  iterlist:
                     PXPapri_mono = PXP + R_pxp_apri.randn(3) * sigma_pxp_apri
 
             PXPapri_lis.append(PXPapri_mono)
+            
+            PXPapri0_lis.append(PXPapri_mono)
+
             
         if with_mono_z:
             for i,pxp in enumerate(PXPapri_lis):
@@ -1214,12 +1225,12 @@ for exp , booldic , sigmadic , startend in  iterlist:
                 sigmas = np.sqrt(np.diag(Ninv) * fuv)
                 sigmas2 = np.sqrt(np.diag(Ninv) *100000000000)
 
+            if with_barycenter:
                 if not with_mono_z:        
                     sigmas = sigmas[:-3]
                 else:
                     sigmas = sigmas[:-2] 
-            
-            
+                    
             iterdic['varcovar'] = Ninv
             iterdic['V']        = V
             iterdic['B_ASM']    = B_ASM
@@ -1234,6 +1245,8 @@ for exp , booldic , sigmadic , startend in  iterlist:
                 print('2nd row = results for PXP1')
                 print('3rd row = results for PXP2')
                 print('etc ...')
+                print('Thus: New PXP Coords = Apri PXP Coords + dXbary (1st row) + dX_PXP')
+                
             else:
                 print('1st row = results for PXP1')
                 print('2nd row = results for PXP2')
@@ -1246,14 +1259,18 @@ for exp , booldic , sigmadic , startend in  iterlist:
 
             else:
                 sigmas_reshape = np.reshape(sigmas,(nPXP,3))
-                dX_reshape     = np.reshape(dX,(nPXP + 1,3))
+                dX_reshape     = np.reshape(dX,(nPXP,3))
 
                 
             acls.print_n_dicwrit('f.u.v.' , fuv , iterdic , 1)
             acls.print_n_dicwrit('f.u.v. before inversion' , oldfuv , iterdic , 1)
             acls.print_n_dicwrit('coords. apriori' , np.array(PXPapri_lis_old) ,
                                  iterdic )
-            
+
+            acls.print_n_dicwrit('barycenter apriori (raw calc)' , 
+                                 acls.barycenter_calc(np.array(PXPapri_lis_old)),            
+                                 iterdic )
+
             acls.print_n_dicwrit('dX' , dX_reshape , iterdic )
             acls.print_n_dicwrit('sum dX' , np.sum(dX) , iterdic , 1)
             acls.print_n_dicwrit('sum abs dX' , np.sum(np.abs(dX)) , iterdic , 1)
@@ -1442,6 +1459,10 @@ for exp , booldic , sigmadic , startend in  iterlist:
                 plt.subplots_adjust(left=0.2, right=0.9, top=0.9, bottom=0.2)
     
                 fig , AXES = plt.subplots(len(idPXP_lis),1)
+                
+                if not genefun.is_iterable(AXES):
+                    AXES = [AXES]
+                
                 fig.set_size_inches(8.27,11.69)
                 
                 smartV_stk = []
