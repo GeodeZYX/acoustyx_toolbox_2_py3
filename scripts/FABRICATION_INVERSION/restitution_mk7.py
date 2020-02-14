@@ -76,11 +76,10 @@ configfile_path = '/home/psakicki/THESE/CODES/CodePython/acoustyx_toolbox_2/conf
 configfile_path = '/home/adminuser/Documents/CODES/acoustyx_toolbox_2/config_files/Detection15mai_CANOPUS_1505_RealCampaign_exemple.cfg'
 
 configfile_path = '/home/psakicki/CODES/acoustyx_toolbox_2_py3/config_files/Detection15mai_CANOPUS_1505_RealCampaign_exemple.cfg'
-
 configfile_path = '/home/psakicki/CODES/acoustyx_toolbox_2_py3/config_files/PAMELI_BREST_wrong_lever_arm_5cm.cfg'
+configfile_path = '/home/psakicki/CODES/acoustyx_toolbox_2_py3/config_files/PAMELI_BREST_wrong_lever_arm.cfg'
 configfile_path = '/home/psakicki/CODES/acoustyx_toolbox_2_py3/config_files/PAMELI_BREST.cfg'
 
-configfile_path = '/home/psakicki/CODES/acoustyx_toolbox_2_py3/config_files/PAMELI_BREST_wrong_lever_arm.cfg'
 ###############################################################################
 
 
@@ -443,7 +442,7 @@ for exp , booldic , sigmadic , startend in  iterlist:
         else:
             Z = bigdico['Z']['d']
             C = bigdico['C']['d'] 
-       
+                                
         if with_alternat_ssp:
             alternat_SSP = np.loadtxt(alternat_ssp_path)
             Z = alternat_SSP[:,0]
@@ -452,7 +451,20 @@ for exp , booldic , sigmadic , startend in  iterlist:
         if with_munk_ssp:
             print('INFO : with_munk_ssp ON, you will use a Munk profile')
             Z,C = ssp.munk(6000,10)
+            
+            #C = np.ones(len(Z)) * 1550. + np.random.randn(len(Z)) * 10.
+            #raise Exception
+            
+            # some  non significative random behavior to avoid error 
+        RS = np.random.RandomState(seed=42)
+        C = C + RS.randn(len(C)) * 10**-4  *0.
+        print("C mean",np.mean(C))
+        
+        Z2, C2 = ssp.SSP_extrapolate(Z, C, 80, 1)
 
+        
+        
+            
         if with_decimate_ssp:
             print("decimating SSP")
             Zfull , Cfull = Z , C

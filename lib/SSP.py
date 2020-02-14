@@ -23,6 +23,63 @@ import bisect
 
 sys.dont_write_bytecode = True
 
+
+def SSP_cut_2020(Z,C,zmax):
+    """
+    Simplified version of SSP cut
+    """
+    
+    if np.all(Z < zmax):
+        print("ERR: SSP_cut_2020: Z < zmax")
+    
+    ### get the z abouve zmax
+    I_above_zmax = np.stack(np.squeeze(np.argwhere(Z <= zmax)))
+    imax = np.max(I_above_zmax)    
+    
+    ### Case when the zmax is in Z
+    if np.isclose(Z[imax],zmax): 
+        Zout = Z[:imax+1]
+        Cout = C[:imax+1]
+    ### General case, we interpolate
+    else:
+        Zout = np.append(Z,zmax)
+        g = (C[imax+1] - C[imax]) / (Z[imax+1] - Z[imax])
+        c_zmax = g * (zmax - Z[imax]) + C[imax] 
+        Cout = np.append(C,c_zmax)   
+        
+    return Zout , Cout
+
+def SSP_remove_duplicate_DataFrame(Zinp,Cinp):
+    """
+    Remove duplicates in a SSP
+    if duplicate C, gradient null => error
+    """
+    DF = pd.DataFrame(np.column_stack((Zinp,Cinp)))
+    
+    Bool = DF.duplicated(subset=1,keep='first')
+    Bool = np.logical_not(Bool)
+    
+    Zout,Cout = Zinp[Bool],Cinp[Bool]
+    
+    return Zout,Cout
+
+
+def SSP_remove_duplicate(Zinp,Cinp):
+    """
+    Remove duplicates in a SSP
+    if duplicate C, gradient null => error
+    """
+    
+    _ , I = np.unique(Cinp,return_index=True)
+    
+    I = np.sort(I)
+    
+    Zout = Zinp[I]    
+    Cout = Cinp[I]
+    
+    return Zout,Cout
+
+
 def SSP_cut(Zinp, Cinp, zmax):    
 
     """"coupe" un SSP au niveau d'une valeur maxi de z
@@ -99,6 +156,10 @@ def SSP_cut_old(Z, C, zmax):
 def SSP_extrapolate(Zinp, Cinp, zend, zpas):
     """SSP_extrapolate extrapole un SSP
     """
+    
+    if np.abs(Zinp[-1] - zend) < zpas: #### when the zpas is bigger than the requested zend 
+        zpas = np.floor(np.abs(Zinp[-1] - zend) * 0.5)
+        
     Zbis = np.arange(np.max(Zinp), zend, zpas)
         
     s = interp.UnivariateSpline(Zinp, Cinp, s=1)
@@ -110,7 +171,7 @@ def SSP_extrapolate(Zinp, Cinp, zend, zpas):
     
     Zout = np.hstack((Zinp[:-1], Zbis))
     Cout = np.hstack((Cinp[:-1], Cbis))
-
+    
     return Zout, Cout
 
 def SSP_extrapolate_linear(Zinp, Cinp, zend, zpas , zutil):

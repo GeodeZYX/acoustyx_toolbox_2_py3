@@ -32,6 +32,88 @@ def munk(zmax,pas=1):
     return z , munk_fct(z)
 
 
+def raytrace_SnellDesc_2020(Zinp,Cinp,theta0,zmax=None,return_cumsum=True,
+                            degrees=True):
+    """
+    Parameters
+    ----------
+    Zinp : array
+        SSP Depths.
+    Cinp : array
+        SSP Celerities.
+    theta0 : float
+        emission angle.
+    zmax : TYPE, optional
+        DESCRIPTION. The default is None.
+    return_cumsum : bool, optional
+        output are the cumulated sum. The default is True.
+    degrees : bool, optional
+        degree or radians for theta0. The default is True.
+
+    Returns
+    -------
+    t,r,s
+        Propagation Time, Radial Distance, Path Length.
+
+    Note
+    ----
+    See Pierre Sakic, Valérie Ballu, Wayne C. Crawford & Guy Wöppelmann (2018) 
+    Acoustic Ray Tracing Comparisons in the Context of Geodetic Precise 
+    off-shore Positioning Experiments, 
+    Marine Geodesy, 41:4, 315-330, DOI: 10.1080/01490419.2018.1438322
+    """
+    if degrees:
+        theta0 = np.deg2rad(theta0)
+    
+    Z = Zinp.copy()
+    C = Cinp.copy()
+    
+
+    #### extrapolate SSP if necessary
+    if zmax and zmax > np.max(Z):
+        #Z, C = SSP_extrapolate(Z, C, zmax + 10., 1)
+        Z = np.append(Z,6000)
+        C = np.append(C,C[-1]+0.001)
+                
+    #### Cut the SSP if necessary
+    if zmax and not np.isclose(zmax,np.max(Z)):
+        Z, C = SSP_cut_2020(Z, C, zmax)    
+        
+    #### remove duplicate in C => if not gradent null => error
+    if len(np.unique(C)) != len(C):
+        Z,C = SSP_remove_duplicate(Z,C)
+            
+    k = np.cos(theta0)/C[0]
+    
+    # define the Gradient
+    G = np.diff(C) / np.diff(Z)
+    
+    # Get C vectors
+    Cip1 = C[1:]
+    Ci   = C[:-1]
+    
+    ## define quotients
+    Q1 = Cip1 / Ci
+    
+    Q2a = 1 + np.sqrt(1 - k**2 * Ci**2) 
+    Q2b = 1 + np.sqrt(1 - k**2 * Cip1**2) 
+    Q2  = Q2a / Q2b
+    
+    # define the output in each layers
+    Dt = (1/G)*np.log(Q1 * Q2)
+    Dr = ((k*G)**-1)*(np.sqrt(1-k**2 * Ci**2) - np.sqrt(1-k**2 * Cip1**2))
+    Ds = (1/k*G) * (np.arccos(k*Ci) - np.arccos(k*Cip1))
+    
+    if return_cumsum:
+        t = np.sum(Dt)
+        r = np.sum(Dr)
+        s = np.sum(Ds)
+        
+        return t,r,s,Z[-1]
+    else:
+        return Dt,Dr,Ds,Z
+
+
 def raytrace_ultimate(xo,zo,theta0,tt,zz,cc):
 
     """
@@ -348,8 +430,6 @@ def raytrace_ultimate(xo,zo,theta0,tt,zz,cc):
 
     return x , z , t , d , ttt_corr
 
-
-
 def raytrace_SnellDesc(Zinp, Cinp, theta, zmax, mode='light',severe=True):
     """
      Penser à utiliser raytrace_SD1_frontend en priorité
@@ -419,7 +499,12 @@ def raytrace_SnellDesc(Zinp, Cinp, theta, zmax, mode='light',severe=True):
             print('ERR : raytrace_SnellDesc : something very weird is happening', end=' ')
             print('     Z, C & zmax are printed below', end=' ')
             print(Z , C , zmax)
-
+            
+            
+    ### Remove duplicates
+    #if len(np.unique(C)) != len(C):
+    #    Z,C = SSP_remove_duplicate(Z,C)
+        
     # 1) recherche du gradient b de chaque couche => interpolation linéaire
     n = max(Z.shape)
     m = max(Z.shape) - 1
@@ -716,6 +801,12 @@ def raytrace_SD1_frontend( Zinp , Cinp , theta , zmax , cumsum = False ,
         return np.cumsum(Dx) , Z , np.cumsum(Dt)
     elif not cumsum and not out_path_length:
         return np.sum(Dx) , Z[-1] , np.sum(Dt)
+    
+
+    
+def raytrace_SD1_frontend_2020(Zinp , Cinp , theta , zmax):
+    t,r,s,z = raytrace_SnellDesc_2020(Zinp , Cinp , theta , zmax)
+    return r,z,t
 
 def raytrace_SD3_frontend(Zinp , Cinp , zstart , zmax , tmax , theta ,
                                 tcut = 0.1 , plotflag = False , cumsum = False):
@@ -824,7 +915,7 @@ def plot_raytrace(Dz, Dx, Dt,Round):
     return x , -z
 
 
-def raytrace_seek_mono(Xsrc, Xrec, Z, C, thetaminin=0, thetamaxin=88,
+def raytrace_seek_mono_old_style(Xsrc, Xrec, Z, C, thetaminin=0, thetamaxin=88,
                   verbose=True,fulloutput=True,severe=False):
     """
     RAYTRACE_SEEK Recherche le rayon acoustique qui relie le bateau et la
@@ -861,6 +952,11 @@ def raytrace_seek_mono(Xsrc, Xrec, Z, C, thetaminin=0, thetamaxin=88,
                  return theta, Dx, Dt
              else:
                 return theta , np.sum(Dx) , np.sum(Dt)
+                
+                
+    NB: we discontinue this function in 2020 01
+        too complicated
+        replaced with a simpler scipy optimize based fct
     """
 
 
@@ -924,9 +1020,68 @@ def raytrace_seek_mono(Xsrc, Xrec, Z, C, thetaminin=0, thetamaxin=88,
         return theta, Dx, Dt
     else:
         return theta , np.sum(Dx) , np.sum(Dt)
+    
+    
+    
+def raytrace_seek_opti_root_mono(Xemi,Xrec,Z,C,theta=45,
+                                 tol=10**-6,method='hybr',
+                                 verbose=False,
+                                 raytracefct = raytrace_SD1_frontend):
+    """
+    raytracefct = raytrace_SD1_frontend or raytrace_SD1_frontend_2020 
+
+    """
+    
+    ############################### WRAPPER ###################################
+    def rt_SD1_wrap_rootfind(theta,Xemi,Xrec,Zinp,Cinp):
+        """
+        this is the wrapper for scipy.optimize.root
+        
+        Shall be used like this exemple :
+        outtup = scipy.optimize.root(rt_SD1_wrap_rootfind,theta,args=(Xemi,Xrec,Z,C),
+                                     tol=10**-6,method='hybr')
+        """
+        
+        if theta > 85:
+            theta = 85
+        if theta < 1:
+            theta = 1
+        
+        #Xemi[2] = np.abs(Xemi[2])
+        #Xrec[2] = np.abs(Xrec[2])
+        
+        r0 = np.sqrt((Xrec[0] - Xemi[0])**2 + (Xrec[1] - Xemi[1])**2)
+        z0 = Xrec[2]
+            
+        r1,z1,t1  = raytracefct(Zinp,Cinp,theta,z0)
+    
+        #### The criteria is the distance between the apriori rec point and the 
+        #### estimated one
+        criteria = np.linalg.norm(np.array([r0,z0]) - np.array([r1,z1]))
+        
+        if verbose:
+            print('rt_SD1_wrap_rootfind:',criteria,r1,z1,t1)
+        
+        return criteria
+    ############################### WRAPPER ###################################
+    
+    ### find the optimal theta
+    outtup1 = scipy.optimize.root(rt_SD1_wrap_rootfind,
+                                  theta,args=(Xemi,Xrec,Z,C),
+                                  tol=tol,method=method)
+    
+    ### rerun the direct raytrace to get the values
+    theta = outtup1.x[0]
+    dx,zmax_out,t = raytracefct(Z,C,theta,Xrec[2])
+        
+    return theta,dx,t
+
+
+
+
 
 def raytrace_seek(Xsrc_inp,Xrec, Z, C, thetaminin=0, thetamaxin=88,
-                  verbose=True,fulloutput=True,severe=False):
+                  verbose=True,fulloutput=True,severe=False,legacy=False):
     """
     RAYTRACE_SEEK Recherche le rayon acoustique qui relie le bateau et la
     balise dans un SSP particulier, par la methode de la sécante, puis par dicotomie
@@ -950,6 +1105,8 @@ def raytrace_seek(Xsrc_inp,Xrec, Z, C, thetaminin=0, thetamaxin=88,
          thetamin et thetamax : angles de "balayage" en degrés (IL N'EST PAS
          RECOMMANDÉ UN THETAMAX > 88)
          => ne sont utilisé que dans la 2nde partie, "dicotomie de la seconde chance"
+         
+         legacy : if False now works with an scipy.optimize fct (Janv 2020)
 
      SORTIE :
          theta : angle d'emission du rayon acoustique
@@ -970,10 +1127,25 @@ def raytrace_seek(Xsrc_inp,Xrec, Z, C, thetaminin=0, thetamaxin=88,
     """
     if type(Xsrc_inp) is tuple and len(Xsrc_inp) == 2:
         #print 'INFO : mode forward/backward'
-        theta1, Dx1, Dt1 = raytrace_seek_mono(Xsrc_inp[0], Xrec, Z, C, thetaminin=0, thetamaxin=88,
-                  verbose=verbose,fulloutput=fulloutput,severe=severe)
-        theta2, Dx2, Dt2 = raytrace_seek_mono(Xsrc_inp[1], Xrec, Z, C, thetaminin=0, thetamaxin=88,
-                  verbose=verbose,fulloutput=fulloutput,severe=severe)
+        if legacy:
+            theta1, Dx1, Dt1 = raytrace_seek_mono_old_style(Xsrc_inp[0], Xrec,
+                                                            Z, C, 
+                                                            thetaminin=0,
+                                                            thetamaxin=88,
+                                                            verbose=verbose,
+                                                            fulloutput=fulloutput,
+                                                            severe=severe)
+            
+            theta2, Dx2, Dt2 = raytrace_seek_mono_old_style(Xsrc_inp[1], Xrec, 
+                                                            Z, C,
+                                                            thetaminin=0,
+                                                            thetamaxin=88,
+                                                            verbose=verbose,
+                                                            fulloutput=fulloutput,
+                                                            severe=severe)
+        else:
+            theta1, Dx1, Dt1 = raytrace_seek_opti_root_mono(Xsrc_inp[0], Xrec, Z, C)
+            theta2, Dx2, Dt2 = raytrace_seek_opti_root_mono(Xsrc_inp[1], Xrec, Z, C)            
         try:
             return (theta1,theta2) , Dx1 + Dx2 , Dt1 + Dt2
         except:
@@ -984,8 +1156,15 @@ def raytrace_seek(Xsrc_inp,Xrec, Z, C, thetaminin=0, thetamaxin=88,
             return (theta1,theta2) , Dx1 , Dx2 , Dt1 , Dt2 , Xsrc_inp[0] , Xsrc_inp[1]
 
     else:
-        return raytrace_seek_mono(Xsrc_inp, Xrec, Z, C, thetaminin=0, thetamaxin=88,
-                  verbose=verbose,fulloutput=fulloutput,severe=severe)
+        if legacy:
+            return raytrace_seek_mono_old_style(Xsrc_inp, Xrec, Z, C,
+                                                thetaminin=0, thetamaxin=88,
+                                                verbose=verbose,
+                                                fulloutput=fulloutput,
+                                                severe=severe)
+        else:
+            return raytrace_seek_opti_root_mono(Xsrc_inp, Xrec, Z, C)            
+
 
 def raytrace_seek_bilin_input(Xsrc, Xrec, g1, g2, cs, zb,
                               thtmin=0, thtmax=88,
@@ -1474,20 +1653,25 @@ def raytrace_diff2(Xsrc,Xrec,Z,C,h=1e-6):
         out.append(partial_derivative(raytrace_diff2_wrapper,i,arguments,dx=h))
     return out
 
-def rt_SD_wrap_rootfind(theta_and_t,Xrec,zsrc,Zinp , Cinp):
+def rt_SD3_wrap_rootfind(theta_and_t,Xrec,zsrc,Zinp , Cinp):
     """
     Shall be used like this exemple :
-    outtup = scipy.optimize.root(rt_SD_wrap_rootfind , theta_and_t , args=(Xrec,zsrc,Z,C),tol=10**-1,method='hybr')
+    outtup = scipy.optimize.root(rt_SD3_wrap_rootfind , theta_and_t , args=(Xrec,zsrc,Z,C),tol=10**-1,method='hybr')
+    
+    202001: this implementation is weak
     """
 
     theta,t = theta_and_t
     r0 = np.sqrt(Xrec[0]**2 + Xrec[1]**2)
     z0 = Xrec[2]
-    r1,z1,t1 = rt.raytrace_SD1_frontend(Zinp, Cinp , zsrc , z0 , t, \
+    r1,z1,t1 = rt.raytrace_SD3_frontend(Zinp, Cinp , zsrc , z0 , t, \
                                            theta,tcut = 0.1,plotflag = False, \
                                            cumsum = False)
 
-    return np.array([r0,z0]) - np.array([r1,z1])
+
+    criteria = np.linalg.norm(np.array([r0,z0]) - np.array([r1,z1]))
+    
+    return criteria,criteria
 
 
 def circle_center(x1,y1,x2,y2,R):
