@@ -1,4 +1,4 @@
-# acoustyx_toolbox_2_py3
+# AcoustYX Toolbox v2
 
 This toolbox for GNSS/Acoustics inversion is provided under the GNU General Public License.
 
