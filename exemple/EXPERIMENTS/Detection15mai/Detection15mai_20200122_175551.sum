@@ -1,0 +1,559 @@
+********** Nb PXPs                                  **********
+Detection15mai_20200122_175550.exp 3
+Detection15mai_20200119_213141.exp 3
+Detection15mai_20200119_211950.exp 3
+Detection15mai_20171109_201829.exp 3
+Detection15mai_20170727_123039.exp 3
+********** Nb iter.                                 **********
+Detection15mai_20200122_175550.exp 3
+Detection15mai_20200119_213141.exp 3
+Detection15mai_20200119_211950.exp 3
+Detection15mai_20171109_201829.exp 3
+Detection15mai_20170727_123039.exp 4
+********** Nb pings                                 **********
+Detection15mai_20200122_175550.exp 8896
+Detection15mai_20200119_213141.exp 8896
+Detection15mai_20200119_211950.exp 8896
+Detection15mai_20171109_201829.exp 7619
+Detection15mai_20170727_123039.exp 7619
+********** Size Jacob.                              **********
+Detection15mai_20200122_175550.exp (2661, 12)
+Detection15mai_20200119_213141.exp (2661, 12)
+Detection15mai_20200119_211950.exp (2661, 12)
+Detection15mai_20171109_201829.exp (2693, 12)
+Detection15mai_20170727_123039.exp (27354, 12)
+********** Size Resid.                              **********
+Detection15mai_20200122_175550.exp (2661,)
+Detection15mai_20200119_213141.exp (2661,)
+Detection15mai_20200119_211950.exp (2661,)
+Detection15mai_20171109_201829.exp (2693,)
+Detection15mai_20170727_123039.exp (27354,)
+********** barycentrer dXs in LSQ                   **********
+Detection15mai_20200122_175550.exp [1.89478063e-14 0.00000000e+00 2.36847579e-15]
+Detection15mai_20200119_213141.exp [1.89478063e-14 0.00000000e+00 2.36847579e-15]
+Detection15mai_20200119_211950.exp [1.89478063e-14 0.00000000e+00 2.36847579e-15]
+Detection15mai_20171109_201829.exp [ 0.00000000e+00  7.57912251e-14 -4.73695157e-15]
+Detection15mai_20170727_123039.exp [ 0.00000000e+00  0.00000000e+00 -4.73695157e-15]
+********** barycentrer estimated in LSQ             **********
+Detection15mai_20200122_175550.exp [ 172.96781721  -89.1984257  1290.91204504]
+Detection15mai_20200119_213141.exp [ 172.96781721  -89.1984257  1290.91204504]
+Detection15mai_20200119_211950.exp [ 172.96781721  -89.1984257  1290.91204504]
+Detection15mai_20171109_201829.exp [ 173.35709027  -87.46094773 1291.72384865]
+Detection15mai_20170727_123039.exp [ 173.14784803  -87.07400035 1291.45555697]
+********** baselines of current iteration apriori coordinates ('Mod') **********
+Detection15mai_20200122_175550.exp [1033.11195601 1529.62914763 1071.48192544]
+Detection15mai_20200119_213141.exp [1033.11195601 1529.62914763 1071.48192544]
+Detection15mai_20200119_211950.exp [1033.11195601 1529.62914763 1071.48192544]
+Detection15mai_20171109_201829.exp [1071.55665654 1528.66947515 1033.34633518]
+Detection15mai_20170727_123039.exp [1071.91155162 1530.45305413 1034.6701135 ]
+********** baselines of first apriori coordinates ('Mod') **********
+Detection15mai_20200122_175550.exp [1034.0674912  1528.3230118  1072.25414265]
+Detection15mai_20200119_213141.exp [1034.0674912  1528.3230118  1072.25414265]
+Detection15mai_20200119_211950.exp [1034.0674912  1528.3230118  1072.25414265]
+Detection15mai_20171109_201829.exp [1072.25414265 1528.3230118  1034.0674912 ]
+Detection15mai_20170727_123039.exp [1072.25414265 1528.3230118  1034.0674912 ]
+********** batch_mode                               **********
+Detection15mai_20200122_175550.exp True
+Detection15mai_20200119_213141.exp True
+Detection15mai_20200119_211950.exp True
+Detection15mai_20171109_201829.exp True
+Detection15mai_20170727_123039.exp True
+Detection15mai_20170920_230711.exp True
+Detection15mai_20170920_225749.exp True
+********** coords. apriori                          **********
+Detection15mai_20200122_175550.exp [[ -57.96432391  666.1912646  1207.3524209 ]
+ [ 653.62054949  -75.28888677 1313.06177112]
+ [ -78.81277216 -856.30496402 1353.42057391]]
+Detection15mai_20200119_213141.exp [[ -57.96432391  666.1912646  1207.3524209 ]
+ [ 653.62054949  -75.28888677 1313.06177112]
+ [ -78.81277216 -856.30496402 1353.42057391]]
+Detection15mai_20200119_211950.exp [[ -57.96432391  666.1912646  1207.3524209 ]
+ [ 653.62054949  -75.28888677 1313.06177112]
+ [ -78.81277216 -856.30496402 1353.42057391]]
+Detection15mai_20171109_201829.exp [[ -78.52265706 -854.18939397 1355.24550249]
+ [ 655.03359192  -74.22253967 1313.0482993 ]
+ [ -57.0035349   667.16787211 1207.46404023]]
+Detection15mai_20170727_123039.exp [[ -78.24600933 -854.87082973 1354.84624623]
+ [ 655.16505878  -74.26195181 1312.9850543 ]
+ [ -57.51872033  668.25777589 1206.73756613]]
+********** critera/critera old                      **********
+Detection15mai_20200122_175550.exp [6.359014941236571, 7.784556691345102]
+Detection15mai_20200119_213141.exp [6.359014941236571, 7.784556691345102]
+Detection15mai_20200119_211950.exp [6.359014941236571, 7.784556691345102]
+Detection15mai_20171109_201829.exp [3.8167778959472334, 4.358556308409899]
+Detection15mai_20170727_123039.exp [0.9900453837443921, 2.2768049451894252]
+********** dX                                       **********
+Detection15mai_20200122_175550.exp [[ 0.68666607 -0.73089697 -0.36621027]
+ [-0.68689244  0.73097593  0.36588128]
+ [-0.09274117  0.29776666  0.11336334]
+ [ 0.77963361 -1.02874258 -0.47924462]]
+Detection15mai_20200119_213141.exp [[ 0.68666607 -0.73089697 -0.36621027]
+ [-0.68689244  0.73097593  0.36588128]
+ [-0.09274117  0.29776666  0.11336334]
+ [ 0.77963361 -1.02874258 -0.47924462]]
+Detection15mai_20200119_211950.exp [[ 0.68666607 -0.73089697 -0.36621027]
+ [-0.68689244  0.73097593  0.36588128]
+ [-0.09274117  0.29776666  0.11336334]
+ [ 0.77963361 -1.02874258 -0.47924462]]
+Detection15mai_20171109_201829.exp [[ 0.18795695 -0.37959388 -0.19543202]
+ [ 0.37710627 -0.75959606 -0.39019519]
+ [-0.18776321  0.37975866  0.19534351]
+ [-0.18934306  0.37983739  0.19485167]]
+Detection15mai_20170727_123039.exp [[ 0.01440499 -0.11566513 -0.06739859]
+ [ 0.03082879 -0.230147   -0.13531255]
+ [-0.01575619  0.11440854  0.0680507 ]
+ [-0.0150726   0.11573846  0.06726185]]
+********** duration                                 **********
+Detection15mai_20200122_175550.exp 0:04:23.078724
+Detection15mai_20200119_213141.exp 0:04:48.395536
+Detection15mai_20200119_211950.exp 0:04:07.012239
+Detection15mai_20171109_201829.exp 0:07:24.551228
+Detection15mai_20170727_123039.exp 0:35:00.216959
+********** end                                      **********
+Detection15mai_20200122_175550.exp 2020-01-22 17:55:50.691657
+Detection15mai_20200119_213141.exp 2020-01-19 21:31:41.046548
+Detection15mai_20200119_211950.exp 2020-01-19 21:19:50.247608
+Detection15mai_20171109_201829.exp 2017-11-09 20:18:29.878391
+Detection15mai_20170727_123039.exp 2017-07-27 12:30:39.157970
+********** f.u.v.                                   **********
+Detection15mai_20200122_175550.exp 5.3258701826467283e+17
+Detection15mai_20200119_213141.exp 5.3258701826467283e+17
+Detection15mai_20200119_211950.exp 5.3258701826467283e+17
+Detection15mai_20171109_201829.exp 1.0039624943933155e+18
+Detection15mai_20170727_123039.exp 7.09645509268813e+23
+********** f.u.v. before inversion                  **********
+Detection15mai_20200122_175550.exp 826916711201.1757
+Detection15mai_20200119_213141.exp 826916711201.1757
+Detection15mai_20200119_211950.exp 826916711201.1757
+Detection15mai_20171109_201829.exp 1186652114790.496
+Detection15mai_20170727_123039.exp 8.85990186816397e+17
+********** force_mode                               **********
+Detection15mai_20200122_175550.exp False
+Detection15mai_20200119_213141.exp False
+Detection15mai_20200119_211950.exp False
+Detection15mai_20171109_201829.exp False
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_230711.exp False
+Detection15mai_20170920_225749.exp False
+********** jackknife inverted                       **********
+Detection15mai_20200122_175550.exp 0
+Detection15mai_20200119_213141.exp 0
+Detection15mai_20200119_211950.exp 0
+Detection15mai_20171109_201829.exp 0
+Detection15mai_20170920_230711.exp 0
+Detection15mai_20170920_225749.exp 0
+********** jackknife random seed                    **********
+Detection15mai_20200122_175550.exp 1452
+Detection15mai_20200119_213141.exp 1452
+Detection15mai_20200119_211950.exp 1452
+Detection15mai_20171109_201829.exp 1452
+Detection15mai_20170920_230711.exp 1452
+Detection15mai_20170920_225749.exp 1452
+********** keep_ratio                               **********
+Detection15mai_20200122_175550.exp 0.1
+Detection15mai_20200119_213141.exp 0.1
+Detection15mai_20200119_211950.exp 0.1
+Detection15mai_20171109_201829.exp 0.1
+Detection15mai_20170920_230711.exp 0.1
+Detection15mai_20170920_225749.exp 0.1
+********** name                                     **********
+Detection15mai_20200122_175550.exp Detection15mai
+Detection15mai_20200119_213141.exp Detection15mai
+Detection15mai_20200119_211950.exp Detection15mai
+Detection15mai_20171109_201829.exp Detection15mai
+Detection15mai_20170727_123039.exp Detection15mai
+Detection15mai_20170920_230711.exp Detection15mai
+Detection15mai_20170920_225749.exp Detection15mai
+********** new baselines after inversion            **********
+Detection15mai_20200122_175550.exp [1033.80633649 1531.28102544 1071.83146617]
+Detection15mai_20200119_213141.exp [1033.80633649 1531.28102544 1071.83146617]
+Detection15mai_20200119_211950.exp [1033.80633649 1531.28102544 1071.83146617]
+Detection15mai_20171109_201829.exp [1071.9770533  1529.73919322 1033.34753052]
+Detection15mai_20170727_123039.exp [1072.12270988 1530.77707745 1034.67067805]
+********** new coords.                              **********
+Detection15mai_20200122_175550.exp [[ -57.96455028  666.19134356 1207.35209191]
+ [ 654.21447439  -75.72201709 1312.8089242 ]
+ [ -77.34647248 -858.06460357 1352.57511902]]
+Detection15mai_20200119_213141.exp [[ -57.96455028  666.19134356 1207.35209191]
+ [ 654.21447439  -75.72201709 1312.8089242 ]
+ [ -77.34647248 -858.06460357 1352.57511902]]
+Detection15mai_20200119_211950.exp [[ -57.96455028  666.19134356 1207.35209191]
+ [ 654.21447439  -75.72201709 1312.8089242 ]
+ [ -77.34647248 -858.06460357 1352.57511902]]
+Detection15mai_20171109_201829.exp [[ -77.95759383 -855.32858391 1354.65987528]
+ [ 655.03378566  -74.22237489 1313.04821079]
+ [ -57.00492101  667.16811562 1207.46345988]]
+Detection15mai_20170727_123039.exp [[ -78.20077554 -855.21664186 1354.6435351 ]
+ [ 655.16370758  -74.2632084  1312.98570641]
+ [ -57.51938794  668.25784922 1206.73742939]]
+********** noise  Z                                 **********
+Detection15mai_20200122_175550.exp 1e-12
+Detection15mai_20200119_213141.exp 1e-12
+Detection15mai_20200119_211950.exp 1e-12
+Detection15mai_20171109_201829.exp 1e-12
+Detection15mai_20170727_123039.exp 1e-12
+Detection15mai_20170920_230711.exp 1e-12
+Detection15mai_20170920_225749.exp 1e-12
+********** noise BL                                 **********
+Detection15mai_20200122_175550.exp 1e-12
+Detection15mai_20200119_213141.exp 1e-12
+Detection15mai_20200119_211950.exp 1e-12
+Detection15mai_20171109_201829.exp 1e-12
+Detection15mai_20170727_123039.exp 1e-12
+Detection15mai_20170920_230711.exp 1e-12
+Detection15mai_20170920_225749.exp 1e-12
+********** noise PXP apriori                        **********
+Detection15mai_20200122_175550.exp 1e-12
+Detection15mai_20200119_213141.exp 1e-12
+Detection15mai_20200119_211950.exp 1e-12
+Detection15mai_20171109_201829.exp 1e-12
+Detection15mai_20170727_123039.exp 1e-12
+Detection15mai_20170920_230711.exp 1e-12
+Detection15mai_20170920_225749.exp 1e-12
+********** noise dZ                                 **********
+Detection15mai_20200122_175550.exp 1e-12
+Detection15mai_20200119_213141.exp 1e-12
+Detection15mai_20200119_211950.exp 1e-12
+Detection15mai_20171109_201829.exp 1e-12
+Detection15mai_20170727_123039.exp 1e-12
+Detection15mai_20170920_230711.exp 1e-12
+Detection15mai_20170920_225749.exp 1e-12
+********** path                                     **********
+Detection15mai_20200122_175550.exp /home/psakicki/CODES/acoustyx_toolbox_2_py3/exemple/EXPERIMENTS/Detection15mai
+Detection15mai_20200119_213141.exp /home/psakicki/CODES/acoustyx_toolbox_2_py3/exemple/EXPERIMENTS/Detection15mai
+Detection15mai_20200119_211950.exp /home/psakicki/CODES/acoustyx_toolbox_2_py3/exemple/EXPERIMENTS/Detection15mai
+Detection15mai_20171109_201829.exp /home/adminuser/Documents/CODES/acoustyx_toolbox_2/exemple/EXPERIMENTS/Detection15mai
+Detection15mai_20170727_123039.exp /home/psakicki/THESE/CODES/CodePython/acoustyx_toolbox_2/exemple/EXPERIMENTS/Detection15mai
+Detection15mai_20170920_230711.exp /home/adminuser/Documents/CODES/acoustyx_toolbox_2/exemple/EXPERIMENTS/Detection15mai
+Detection15mai_20170920_225749.exp /home/adminuser/Documents/CODES/acoustyx_toolbox_2/exemple/EXPERIMENTS/Detection15mai
+********** plateform                                **********
+Detection15mai_20200122_175550.exp TPX1-GFZ
+Detection15mai_20200119_213141.exp TPX1-GFZ
+Detection15mai_20200119_211950.exp TPX1-GFZ
+Detection15mai_20171109_201829.exp psakicki-MS-16Y1
+Detection15mai_20170727_123039.exp VirBox5HPHP
+Detection15mai_20170920_230711.exp psakicki-MS-16Y1
+Detection15mai_20170920_225749.exp psakicki-MS-16Y1
+********** raw barycentrer : Sum Xpxp / Npxp        **********
+Detection15mai_20200122_175550.exp [ 172.96781721  -89.1984257  1290.91204504]
+Detection15mai_20200119_213141.exp [ 172.96781721  -89.1984257  1290.91204504]
+Detection15mai_20200119_211950.exp [ 172.96781721  -89.1984257  1290.91204504]
+Detection15mai_20171109_201829.exp [ 173.35709027  -87.46094773 1291.72384865]
+Detection15mai_20170727_123039.exp [ 173.14784803  -87.07400035 1291.45555697]
+********** seed noise BL                            **********
+Detection15mai_20200122_175550.exp 0
+Detection15mai_20200119_213141.exp 0
+Detection15mai_20200119_211950.exp 0
+Detection15mai_20171109_201829.exp 0
+Detection15mai_20170727_123039.exp 0
+Detection15mai_20170920_230711.exp 0
+Detection15mai_20170920_225749.exp 0
+********** seed noise PXP apriori                   **********
+Detection15mai_20200122_175550.exp 10
+Detection15mai_20200119_213141.exp 10
+Detection15mai_20200119_211950.exp 10
+Detection15mai_20171109_201829.exp 10
+Detection15mai_20170727_123039.exp 10
+Detection15mai_20170920_230711.exp 10
+Detection15mai_20170920_225749.exp 10
+********** seed noise Z                             **********
+Detection15mai_20200122_175550.exp 0
+Detection15mai_20200119_213141.exp 0
+Detection15mai_20200119_211950.exp 0
+Detection15mai_20171109_201829.exp 0
+Detection15mai_20170727_123039.exp 0
+Detection15mai_20170920_230711.exp 0
+Detection15mai_20170920_225749.exp 0
+********** seed noise dZ                            **********
+Detection15mai_20200122_175550.exp 0
+Detection15mai_20200119_213141.exp 0
+Detection15mai_20200119_211950.exp 0
+Detection15mai_20171109_201829.exp 0
+Detection15mai_20170727_123039.exp 0
+Detection15mai_20170920_230711.exp 0
+Detection15mai_20170920_225749.exp 0
+********** sigmas                                   **********
+Detection15mai_20200122_175550.exp [[0.30513569 0.24696219 0.13969198]
+ [0.43410218 0.34900152 0.21232562]
+ [0.36039105 0.30367569 0.16017884]
+ [0.49018658 0.39272033 0.21531361]]
+Detection15mai_20200119_213141.exp [[0.30513569 0.24696219 0.13969198]
+ [0.43410218 0.34900152 0.21232562]
+ [0.36039105 0.30367569 0.16017884]
+ [0.49018658 0.39272033 0.21531361]]
+Detection15mai_20200119_211950.exp [[0.30513569 0.24696219 0.13969198]
+ [0.43410218 0.34900152 0.21232562]
+ [0.36039105 0.30367569 0.16017884]
+ [0.49018658 0.39272033 0.21531361]]
+Detection15mai_20171109_201829.exp [[0.30206324 0.26376631 0.15304337]
+ [0.54046392 0.41085548 0.23059058]
+ [0.39556495 0.31238145 0.17188454]
+ [0.48279218 0.38317906 0.23910299]]
+Detection15mai_20170727_123039.exp [[0.10419864 0.08643241 0.04830886]
+ [0.1682498  0.14039302 0.07593201]
+ [0.11943442 0.10225967 0.05384505]
+ [0.15016492 0.1209041  0.07310497]]
+********** start                                    **********
+Detection15mai_20200122_175550.exp 2020-01-22 17:51:27.612933
+Detection15mai_20200119_213141.exp 2020-01-19 21:26:52.651012
+Detection15mai_20200119_211950.exp 2020-01-19 21:15:43.235369
+Detection15mai_20171109_201829.exp 2017-11-09 20:11:05.327163
+Detection15mai_20170920_230711.exp 2017-09-20 23:02:18.104461
+Detection15mai_20170920_225749.exp 2017-09-20 22:54:54.165942
+********** sum abs dX                               **********
+Detection15mai_20200122_175550.exp 6.359014941236571
+Detection15mai_20200119_213141.exp 6.359014941236571
+Detection15mai_20200119_211950.exp 6.359014941236571
+Detection15mai_20171109_201829.exp 3.8167778959472334
+Detection15mai_20170727_123039.exp 0.9900453837443921
+********** sum dX                                   **********
+Detection15mai_20200122_175550.exp -0.4104411648146866
+Detection15mai_20200119_213141.exp -0.4104411648146866
+Detection15mai_20200119_211950.exp -0.4104411648146866
+Detection15mai_20171109_201829.exp -0.38706895264869534
+Detection15mai_20170727_123039.exp -0.16865872622932288
+********** var. params of the exp.                  **********
+Detection15mai_20200122_175550.exp {'with_barycenter': 1, 'with_bl': 0, 'with_cleaning': 1, 'with_v_4_p_reinject': 0, 'with_mono_z': 0, 'with_zmaster': 0, 'with_dzcst': 0, 'with_noising_apriori': 0, 'with_time_window': 0, 'with_specific_timwin_bool': 0, 'with_jackknife': 1, 'with_invert_jk': 0, 'with_fb_mode': 1, 'with_old_style': 0, 'with_backward_select': 0, 'with_ssp_bilin': 0, 'with_decimate_ssp': 1, 'with_alternat_ssp': 0, 'with_smart_ssp': 0, 'with_munk_ssp': 1}
+Detection15mai_20200119_213141.exp {'with_barycenter': 1, 'with_bl': 0, 'with_cleaning': 1, 'with_v_4_p_reinject': 0, 'with_mono_z': 0, 'with_zmaster': 0, 'with_dzcst': 0, 'with_noising_apriori': 0, 'with_time_window': 0, 'with_specific_timwin_bool': 0, 'with_jackknife': 1, 'with_invert_jk': 0, 'with_fb_mode': 1, 'with_old_style': 0, 'with_backward_select': 0, 'with_ssp_bilin': 0, 'with_decimate_ssp': 1, 'with_alternat_ssp': 0, 'with_smart_ssp': 0, 'with_munk_ssp': 1}
+Detection15mai_20200119_211950.exp {'with_barycenter': 1, 'with_bl': 0, 'with_cleaning': 1, 'with_v_4_p_reinject': 0, 'with_mono_z': 0, 'with_zmaster': 0, 'with_dzcst': 0, 'with_noising_apriori': 0, 'with_time_window': 0, 'with_specific_timwin_bool': 0, 'with_jackknife': 1, 'with_invert_jk': 0, 'with_fb_mode': 1, 'with_old_style': 0, 'with_backward_select': 0, 'with_ssp_bilin': 0, 'with_decimate_ssp': 1, 'with_alternat_ssp': 0, 'with_smart_ssp': 0, 'with_munk_ssp': 1}
+Detection15mai_20171109_201829.exp {'with_smart_ssp': 0, 'with_ssp_bilin': 0, 'with_invert_jk': 0, 'with_munk_ssp': 1, 'with_time_window': 0, 'with_mono_z': 0, 'with_zmaster': 0, 'with_barycenter': 1, 'with_cleaning': 1, 'with_bl': 0, 'with_jackknife': 1, 'with_specific_timwin_bool': 0, 'with_noising_apriori': 0, 'with_fb_mode': 1, 'with_backward_select': 0, 'with_v_4_p_reinject': 0, 'with_decimate_ssp': 1, 'with_alternat_ssp': 0, 'with_old_style': 0, 'with_dzcst': 0}
+Detection15mai_20170727_123039.exp {'with_smart_ssp': 0, 'with_ssp_bilin': 0, 'with_invert_jk': 0, 'with_munk_ssp': 1, 'with_time_window': 0, 'with_mono_z': 0, 'with_zmaster': 0, 'with_barycenter': 1, 'with_cleaning': 1, 'with_bl': 0, 'with_jackknife': 0, 'with_specific_timwin_bool': 0, 'with_noising_apriori': 0, 'with_fb_mode': 1, 'with_backward_select': 0, 'with_v_4_p_reinject': 0, 'with_decimate_ssp': 1, 'with_alternat_ssp': 0, 'with_old_style': 0, 'with_dzcst': 0}
+Detection15mai_20170920_230711.exp {'with_smart_ssp': 0, 'with_ssp_bilin': 0, 'with_invert_jk': 0, 'with_munk_ssp': 1, 'with_time_window': 0, 'with_mono_z': 0, 'with_zmaster': 0, 'with_barycenter': 1, 'with_cleaning': 1, 'with_bl': 0, 'with_jackknife': 1, 'with_specific_timwin_bool': 0, 'with_noising_apriori': 0, 'with_fb_mode': 1, 'with_backward_select': 0, 'with_v_4_p_reinject': 0, 'with_decimate_ssp': 1, 'with_alternat_ssp': 0, 'with_old_style': 0, 'with_dzcst': 0}
+Detection15mai_20170920_225749.exp {'with_smart_ssp': 0, 'with_ssp_bilin': 0, 'with_invert_jk': 0, 'with_munk_ssp': 1, 'with_time_window': 0, 'with_mono_z': 0, 'with_zmaster': 0, 'with_barycenter': 1, 'with_cleaning': 1, 'with_bl': 0, 'with_jackknife': 1, 'with_specific_timwin_bool': 0, 'with_noising_apriori': 0, 'with_fb_mode': 1, 'with_backward_select': 0, 'with_v_4_p_reinject': 0, 'with_decimate_ssp': 1, 'with_alternat_ssp': 0, 'with_old_style': 0, 'with_dzcst': 0}
+********** variables params                         **********
+Detection15mai_20200122_175550.exp []
+Detection15mai_20200119_213141.exp []
+Detection15mai_20200119_211950.exp []
+Detection15mai_20171109_201829.exp []
+Detection15mai_20170727_123039.exp []
+Detection15mai_20170920_230711.exp []
+Detection15mai_20170920_225749.exp []
+********** version numpy                            **********
+Detection15mai_20200122_175550.exp 1.16.4
+Detection15mai_20200119_213141.exp 1.16.4
+Detection15mai_20200119_211950.exp 1.16.4
+Detection15mai_20171109_201829.exp 1.13.3
+Detection15mai_20170727_123039.exp 1.13.0
+Detection15mai_20170920_230711.exp 1.12.1
+Detection15mai_20170920_225749.exp 1.12.1
+********** version python                           **********
+Detection15mai_20200122_175550.exp 3.6.9 (default, Nov  7 2019, 10:44:02) 
+[GCC 8.3.0]
+Detection15mai_20200119_213141.exp 3.6.9 (default, Nov  7 2019, 10:44:02) 
+[GCC 8.3.0]
+Detection15mai_20200119_211950.exp 3.6.9 (default, Nov  7 2019, 10:44:02) 
+[GCC 8.3.0]
+Detection15mai_20171109_201829.exp 2.7.14 (default, Sep 23 2017, 22:06:14) 
+[GCC 7.2.0]
+Detection15mai_20170727_123039.exp 2.7.13 (default, Jan 19 2017, 14:48:08) 
+[GCC 6.3.0 20170118]
+Detection15mai_20170920_230711.exp 2.7.13 (default, Jan 19 2017, 14:48:08) 
+[GCC 6.3.0 20170118]
+Detection15mai_20170920_225749.exp 2.7.13 (default, Jan 19 2017, 14:48:08) 
+[GCC 6.3.0 20170118]
+********** version scipy                            **********
+Detection15mai_20200122_175550.exp 1.4.1
+Detection15mai_20200119_213141.exp 1.4.1
+Detection15mai_20200119_211950.exp 1.4.1
+Detection15mai_20171109_201829.exp 1.0.0
+Detection15mai_20170727_123039.exp 0.19.1
+Detection15mai_20170920_230711.exp 0.18.1
+Detection15mai_20170920_225749.exp 0.18.1
+********** weight ASM                               **********
+Detection15mai_20200122_175550.exp 1e-06
+Detection15mai_20200119_213141.exp 1e-06
+Detection15mai_20200119_211950.exp 1e-06
+Detection15mai_20171109_201829.exp 1e-06
+Detection15mai_20170727_123039.exp 1e-06
+Detection15mai_20170920_230711.exp 1e-06
+Detection15mai_20170920_225749.exp 1e-06
+********** weight BL                                **********
+Detection15mai_20200122_175550.exp 1e-06
+Detection15mai_20200119_213141.exp 1e-06
+Detection15mai_20200119_211950.exp 1e-06
+Detection15mai_20171109_201829.exp 1e-06
+Detection15mai_20170727_123039.exp 1e-06
+Detection15mai_20170920_230711.exp 1e-06
+Detection15mai_20170920_225749.exp 1e-06
+********** weight dZ                                **********
+Detection15mai_20200122_175550.exp 0.001
+Detection15mai_20200119_213141.exp 0.001
+Detection15mai_20200119_211950.exp 0.001
+Detection15mai_20171109_201829.exp 0.001
+Detection15mai_20170727_123039.exp 0.001
+Detection15mai_20170920_230711.exp 0.001
+Detection15mai_20170920_225749.exp 0.001
+********** with_alternat_ssp                        **********
+Detection15mai_20200122_175550.exp False
+Detection15mai_20200119_213141.exp False
+Detection15mai_20200119_211950.exp False
+Detection15mai_20171109_201829.exp False
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_230711.exp False
+Detection15mai_20170920_225749.exp False
+********** with_backward_select                     **********
+Detection15mai_20200122_175550.exp False
+Detection15mai_20200119_213141.exp False
+Detection15mai_20200119_211950.exp False
+Detection15mai_20171109_201829.exp False
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_230711.exp False
+Detection15mai_20170920_225749.exp False
+********** with_barycenter                          **********
+Detection15mai_20200122_175550.exp True
+Detection15mai_20200119_213141.exp True
+Detection15mai_20200119_211950.exp True
+Detection15mai_20171109_201829.exp True
+Detection15mai_20170727_123039.exp True
+Detection15mai_20170920_230711.exp True
+Detection15mai_20170920_225749.exp True
+********** with_bl                                  **********
+Detection15mai_20200122_175550.exp False
+Detection15mai_20200119_213141.exp False
+Detection15mai_20200119_211950.exp False
+Detection15mai_20171109_201829.exp False
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_230711.exp False
+Detection15mai_20170920_225749.exp False
+********** with_cleaning                            **********
+Detection15mai_20200122_175550.exp True
+Detection15mai_20200119_213141.exp True
+Detection15mai_20200119_211950.exp True
+Detection15mai_20171109_201829.exp True
+Detection15mai_20170727_123039.exp True
+Detection15mai_20170920_230711.exp True
+Detection15mai_20170920_225749.exp True
+********** with_decimate_ssp                        **********
+Detection15mai_20200122_175550.exp True
+Detection15mai_20200119_213141.exp True
+Detection15mai_20200119_211950.exp True
+Detection15mai_20171109_201829.exp True
+Detection15mai_20170727_123039.exp True
+Detection15mai_20170920_230711.exp True
+Detection15mai_20170920_225749.exp True
+********** with_dzcst                               **********
+Detection15mai_20200122_175550.exp False
+Detection15mai_20200119_213141.exp False
+Detection15mai_20200119_211950.exp False
+Detection15mai_20171109_201829.exp False
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_230711.exp False
+Detection15mai_20170920_225749.exp False
+********** with_fb_mode                             **********
+Detection15mai_20200122_175550.exp True
+Detection15mai_20200119_213141.exp True
+Detection15mai_20200119_211950.exp True
+Detection15mai_20171109_201829.exp True
+Detection15mai_20170727_123039.exp True
+Detection15mai_20170920_230711.exp True
+Detection15mai_20170920_225749.exp True
+********** with_invert_jk                           **********
+Detection15mai_20200122_175550.exp False
+Detection15mai_20200119_213141.exp False
+Detection15mai_20200119_211950.exp False
+Detection15mai_20171109_201829.exp False
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_230711.exp False
+Detection15mai_20170920_225749.exp False
+********** with_jackknife                           **********
+Detection15mai_20200122_175550.exp True
+Detection15mai_20200119_213141.exp True
+Detection15mai_20200119_211950.exp True
+Detection15mai_20171109_201829.exp True
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_230711.exp True
+Detection15mai_20170920_225749.exp True
+********** with_mono_z                              **********
+Detection15mai_20200122_175550.exp False
+Detection15mai_20200119_213141.exp False
+Detection15mai_20200119_211950.exp False
+Detection15mai_20171109_201829.exp False
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_230711.exp False
+Detection15mai_20170920_225749.exp False
+********** with_munk_ssp                            **********
+Detection15mai_20200122_175550.exp True
+Detection15mai_20200119_213141.exp True
+Detection15mai_20200119_211950.exp True
+Detection15mai_20171109_201829.exp True
+Detection15mai_20170727_123039.exp True
+Detection15mai_20170920_230711.exp True
+Detection15mai_20170920_225749.exp True
+********** with_noising_apriori                     **********
+Detection15mai_20200122_175550.exp False
+Detection15mai_20200119_213141.exp False
+Detection15mai_20200119_211950.exp False
+Detection15mai_20171109_201829.exp False
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_230711.exp False
+Detection15mai_20170920_225749.exp False
+********** with_old_style                           **********
+Detection15mai_20200122_175550.exp False
+Detection15mai_20200119_213141.exp False
+Detection15mai_20200119_211950.exp False
+Detection15mai_20171109_201829.exp False
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_230711.exp False
+Detection15mai_20170920_225749.exp False
+********** with_print_simu_infos                    **********
+Detection15mai_20200122_175550.exp False
+Detection15mai_20200119_213141.exp False
+Detection15mai_20200119_211950.exp False
+Detection15mai_20171109_201829.exp False
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_230711.exp False
+Detection15mai_20170920_225749.exp False
+********** with_smart_ssp                           **********
+Detection15mai_20200122_175550.exp False
+Detection15mai_20200119_213141.exp False
+Detection15mai_20200119_211950.exp False
+Detection15mai_20171109_201829.exp False
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_230711.exp False
+Detection15mai_20170920_225749.exp False
+********** with_specific_timwin_bool                **********
+Detection15mai_20200122_175550.exp False
+Detection15mai_20200119_213141.exp False
+Detection15mai_20200119_211950.exp False
+Detection15mai_20171109_201829.exp False
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_230711.exp False
+Detection15mai_20170920_225749.exp False
+********** with_ssp_bilin                           **********
+Detection15mai_20200122_175550.exp False
+Detection15mai_20200119_213141.exp False
+Detection15mai_20200119_211950.exp False
+Detection15mai_20171109_201829.exp False
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_230711.exp False
+Detection15mai_20170920_225749.exp False
+********** with_time_window                         **********
+Detection15mai_20200122_175550.exp False
+Detection15mai_20200119_213141.exp False
+Detection15mai_20200119_211950.exp False
+Detection15mai_20171109_201829.exp False
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_230711.exp False
+Detection15mai_20170920_225749.exp False
+********** with_v_4_p_reinject                      **********
+Detection15mai_20200122_175550.exp False
+Detection15mai_20200119_213141.exp False
+Detection15mai_20200119_211950.exp False
+Detection15mai_20171109_201829.exp False
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_230711.exp False
+Detection15mai_20170920_225749.exp False
+********** with_var_lis                             **********
+Detection15mai_20200122_175550.exp True
+Detection15mai_20200119_213141.exp True
+Detection15mai_20200119_211950.exp True
+Detection15mai_20171109_201829.exp True
+Detection15mai_20170727_123039.exp True
+********** with_zmaster                             **********
+Detection15mai_20200122_175550.exp False
+Detection15mai_20200119_213141.exp False
+Detection15mai_20200119_211950.exp False
+Detection15mai_20171109_201829.exp False
+Detection15mai_20170727_123039.exp False
+Detection15mai_20170920_230711.exp False
+Detection15mai_20170920_225749.exp False

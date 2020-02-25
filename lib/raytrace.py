@@ -1026,7 +1026,7 @@ def raytrace_seek_mono_old_style(Xsrc, Xrec, Z, C, thetaminin=0, thetamaxin=88,
 def raytrace_seek_opti_root_mono(Xemi,Xrec,Z,C,theta=45,
                                  tol=10**-6,method='hybr',
                                  verbose=False,
-                                 raytracefct = raytrace_SD1_frontend):
+                                 raytracefct = raytrace_SD1_frontend_2020):
     """
     raytracefct = raytrace_SD1_frontend or raytrace_SD1_frontend_2020 
 
@@ -1081,7 +1081,7 @@ def raytrace_seek_opti_root_mono(Xemi,Xrec,Z,C,theta=45,
 
 
 def raytrace_seek(Xsrc_inp,Xrec, Z, C, thetaminin=0, thetamaxin=88,
-                  verbose=True,fulloutput=True,severe=False,legacy=False):
+                  verbose=True,fulloutput=True,severe=False,legacy=True):
     """
     RAYTRACE_SEEK Recherche le rayon acoustique qui relie le bateau et la
     balise dans un SSP particulier, par la methode de la sécante, puis par dicotomie
