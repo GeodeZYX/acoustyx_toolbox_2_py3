@@ -1852,7 +1852,8 @@ def equiv_wrapper(Zssp,Cssp,Xe,Xr,zref=None,
     return D , Ang , C , T
 
 
-def equiv_get_param(Zssp,Cssp,zref,polydeg = 12):
+def equiv_get_param(Zssp,Cssp,zref,polydeg = 12,
+                    zranging=(-200,200,10)):
     """
     with a SSP and a coord of a emitter and a recepter
     get the D, Ang and the equivalent C & T
@@ -1880,7 +1881,7 @@ def equiv_get_param(Zssp,Cssp,zref,polydeg = 12):
     c_z_stk = []
     z_z_stk = []
 
-    for z in np.arange(-200,200,10):
+    for z in np.arange(*zranging):
         cz = ssp.SSP_mean(Zssp,Cssp,0,zref + z)
         c_z_stk.append(cz)
         z_z_stk.append(z)

@@ -6,12 +6,11 @@ from geodezyx import *                   # Import the GeodeZYX modules
 from geodezyx.externlib import *         # Import the external modules
 from geodezyx.megalib.megalib import *   # Import the legacy modules names
 
-
+import SSP
 
 import numpy as np
 import warnings
 from scipy.io import loadmat,savemat
-from SSP import *
 import time
 import os
 import acouclass as acls
@@ -32,8 +31,8 @@ def munk(zmax,pas=1):
     return z , munk_fct(z)
 
 
-def raytrace_SnellDesc_2020(Zinp,Cinp,theta0,zmax=None,return_cumsum=True,
-                            degrees=True):
+def raytrace_SnellDesc_2020(Zinp,Cinp,theta0,zmax=None,
+                            return_cumsum=True,degrees=True):
     """
     Parameters
     ----------
@@ -71,17 +70,17 @@ def raytrace_SnellDesc_2020(Zinp,Cinp,theta0,zmax=None,return_cumsum=True,
 
     #### extrapolate SSP if necessary
     if zmax and zmax > np.max(Z):
-        #Z, C = SSP_extrapolate(Z, C, zmax + 10., 1)
+        #Z, C = SSP.SSP_extrapolate(Z, C, zmax + 10., 1)
         Z = np.append(Z,6000)
         C = np.append(C,C[-1]+0.001)
                 
     #### Cut the SSP if necessary
     if zmax and not np.isclose(zmax,np.max(Z)):
-        Z, C = SSP_cut_2020(Z, C, zmax)    
+        Z, C = SSP.SSP_cut(Z, C, zmax)    
         
     #### remove duplicate in C => if not gradent null => error
     if len(np.unique(C)) != len(C):
-        Z,C = SSP_remove_duplicate(Z,C)
+        Z,C = SSP.SSP_remove_duplicate(Z,C)
             
     k = np.cos(theta0)/C[0]
     
@@ -483,7 +482,7 @@ def raytrace_SnellDesc(Zinp, Cinp, theta, zmax, mode='light',severe=True):
         else:
             print('WARN : zmax > max(Z) => extrapolation de C')
             print('theta',theta,'zmax',zmax)
-            Z, C = SSP_extrapolate(Zinp, Cinp, zmax, 100) # nargout=2
+            Z, C = SSP.SSP_extrapolate(Zinp, Cinp, zmax, 100) # nargout=2
 
     else:
         Z = Zinp.copy()
@@ -494,16 +493,16 @@ def raytrace_SnellDesc(Zinp, Cinp, theta, zmax, mode='light',severe=True):
         # warnings.warn("ATTENTION : zmax != max(Z) => decoupage de Z et C \
         #\n pensez à le faire en amont ")
         try:
-            Z, C = SSP_cut(Z, C, zmax) # nargout=2
+            Z, C = SSP.SSP_cut(Z, C, zmax) # nargout=2
         except:
-            print('ERR : raytrace_SnellDesc : something very weird is happening', end=' ')
+            print('ERR : raytrace_SnellDesc : crash after SSP.SSP_cut', end=' ')
             print('     Z, C & zmax are printed below', end=' ')
             print(Z , C , zmax)
             
             
     ### Remove duplicates
     #if len(np.unique(C)) != len(C):
-    #    Z,C = SSP_remove_duplicate(Z,C)
+    #    Z,C = SSP.SSP_remove_duplicate(Z,C)
         
     # 1) recherche du gradient b de chaque couche => interpolation linéaire
     n = max(Z.shape)
@@ -620,7 +619,7 @@ def  raytrace_SnellDesc3(Zinp,Cinp,zstart,zmax,tmax,theta,tcut = 0.1,
 
     if zmax > np.max(Zinp):
         warnings.warn('WARN : zmax > max(Z) => extrapolation de C')
-        Z, C = SSP_extrapolate(Zinp, Cinp, zmax, 100) # nargout=2
+        Z, C = SSP.SSP_extrapolate(Zinp, Cinp, zmax, 100) # nargout=2
     else:
         Z = Zinp.copy()
         C = Cinp.copy()
@@ -629,7 +628,7 @@ def  raytrace_SnellDesc3(Zinp,Cinp,zstart,zmax,tmax,theta,tcut = 0.1,
     if zmax != np.max(Z) and zmax != 0:
         # warnings.warn("ATTENTION : zmax != max(Z) => decoupage de Z et C \
         #\n pensez à le faire en amont ")
-        Z, C = SSP_cut(Z, C, zmax) # nargout=2
+        Z, C = SSP.SSP_cut(Z, C, zmax) # nargout=2
     # recherche du gradient b de chaque couche => interpolation linéaire
     n = len(Z)
     m = len(Z) - 1
@@ -1073,8 +1072,8 @@ def raytrace_seek_opti_root_mono(Xemi,Xrec,Z,C,theta=45,
     ### rerun the direct raytrace to get the values
     theta = outtup1.x[0]
     dx,zmax_out,t = raytracefct(Z,C,theta,Xrec[2])
-        
-    return theta,dx,t
+    theta_out = 90. - theta
+    return theta_out,dx,t
 
 
 
@@ -1722,7 +1721,7 @@ def raytrace_SnellDescRK(Zinp, Cinp , zstart , zmax , tmax , theta, tcut = 0.1):
 
     if zmax > np.max(Zinp):
         warnings.warn('ATTENTION : zmax > max(Z) => extrapolation de C')
-        Z, C = SSP_extrapolate(Zinp, Cinp, zmax, 100) # nargout=2
+        Z, C = SSP.SSP_extrapolate(Zinp, Cinp, zmax, 100) # nargout=2
     else:
         Z = Zinp.copy()
         C = Cinp.copy()
@@ -1731,7 +1730,7 @@ def raytrace_SnellDescRK(Zinp, Cinp , zstart , zmax , tmax , theta, tcut = 0.1):
     if zmax != np.max(Z) and zmax != 0:
         # warnings.warn("ATTENTION : zmax != max(Z) => decoupage de Z et C \
         #\n pensez à le faire en amont ")
-        Z, C = SSP_cut(Z, C, zmax) # nargout=2
+        Z, C = SSP.SSP_cut(Z, C, zmax) # nargout=2
     # recherche du gradient b de chaque couche => interpolation linéaire
     n = len(Z)
     m = len(Z) - 1
@@ -1927,7 +1926,7 @@ def fit_dbl_exp_SSP(Z,C,dz=1,zup=None,zdown=None):
 #
 #    if zmax > np.max(Zinp):
 #        warnings.warn('WARN : zmax > max(Z) => extrapolation de C')
-#        Z, C = SSP_extrapolate(Zinp, Cinp, zmax, 100) # nargout=2
+#        Z, C = SSP.SSP_extrapolate(Zinp, Cinp, zmax, 100) # nargout=2
 #
 #    else:
 #        Z = Zinp.copy()
@@ -1937,7 +1936,7 @@ def fit_dbl_exp_SSP(Z,C,dz=1,zup=None,zdown=None):
 #    if zmax != np.max(Z) and zmax != 0:
 #        # warnings.warn("ATTENTION : zmax != max(Z) => decoupage de Z et C \
 #        #\n pensez à le faire en amont ")
-#        Z, C = SSP_cut(Z, C, zmax) # nargout=2
+#        Z, C = SSP.SSP_cut(Z, C, zmax) # nargout=2
 #    # recherche du gradient b de chaque couche => interpolation linéaire
 #    n = len(Z)
 #    m = len(Z) - 1

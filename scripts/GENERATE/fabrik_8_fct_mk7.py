@@ -25,14 +25,20 @@ le BLfile : la matrice de baseline
 @author: psakicki
 """
 
+#### Import star style
+from geodezyx import *                   # Import the GeodeZYX modules
+from geodezyx.externlib import *         # Import the external modules
+from geodezyx.megalib.megalib import *   # Import the legacy modules names
+
+
 import glob
 import acouclass as acls
 import numpy as np
 import raytrace as rt
-from megalib import *
 import matplotlib.pyplot as plt
 import multiprocessing as mp
 import SSP as ssp
+
 
 # ===============================
 #           PARAMETERS
@@ -42,22 +48,22 @@ plateform_toolbox_path = '/home/psakicki/THESE/CODES/CodePython/acoustyx_toolbox
 
 # specific plateform_toolbox_path depending on computer name
 
-if platform.node() == 'calipso':
+if utils.get_computer_name() == 'calipso':
     plateform_toolbox_path = '/home/psakicki/THESE/CODES/CodePython/acoustyx_toolbox_2/'
 
-elif platform.node() == 'psakicki-MS-16Y1':
+elif utils.get_computer_name() == 'psakicki-MS-16Y1':
     plateform_toolbox_path = '/home/psakicki/Documents/CODES/acoustyx_toolbox_2/'
 
-elif platform.node() == 'diamant':
+elif utils.get_computer_name() == 'diamant':
     plateform_toolbox_path = '/home/psakicki/Documents/CODES/acoustyx_toolbox_2/'
 
-elif platform.node() == 'VirBox5HPHP':
+elif utils.get_computer_name() == 'VirBox5HPHP':
     plateform_toolbox_path = '/home/psakicki/THESE/CODES/CodePython/acoustyx_toolbox_2/'
 
-elif platform.node() == 'TPX1-GFZ':
+elif utils.get_computer_name() == 'TPX1-GFZ':
     plateform_toolbox_path = "/home/psakicki/CODES/acoustyx_toolbox_2_py3/"
 
-elif "kg3" in platform.node():
+elif "kg3" in utils.get_computer_name():
     plateform_toolbox_path ="/dsk/ggsp_pf/PLAYGROUND/psakicki/scripts_PS/zyx_TOOLBOXs/acoustyx_toolbox_2_py3"
 
 prm_ssp_file_path = plateform_toolbox_path + '/exemple/input_data_for_simulation/SSP/SSP_NOAA_dep5645_20030608000000'
@@ -77,7 +83,7 @@ gf.create_dir(path_gene)
 
 # ===== exp_prefix : name of the generated experiment
 
-exp_prefix = 'SIMU_EXEMPLE'
+exp_prefix = 'SIMU_SUMMER2020'
 exp_suffix  = ''
 
 # ===== PXP COORDINATES
@@ -170,7 +176,7 @@ prm_offset     = [0.1,0.1,0.1] # offset in ship internal frame, moving with the 
 # **********
 
 # ===== EIKONAL RAYTRACING
-prm_with_ssf           = 1      # Work with Sound Speed Field & Eikonal Raytracing
+prm_with_ssf           = 0      # Work with Sound Speed Field & Eikonal Raytracing
 prm_eiko_h             = 1000   # integration step
 prm_eiko_resotype      = 'rkck' # Eikonal equation resolution method
 prm_bypass_ssf_rec     = 0 # La recherche du eigenray retour étant très longue, on peut la bypasser et prendre la valeur de l'émission
@@ -266,8 +272,9 @@ prm_K_t = 4000
 
 # ====== TRAJECTORY
 prm_traject = 'cross'
-prm_traject = 'droite'
 prm_traject = 'derive'
+prm_traject = 'droite'
+
 
 # ----- DROITE (STRAIGHT)
 # ---- Bloc pour les grilles d'interpo --
@@ -286,7 +293,7 @@ prm_drt_xcenter = 10000 # center of the trajectory (X)
 prm_drt_ycenter = 10000 # center of the trajectory (Y)
 prm_drt_zcenter = 0     # center of the trajectory (Z)
 prm_drt_nb_pass = 3     # number of passes
-prm_drt_nb_obs  = 33    # number of observation PER pass
+prm_drt_nb_obs  = 333   # number of observation PER pass
 prm_drt_angle   = 0     # rotation angle of the trajectories
 
 # ----- CROSS
@@ -308,7 +315,7 @@ prm_drv_x0        = 10000
 prm_drv_y0        = 10000 # start of the point
 prm_drv_xcenter   = 10000
 prm_drv_ycenter   = 10000 # center of the circle
-prm_drv_nb_obs    = 10
+prm_drv_nb_obs    = 1000
 prm_drv_R         = 50 # radius of the circle
 prm_drv_step_size = 10
 prm_drv_K_derive  = 1400 # Mersenne twister for the rando walk
@@ -1359,7 +1366,7 @@ def fabrik_fct(exp_prefix,midfix='',vari_dico=dict()):
 
     return None
 
-if 0:
+if 1:
     print("Si bloqué, verifier que le lancement de la fct n'est pas activé dans le script core")
     outup  = fabrik_fct(exp_prefix)
 

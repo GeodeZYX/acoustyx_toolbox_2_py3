@@ -78,7 +78,10 @@ configfile_path = '/home/adminuser/Documents/CODES/acoustyx_toolbox_2/config_fil
 configfile_path = '/home/psakicki/CODES/acoustyx_toolbox_2_py3/config_files/Detection15mai_CANOPUS_1505_RealCampaign_exemple.cfg'
 configfile_path = '/home/psakicki/CODES/acoustyx_toolbox_2_py3/config_files/PAMELI_BREST_wrong_lever_arm_5cm.cfg'
 configfile_path = '/home/psakicki/CODES/acoustyx_toolbox_2_py3/config_files/PAMELI_BREST_wrong_lever_arm.cfg'
-configfile_path = '/home/psakicki/CODES/acoustyx_toolbox_2_py3/config_files/PAMELI_BREST.cfg'
+configfile_path = '/home/psakicki/CODES/acoustyx_toolbox_2_py3/config_files/PAMELI_BREST/PAMELI_BREST.cfg'
+
+configfile_path = "/home/psakicki/CODES/acoustyx_toolbox_2_py3/config_files/PAMELI_BREST/PAMELI_BREST_1transducer.cfg"
+configfile_path = "/home/psakicki/CODES/acoustyx_toolbox_2_py3/config_files/PAMELI_BREST/PAMELI_BREST_4transducers.cfg"
 
 ###############################################################################
 
@@ -456,7 +459,7 @@ for exp , booldic , sigmadic , startend in  iterlist:
             
             # some  non significative random behavior to avoid error 
         RS = np.random.RandomState(seed=42)
-        C = C + RS.randn(len(C)) * 10**-6  *1. ##### 10 ** -5 seems to be good ....
+        C = C + RS.randn(len(C)) * 10**-5  *1. ##### 10 ** -5 seems to be good ....
     
         print("C mean",np.mean(C))
         
@@ -1166,23 +1169,26 @@ for exp , booldic , sigmadic , startend in  iterlist:
                 PXPapri_lis_old = PXPapri_lis
                 PXPapri_lis     = list(PXPnew.reshape(shape_arr))
 
-#                ObsASM_V , ModASM4_V  = acls.vectorialize_ASM_multi(PXPapri_lis,
-#                                                               ObsASM_lis,
-#                                                               Xbato,Z,C,
-#                                                               nbprocs=nbproc,
-#                                                               dz_cst=dz_cst)
-#                                                               
-#                                                               
-#                Vnaif = ObsASM_V - ModASM4_V
-#                
-#                if with_bl:
-#                    if with_barycenter:
-#                        ObsBL_V,ModBL_V = acls.vectorialize_BL(BL,dPXPapri_lis)
-#                    else:
-#                        ObsBL_V,ModBL_V = acls.vectorialize_BL(BL,PXPapri_lis)
-#                        
-#                    V_BL = ObsBL_V - ModBL_V
-#                    Vnaif = np.concatenate((Vnaif,V_BL))
+
+
+                if True: ######### Vnaif
+                    ObsASM_V , ModASM4_V , _  = acls.vectorialize_ASM_multi(PXPapri_lis,
+                                                                  ObsASM_lis,
+                                                                  Xbato,Z,C,
+                                                                  nbprocs=nbproc,
+                                                                  dz_cst=dz_cst)
+                                                                  
+                                                                  
+                    Vnaif = ObsASM_V - ModASM4_V
+                    
+                    if with_bl:
+                        if with_barycenter:
+                            ObsBL_V,ModBL_V = acls.vectorialize_BL(BL,dPXPapri_lis)
+                        else:
+                            ObsBL_V,ModBL_V = acls.vectorialize_BL(BL,PXPapri_lis)
+                            
+                        Vnaif_BL = ObsBL_V - ModBL_V
+                        Vnaif = np.concatenate((Vnaif,Vnaif_BL))
 
             Vrigour = B - A.dot(dXorig[:A.shape[1]])
             
@@ -1388,7 +1394,7 @@ for exp , booldic , sigmadic , startend in  iterlist:
                 plt.clf()
                 plt.subplots_adjust(left=0.2, right=0.9, top=0.9, bottom=0.2)
     
-                n,bins,patches = plt.hist(Vnormclean ,100,normed=1)
+                n,bins,patches = plt.hist(Vnormclean ,100,density=True)
                 gauss = scipy.stats.norm.pdf(bins,np.mean(Vnormclean),np.std(Vnormclean))
                 plt.plot(bins,gauss)
     
@@ -1410,7 +1416,7 @@ for exp , booldic , sigmadic , startend in  iterlist:
                 plt.clf()
                 plt.subplots_adjust(left=0.2, right=0.9, top=0.9, bottom=0.2)
     
-                n,bins,patches = plt.hist(Vhisto ,100,normed=1)
+                n,bins,patches = plt.hist(Vhisto ,100,density=True)
                 gauss = scipy.stats.norm.pdf(bins,np.mean(Vhisto),np.std(Vhisto))
                 plt.plot(bins,gauss)
                 
@@ -1425,7 +1431,7 @@ for exp , booldic , sigmadic , startend in  iterlist:
                 plt.clf()
                 plt.subplots_adjust(left=0.2, right=0.9, top=0.9, bottom=0.2)
     
-                n,bins,patches = plt.hist(Vhisto ,100,normed=1)
+                n,bins,patches = plt.hist(Vhisto ,100,density=True)
                 gauss = scipy.stats.norm.pdf(bins,np.mean(Vhisto),np.std(Vhisto))
                 plt.plot(bins,gauss)
                 plt.xlim((- np.std(Vhisto) * 3 , np.std(Vhisto) * 3))
