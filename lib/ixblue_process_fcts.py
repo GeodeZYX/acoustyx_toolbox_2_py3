@@ -23,8 +23,6 @@ import pandas as pd
 
 from scipy.spatial.transform import Rotation
 
-from pygoat.seafloorpos import ixblue_process_fcts
-
 
 ##############################################################################
 
