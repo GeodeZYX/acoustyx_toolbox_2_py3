@@ -123,7 +123,7 @@ Range_iTab_param = np.arange(0,len(Tab_p_twtt)) ### weight range better
 
 Range_iTab_path  = [9] ## 9
 Range_iTab_path  = np.arange(0,3)
-Range_iTab_path  = np.arange(0,12)
+Range_iTab_path  = np.arange(0,15)
 
 Range_iTab_win   = np.arange(0,5)
 Range_iTab_win   = [-1] 
