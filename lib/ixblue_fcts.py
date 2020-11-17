@@ -83,7 +83,35 @@ def read_ixblue_TAT(file_in_path):
     
 
 ########### POSI iXBLUE
-def read_ixblue_realtime_posi(file_in_path):
+def read_ixblue_realtime_posi(file_in_path,
+                              use_extern_up=False,
+                              DF_external_U=None):
+    """
+    Parameters
+    ----------
+    file_in_path : TYPE
+        DESCRIPTION.
+    use_extern_up : bool
+        If activated, use external Up values. 
+    DF_external_U : 4 columns dataframe (columns name date,F,L,&U), optional
+        Data for use_extern_up option The default is None.
+        Only Up will be used
+
+    Returns
+    -------
+    DFgaps_posi_ixblue_out : TYPE
+        DESCRIPTION.
+
+    """
+    
+    if use_extern_up:
+        FLU  = DF_external_U[["F","L","U"]].values
+        TimeInterp = DF_external_U["date"].values
+        
+        _,_,IU = interpolator_position(FLU,TimeInterp,
+                              one_interpolator_per_component=True,
+                              bounds_error=False)
+    
     string_PTSAG         = "^\$PTSAG"
     DFgaps_posi_ixblue   = read_ixblue_data(file_in_path, string_PTSAG,True)
     DFgaps_posi_ixblue_tmp = pd.DataFrame()
@@ -93,7 +121,11 @@ def read_ixblue_realtime_posi(file_in_path):
     DFgaps_posi_ixblue_tmp["date"]  = Time
     DFgaps_posi_ixblue_tmp["lat"]   = DFgaps_posi_ixblue.apply(ixblue_coord_conv,axis=1,args=(7,))
     DFgaps_posi_ixblue_tmp["lon"]   = DFgaps_posi_ixblue.apply(ixblue_coord_conv,axis=1,args=(9,))
-    DFgaps_posi_ixblue_tmp["depth"] = 0 #DFgaps_ptsa_2[12]
+    
+    if use_extern_up:
+        DFgaps_posi_ixblue_tmp["depth"] = IU(Time)
+    else:
+        DFgaps_posi_ixblue_tmp["depth"] = -1. * DFgaps_posi_ixblue[12]
     
     #### ID 0 is the 0 of the GAPS
     DFgaps_posi_ixblue_out = DFgaps_posi_ixblue_tmp[DFgaps_posi_ixblue_tmp.ID == 0].copy()
@@ -102,6 +134,9 @@ def read_ixblue_realtime_posi(file_in_path):
     DFgaps_posi_ixblue_out["X"],DFgaps_posi_ixblue_out["Y"],DFgaps_posi_ixblue_out["Z"] = XYZixblue[:,0],XYZixblue[:,1],XYZixblue[:,2]
     
     return DFgaps_posi_ixblue_out
+
+
+
 
 
 ### Internal fct for time conversion
@@ -176,8 +211,6 @@ def ixblue_coord_conv(x,index=9,debug=False):
     else:
         return koef * conv.dms2dec_num(d,m) , d , m 
         
-
-
 
 def interpolator_position(XYZ,Time,
                           one_interpolator_per_component=False,
