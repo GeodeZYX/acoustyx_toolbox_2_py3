@@ -4,6 +4,8 @@
 Created on Mon Oct 19 12:05:36 2020
 
 @author: psakicki
+
+mk 03 => find an optimal labmda and c
 """
 
 #### Import star style

@@ -11,7 +11,7 @@ from geodezyx import *                   # Import the GeodeZYX modules
 from geodezyx.externlib import *         # Import the external modules
 from geodezyx.megalib.megalib import *   # Import the legacy modules names
 
-from pygoat.seafloorpos import ixblue_process_fcts as ibpf
+import ixblue_process_fcts as ibpf
 
 from scipy.spatial.transform import Rotation
 
@@ -52,6 +52,12 @@ p_obs = path_obs + "PAM_BST_v231_m2507-1245_m4_d06_bea3_ITRF14_RTKLIB/PAM_BST_v2
 p_obs = path_obs + "PAM_BST_v211_m2507-1158_m3_d04_bea1_ITRF14_RTKLIB/PAM_BST_v211_m2507-1158_m3_d04_bea1_ITRF14_RTKLIB.csv"
 
 p_obs = path_obs + "PAM_BST_v211_m2507-1158_m3_d04_bea1_RGF93_RTKLIB/PAM_BST_v211_m2507-1158_m3_d04_bea1_RGF93_RTKLIB.csv"
+
+path_obs = "/home/psakicki/GFZ_WORK/PROJECTS_OTHERS/2001_PAMELi_GNSSA/02_PREPROCESSING/03_/"
+
+p_obs = path_obs + "PAM_BST_v211_m2507-1158_m3_d04_bea1_RGF93_RTKLIB_GPSonly/PAM_BST_v211_m2507-1158_m3_d04_bea1_RGF93_RTKLIB_GPSonly.csv"
+p_obs = path_obs + "PAM_BST_v221_m2507-1109_m5_d02_bea2_RGF93_RTKLIB_GPSonly/PAM_BST_v221_m2507-1109_m5_d02_bea2_RGF93_RTKLIB_GPSonly.csv"
+p_obs = path_obs + "PAM_BST_v231_m2507-1245_m4_d06_bea3_RGF93_RTKLIB_GPSonly/PAM_BST_v231_m2507-1245_m4_d06_bea3_RGF93_RTKLIB_GPSonly.csv"
 
 ############################## PREPARE DFbig ##################################
 DFbig = pd.read_csv(p_obs,index_col=0)
@@ -107,6 +113,8 @@ ncy     = "ncy_i"
 lambdaa = ( cref / freqref )
 ################################ CONSTANT DEF #################################
 
+
+ADIFF_calc_ixb_STK = []
 
 for epoc , DFepoc_orig in DFgroup:
     print('**********************************************************************************************')
@@ -177,6 +185,9 @@ for epoc , DFepoc_orig in DFgroup:
     print("vGAP iXBlue from vRPY ropi",vGAP_frm_RPY_ropi) 
     print("vGAP iXBlue from vRPY piro",vGAP_frm_RPY_piro) 
     
+    
+    
+    
     print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")    
     
    
@@ -200,21 +211,42 @@ for epoc , DFepoc_orig in DFgroup:
         dPhi = DFtwtt.loc[TDCpair[1],'Ph_raw'] - DFtwtt.loc[TDCpair[0],'Ph_raw']
         
         Cos_ab , Theta_ab = theta_ambiguities_finder(dPhi,lambdaa,d_TDCab)
+        #########' direction cosine
         DFab["c" + xy] = Cos_ab
+        ######### Angle assicated to the dir cosine
         DFab["a" + xy] = Theta_ab
+        ######### Site        
+        DFab["s" + xy] = Cos_ab
+        
 
 
     cGAP_frm_NED , aGAP_frm_NED = ibpf.ned2dir_cos(vGAP_frm_NED,True)
     cRPY_ixb     , aRPY_ixb     = ibpf.ned2dir_cos(vRPY_ixb,True)
-
+    
     print("aGAP from vGAP            ",aGAP_frm_NED) 
     print("aRPY iXBlue               ",aRPY_ixb) 
-    print("aGAP - aRPY               ",aGAP_frm_NED - aRPY_ixb)
-
+    aRPY_ixb_m_aDIFF_calc_ixb = aGAP_frm_NED - aRPY_ixb
+    print("aGAP - aRPY               ",aRPY_ixb_m_aDIFF_calc_ixb)
+    
+    DFab_diff = aGAP_frm_NED[0:2] - DFab[["aX","aY"]]
+    ADIFF_calc_ixb_STK.append(DFab_diff.abs().min())
     print(DFab)
         
-        
-        
+ADIFF_calc_ixb = pd.DataFrame(np.vstack(ADIFF_calc_ixb_STK))
+
+
+plt.figure()
+ax = ADIFF_calc_ixb[0].hist(bins=100)
+ax.set_xlabel("degree difference")
+ax.set_title("Azimuth iXBlue vs. PS processing")
+plt.tight_layout()
+
+plt.figure()
+ax = ADIFF_calc_ixb[1].hist(bins=100)
+ax.set_xlabel("degree difference")
+ax.set_title("Site iXBlue vs. PS processing")
+plt.tight_layout()
+
         
         
 

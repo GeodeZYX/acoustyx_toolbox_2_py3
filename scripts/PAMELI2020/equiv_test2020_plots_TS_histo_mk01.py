@@ -21,12 +21,12 @@ plt.ioff()
 pbig = "/home/psakicki/GFZ_WORK/PROJECTS_OTHERS/2001_PAMELi_GNSSA/02_PREPROCESSING/03_c_weight_range"
 pbig = "/home/psakicki/GFZ_WORK/PROJECTS_OTHERS/2001_PAMELi_GNSSA/02_PREPROCESSING/03_a_preliminary_runs"
 pbig = "/home/psakicki/GFZ_WORK/PROJECTS_OTHERS/2001_PAMELi_GNSSA/02_PREPROCESSING/03_l_win_weight_range_5_no_overlap"
+pbig = "/home/psakicki/GFZ_WORK/PROJECTS_OTHERS/2001_PAMELi_GNSSA/02_PREPROCESSING/05_b_eq_a_plus_Up_from_postproc"
 pbig = "/home/psakicki/GFZ_WORK/PROJECTS_OTHERS/2001_PAMELi_GNSSA/02_PREPROCESSING/03_g_weight_range_good_2"
 pbig = "/home/psakicki/GFZ_WORK/PROJECTS_OTHERS/2001_PAMELi_GNSSA/02_PREPROCESSING/05_a_reboot03_n_RealTimeUpCorrectedmv"
 
-Pbig = utils.find_recursive(pbig,"*log*")
+Pbig = utils.find_recursive(pbig,"*log")
 Pbig = list(np.unique([os.path.dirname(e) for e in Pbig]))
-
 
 Weight = [10**float(n) for n in np.arange(-6,7)]
 
@@ -64,98 +64,102 @@ for plog in Pbig:
         
         # ###################### PLOT FOR TRAJECTORY
         
-        # if not ixbluemode:
+        if not ixbluemode:
 
-        #     ############ Trajectory EN
-        #     fig,ax = plt.subplots()
-        #     ax.plot(DFbig["E_AHD_emi"],DFbig["N_AHD_emi"],"+")
-        #     ax.plot(DFbig["E_TDC_rec"],DFbig["N_TDC_rec"],"x")
-        #     DFtdc1 = DFbig[DFbig.ID_TDC == 1]
-        #     ax.plot(DFtdc1["E_TDC_rec"],DFtdc1["N_TDC_rec"],".")
-        #     ax.axis("equal")
+            ############ Trajectory EN
+            fig,ax = plt.subplots()
+            ax.plot(DFbig["E_AHD_emi"],DFbig["N_AHD_emi"],"+")
+            ax.plot(DFbig["E_TDC_rec"],DFbig["N_TDC_rec"],"x")
+            DFtdc1 = DFbig[DFbig.ID_TDC == 1]
+            ax.plot(DFtdc1["E_TDC_rec"],DFtdc1["N_TDC_rec"],".")
+            ax.axis("equal")
             
-        #     ax.set_xlabel("East (m)")
-        #     ax.set_ylabel("North (m)")
+            ax.set_xlabel("East (m)")
+            ax.set_ylabel("North (m)")
             
-        #     plt.tight_layout()
-        #     utils.figure_saver(fig,
-        #                        pdir,
-        #                        suffix_out + "traj_NE",
-        #                        outtype )
+            plt.tight_layout()
+            utils.figure_saver(fig,
+                                pdir,
+                                suffix_out + "traj_NE",
+                                outtype )
             
             
-        #     ############ Trajectory Time Series        
-        #     figt,(axte,axtn) = plt.subplots(2,1)
-        #     figt.suptitle("Trajectory TimeSeries")
+            ############ Trajectory Time Series        
+            figt,(axte,axtn) = plt.subplots(2,1)
+            figt.suptitle("Trajectory TimeSeries")
             
-        #     axte.plot(DFbig["date_emi"],DFbig["E_AHD_emi"],"+")
-        #     axte.plot(DFbig["date_rec"],DFbig["E_TDC_emi"],"x")
+            axte.plot(DFbig["date_emi"],DFbig["E_AHD_emi"],"+")
+            axte.plot(DFbig["date_rec"],DFbig["E_TDC_emi"],"x")
 
-        #     axtn.plot(DFbig["date_emi"],DFbig["N_AHD_emi"],"+")            
-        #     axtn.plot(DFbig["date_rec"],DFbig["N_TDC_emi"],"x")
+            axtn.plot(DFbig["date_emi"],DFbig["N_AHD_emi"],"+")            
+            axtn.plot(DFbig["date_rec"],DFbig["N_TDC_emi"],"x")
             
             
-        #     axte.set_ylabel("East (m)")
-        #     axtn.set_ylabel("North (m)")
+            axte.set_ylabel("East (m)")
+            axtn.set_ylabel("North (m)")
             
 
-        #     plt.tight_layout()
-        #     utils.figure_saver(figt,
-        #                        pdir,
-        #                        suffix_out + "ts_traj_NE",
-        #                        outtype )
+            plt.tight_layout()
+            utils.figure_saver(figt,
+                                pdir,
+                                suffix_out + "ts_traj_NE",
+                                outtype )
 
             
-        #     figttdc,(axttdce,axttdcn) = plt.subplots(2,1)
-        #     figttdc.suptitle("Trajectory TimeSeries per transducer")
+            figttdc,(axttdce,axttdcn) = plt.subplots(2,1)
+            figttdc.suptitle("Trajectory TimeSeries per transducer")
             
             
-        #     for tdc in DFbig.ID_TDC.unique():
-        #         DFtsc = DFbig[DFbig.ID_TDC == tdc]
-        #         tdcstr = "TDC" + str(tdc)
-        #         cols_posi_rec = ['N_' +tdcstr+ '_rec',
-        #                          'E_' +tdcstr+ '_rec',
-        #                          'D_' +tdcstr+ '_rec']
-        #         axttdce.plot(DFtsc["date_rec"],DFtsc[cols_posi_rec[1]],"x")
-        #         axttdcn.plot(DFtsc["date_rec"],DFtsc[cols_posi_rec[0]],"x")
+            for tdc in DFbig.ID_TDC.unique():
+                DFtsc = DFbig[DFbig.ID_TDC == tdc]
+                tdcstr = "TDC" + str(tdc)
+                cols_posi_rec = ['N_' +tdcstr+ '_rec',
+                                  'E_' +tdcstr+ '_rec',
+                                  'D_' +tdcstr+ '_rec']
+                axttdce.plot(DFtsc["date_rec"],DFtsc[cols_posi_rec[1]],"x")
+                axttdcn.plot(DFtsc["date_rec"],DFtsc[cols_posi_rec[0]],"x")
                 
-        #         axttdce.set_ylabel("East (m)")
-        #         axttdcn.set_ylabel("North (m)")
+                axttdce.set_ylabel("East (m)")
+                axttdcn.set_ylabel("North (m)")
                 
-        #     plt.tight_layout()
-        #     utils.figure_saver(figttdc,
-        #                        pdir,
-        #                        suffix_out + "ts_traj_NE2",
-        #                        outtype )
-            
-        #     figup,axup = plt.subplots()
-        #     axup.plot(DFbig["date_rec"],DFbig["D_AHD_emi"],"x",c='C0')
-        #     figup.suptitle("Up + TWTT")
-            
-        #     axtwtt = axup.twinx()
-        #     axtwtt.plot(DFbig.date_rec[DFbig.VALID],DFbig.TWTT_obs[DFbig.VALID],"+",c='C1')
-            
-        #     axup.set_ylabel("Up (m)")
-        #     axtwtt.set_ylabel("TWTT (s)")
-            
-        #     plt.tight_layout()
-            
-        #     utils.figure_saver(figup,
-        #                        pdir,
-        #                        "ts_TWTT_Up",
-        #                        outtype )
                 
-        # ###################### PLOT FOR TRAJECTORY
-        
-        
-        
-        #     # if with_direction_vectors:
-        #     #     fighistangl, axhistangl = plt.subplots()
-        #     #     axhistangl.hist(Angle_residuals,100)
-        #     #     fighistangl.suptitle("Histogram of Direction cosine angle")
-        
+            plt.tight_layout()
+            utils.figure_saver(figttdc,
+                                pdir,
+                                suffix_out + "ts_traj_NE2",
+                                outtype )
+            
+            
+            if "bea3" in p:
+                raise Exception
         
             
+            figup,axup = plt.subplots()
+            axup.plot(DFbig["date_rec"],DFbig["D_AHD_emi"],"x",c='C0')
+            figup.suptitle("Up + TWTT")
+            
+            axtwtt = axup.twinx()
+            axtwtt.plot(DFbig.date_rec[DFbig.VALID],DFbig.TWTT_obs[DFbig.VALID],"+",c='C1')
+            
+            axup.set_ylabel("Up (m)")
+            axtwtt.set_ylabel("TWTT (s)")
+            
+            plt.tight_layout()
+            
+            utils.figure_saver(figup,
+                                pdir,
+                                "ts_TWTT_Up",
+                                outtype )
+                
+        ###################### PLOT FOR TRAJECTORY
+        
+
+            # if with_direction_vectors:
+            #     fighistangl, axhistangl = plt.subplots()
+            #     axhistangl.hist(Angle_residuals,100)
+            #     fighistangl.suptitle("Histogram of Direction cosine angle")
+        
+        
         ###################### PLOT FOR RESIDUALS
         figres,axres   = plt.subplots()
         figres.suptitle("TWTT residuals")
@@ -261,6 +265,3 @@ for plog in Pbig:
                            pdir,
                            suffix_out + "hist_TWTT_resid_miniwin",
                            outtype )
-                
-        
-        

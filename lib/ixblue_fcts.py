@@ -72,6 +72,8 @@ def read_ixblue_TAT(file_in_path):
         GrepBloc = "".join(Greped_lines)
         DFgaps_tat = pd.read_csv(StringIO(GrepBloc),header=None,sep=",")
         DFgaps_tat = DFgaps_tat[[3,10]]
+        print(DFgaps_tat)
+        
         # creation of a TAT Dict from a Serie from a DataFrame
         TATdict = DFgaps_tat[[3,10]].set_index(3)[10].to_dict()
     except:
@@ -658,7 +660,7 @@ def ixblueDF_prepro_step4_attitude(DFin,InterpolatorAttitude,
 
     """
     DFout = DFin.copy(deep=True)
-    
+        
     for emirec,dev in itertools.product(emirec_tup,dev_tup):        
         Rot  = InterpolatorAttitude(DFout['date_' + emirec])
         ######## !!!!!!!!!!!!!!!!!!!!!!!

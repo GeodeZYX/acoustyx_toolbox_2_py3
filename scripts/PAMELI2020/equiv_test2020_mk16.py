@@ -118,12 +118,18 @@ Range_iTab_param = np.arange(0,13) ### weight wide range
 Range_iTab_param = [7]             ### weight wide range favorite 
 
 Range_iTab_param = [0]                          ### weight range mono => worst one
-Range_iTab_param = [len(Tab_p_twtt)-1]          ### weight range mono => best one
 Range_iTab_param = np.arange(0,len(Tab_p_twtt)) ### weight range better
+Range_iTab_param = [len(Tab_p_twtt)-1]          ### weight range mono => best one
 
 Range_iTab_path  = [9] ## 9
 Range_iTab_path  = np.arange(0,3)
 Range_iTab_path  = np.arange(0,15)
+Range_iTab_path  = range(12,15) ## 9
+Range_iTab_path  = np.arange(15,17)
+Range_iTab_path  = np.arange(17,21)
+Range_iTab_path  = np.arange(21,25)
+Range_iTab_path  = np.arange(15,27)
+
 
 Range_iTab_win   = np.arange(0,5)
 Range_iTab_win   = [-1] 
@@ -203,6 +209,62 @@ for iTab_path,iTab_param,iTab_win,iTab_bea  in itertools.product(Range_iTab_path
     p_obs = path_obs + "PAM_BST_v231_m2507-1245_m4_d06_bea3_RGF93_RTKLIB_GPSonly/PAM_BST_v231_m2507-1245_m4_d06_bea3_RGF93_RTKLIB_GPSonly.csv"
     P_obs_stk.append(p_obs)
     down_correction = 0
+    
+    # ########## REAL TIME IXBLUE - Day01 - Up from iXBlue - Concatened 
+    # p_obs = path_obs + "PAM_BST_v711_mX_dXX_bea1_RTiXBlue/PAM_BST_v711_mX_dXX_bea1_RTiXBlue.csv"
+    # P_obs_stk.append(p_obs)
+    # p_obs = path_obs + "PAM_BST_v731_mX_dXX_bea3_RTiXBlue/PAM_BST_v731_mX_dXX_bea3_RTiXBlue.csv"
+    # P_obs_stk.append(p_obs)
+    # down_correction = 0
+    
+    # ########## REAL TIME IXBLUE - Day01 - Up from iXBlue - ClockWise     
+    # p_obs = path_obs + "/PAM_BST_v712_mCW_dXX_bea1_RTiXBlue"  * 2 + ".csv"
+    # P_obs_stk.append(p_obs)
+    # p_obs = path_obs + "/PAM_BST_v732_mCW_dXX_bea3_RTiXBlue"  * 2 + ".csv"
+    # P_obs_stk.append(p_obs)
+
+    # ########## REAL TIME IXBLUE - Day01 - Up from iXBlue - AntiClockWise     
+    # p_obs = path_obs + "/PAM_BST_v713_mACW_dXX_bea1_RTiXBlue" * 2 + ".csv"
+    # P_obs_stk.append(p_obs)
+    # p_obs = path_obs + "/PAM_BST_v733_mACW_dXX_bea3_RTiXBlue" * 2 + ".csv"
+    # P_obs_stk.append(p_obs)
+
+
+    # ########## REAL TIME IXBLUE - Day02 - Up from iXBlue - (Anti)ClockWise     
+    # p_obs = path_obs + "/PAM_BST_v714_mCW_dXX_bea1_RTiXBlue"* 2 + ".csv"
+    # P_obs_stk.append(p_obs)
+    # p_obs = path_obs + "/PAM_BST_v715_mACW_dXX_bea1_RTiXBlue"* 2 + ".csv"
+    # P_obs_stk.append(p_obs)
+    # p_obs = path_obs + "/PAM_BST_v734_mCW_dXX_bea3_RTiXBlue"* 2 + ".csv"
+    # P_obs_stk.append(p_obs)
+    # p_obs = path_obs + "/PAM_BST_v735_mACW_dXX_bea3_RTiXBlue"* 2 + ".csv"
+    # P_obs_stk.append(p_obs)
+
+    p_obs =path_obs + "/PAM_BST_v736_mALL_day2_bea3_RTiXBlue".strip() *2 + ".csv"
+    P_obs_stk.append(p_obs)
+    p_obs =path_obs + "/PAM_BST_v735_mACW_day2_bea3_RTiXBlue".strip() *2 + ".csv"
+    P_obs_stk.append(p_obs)
+    p_obs =path_obs + "/PAM_BST_v734_mCW_day2_bea3_RTiXBlue ".strip() *2 + ".csv"
+    P_obs_stk.append(p_obs)
+    p_obs =path_obs + "/PAM_BST_v716_mALL_day2_bea1_RTiXBlue".strip() *2 + ".csv"
+    P_obs_stk.append(p_obs)
+    p_obs =path_obs + "/PAM_BST_v715_mACW_day2_bea1_RTiXBlue".strip() *2 + ".csv"
+    P_obs_stk.append(p_obs)
+    p_obs =path_obs + "/PAM_BST_v714_mCW_day2_bea1_RTiXBlue ".strip() *2 + ".csv"
+    p_obs =P_obs_stk.append(p_obs)
+    p_obs =path_obs + "/PAM_BST_v733_mACW_day1_bea3_RTiXBlue".strip() *2 + ".csv"
+    p_obs =P_obs_stk.append(p_obs)
+    p_obs =path_obs + "/PAM_BST_v732_mCW_day1_bea3_RTiXBlue ".strip() *2 + ".csv"
+    P_obs_stk.append(p_obs)
+    p_obs =path_obs + "/PAM_BST_v731_mALL_day1_bea3_RTiXBlue".strip() *2 + ".csv"
+    P_obs_stk.append(p_obs)
+    p_obs =path_obs + "/PAM_BST_v713_mACW_day1_bea1_RTiXBlue".strip() *2 + ".csv"
+    P_obs_stk.append(p_obs)
+    p_obs =path_obs + "/PAM_BST_v712_mCW_day1_bea1_RTiXBlue ".strip() *2 + ".csv"
+    P_obs_stk.append(p_obs)
+    p_obs =path_obs + "/PAM_BST_v711_mALL_day1_bea1_RTiXBlue".strip() *2 + ".csv"
+    P_obs_stk.append(p_obs)
+
 
     ##################################### TESTS 04 & 06
     # path_obs = path_computer + "/02_PREPROCESSING/06_/"
@@ -229,7 +291,7 @@ for iTab_path,iTab_param,iTab_win,iTab_bea  in itertools.product(Range_iTab_path
     p_obs = P_obs_stk[iTab_path]
     ########## used p_obs ##########
 
-    if "RTiXBlue" in p_obs and False:
+    if "RTiXBlue" in p_obs and True:
         down_correction = -51.92176511738174
     else:
         down_correction = 0
@@ -272,6 +334,7 @@ for iTab_path,iTab_param,iTab_win,iTab_bea  in itertools.product(Range_iTab_path
     p_bl   = 10**0
     
     log_name = "_".join((log_name,str(iTab_param)))
+    print("INFO:",log_name)
     
     estim_c                = Tab_estim_c[iTab_param]               
     with_direction_vectors = Tab_with_direction_vectors[iTab_param] 
@@ -436,14 +499,22 @@ for iTab_path,iTab_param,iTab_win,iTab_bea  in itertools.product(Range_iTab_path
                                2: np.array([-7.5009646 ,-26.21878226, 40.66]),
                                3: np.array([22.46625595, 2.22251482 , 39.68])}
     
+    
+    ### Mean from the winiwoing 
+    Xbea_apri_all_init_dict = {1: np.array([  -7.093182,  24.429798,  37.843841]),
+                               2: np.array([  -7.344692, -26.193541,  38.236365]),
+                               3: np.array([  22.613897,  2.269430,  37.692704])}
+
+
+
     ### NED 
     ### /home/psakicki/GFZ_WORK/PROJECTS_OTHERS/2001_PAMELi_GNSSA/02_PREPROCESSING/03_g_weight_range_good_2/PAM_BST_v231_m2507-1245_m4_d06_bea3_RGF93_RTKLIB_GPSonly/log
     ### idem for bea1 n 2 
     Xbea_apri_all_init_dict = {1: np.array([  -7.09260362,   24.39713696,   37.80365583 ]),
                                2: np.array([  -7.36952229,  -26.22316284,   38.19201817]),
                                3: np.array([  22.61862272,    2.203012,     37.69790289])}
-
     
+
     Xbea_apri_all_init = pd.DataFrame(Xbea_apri_all_init_dict)
     Xbea_apri_all_init = Xbea_apri_all_init.transpose()
     Xbea_apri_all_init.columns = ["N","E","D"]
@@ -615,6 +686,7 @@ for iTab_path,iTab_param,iTab_win,iTab_bea  in itertools.product(Range_iTab_path
                                          xrec,
                                          c_used)
                 
+                
                 ########## Modeled observations
                 twtt_mod_equiv = ibpf.fct_obs_equiv(*args_for_partial_dev)
                 
@@ -660,6 +732,9 @@ for iTab_path,iTab_param,iTab_win,iTab_bea  in itertools.product(Range_iTab_path
                 else:
                     Bfast_stk.append(twtt_obs - twtt_mod)
                     Bfast_twtt_only_stk.append(twtt_obs - twtt_mod)
+                    
+                    #raise Exception
+
     
                 ########## derivative of position
                 if with_numerical_diff:

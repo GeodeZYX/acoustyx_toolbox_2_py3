@@ -512,7 +512,7 @@ def direction_vector_finder_lsq(Sin,
 
 ######################## site azimut finder 
 
-def ned2site_azim(ned):
+def ned2site_azim(ned,outdeg=False):
     """
     Grewall p 460
     """
@@ -520,6 +520,9 @@ def ned2site_azim(ned):
     r    = np.linalg.norm(ned)
     site = np.arcsin(d/r)  #aka phi
     azim = np.arctan2(e,n)   #aka theta
+    if outdeg:
+        site = np.rad2deg(site)
+        azim = np.rad2deg(azim)
     return np.squeeze(np.column_stack((site,azim,r)))
 
 
